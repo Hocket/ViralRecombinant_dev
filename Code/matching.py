@@ -4,7 +4,6 @@ This file contains functions for reading PED and LD files and processing recombi
 Author: Alex Poyer
 """
 
-import sys
 import pandas as pd
 import re
 
@@ -185,18 +184,3 @@ def save_to_excel(excel_data, output_excel):
     )
     df.to_excel(output_excel, index=False)
     print(f"Results saved to {output_excel}")
-
-
-def main(ped_file, recombinant_file, output_excel="../Data/OutputFiles/matches_output.xlsx"):
-    sample_data = read_ped_file(ped_file)
-    pairs = read_recombinant_file(recombinant_file)
-    sample_to_pairs = find_matching_pairs(sample_data, pairs)
-    excel_data = summarize_matches(sample_to_pairs)
-    save_to_excel(excel_data, output_excel)
-
-
-if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print(f"Usage: python matching.py ped_file recombinant_file")
-        sys.exit(1)
-    main(sys.argv[1], sys.argv[2])
