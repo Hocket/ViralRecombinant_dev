@@ -187,7 +187,7 @@ def save_to_excel(excel_data, output_excel):
     print(f"Results saved to {output_excel}")
 
 
-def main(ped_file, recombinant_file, output_excel="matches_output.xlsx"):
+def main(ped_file, recombinant_file, output_excel="../Data/OutputFiles/matches_output.xlsx"):
     sample_data = read_ped_file(ped_file)
     pairs = read_recombinant_file(recombinant_file)
     sample_to_pairs = find_matching_pairs(sample_data, pairs)
