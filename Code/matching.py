@@ -6,7 +6,7 @@ Author: Alex Poyer
 
 import pandas as pd
 import re
-
+import tree_utils
 
 # This function may further be optimized by utilizing pandas dataframes. Works for small datasets
 def read_ped_file(ped_file, ped_header="Position"):
@@ -135,13 +135,14 @@ def find_matching_pairs(sample_data, pairs):
     return sample_to_pairs
 
 
-def summarize_matches(sample_to_pairs):
+def summarize_matches(sample_to_pairs, phylo_times=None):
     """
     Summarizes which samples share the same set of recombinant pairs.
 
     Args:
         sample_to_pairs (dict): A dictionary mapping each sample name (str) to the set of recombinant pairs present in that sample.
             See find_matching_pairs for format.
+        phylo_times (dict, optional): A dictionary mapping each sample name (str) to branch length / phylogenetic time (int)
 
     Returns:
         list: excel_data
@@ -158,7 +159,9 @@ def summarize_matches(sample_to_pairs):
         unique = "Yes" if len(samples) == 1 else "No"
         shared_with = "" if len(samples) == 1 else ", ".join(samples)
         for sample in samples:
-            excel_data.append([sample, num_pairs, unique, pair_identities, shared_with])
+            epi_isl = tree_utils.extract_epi_isl(sample)
+            phylo_time = phylo_times.get(epi_isl, "") if phylo_times else ""
+            excel_data.append([sample, num_pairs, unique, pair_identities, shared_with, phylo_time])
     return excel_data
 
 
@@ -180,6 +183,7 @@ def save_to_excel(excel_data, output_excel):
             "UniqueRecombinant",
             "Pair Identities",
             "Shared With",
+            "Phylogenetic Time"
         ],
     )
     df.to_excel(output_excel, index=False)
