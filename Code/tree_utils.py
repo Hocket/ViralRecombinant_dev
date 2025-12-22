@@ -1,4 +1,6 @@
 import subprocess
+import re
+from Bio import Phylo
 
 
 def run_iqtree(input_alignment, output_prefix, iqtree_path="iqtree", extra_args=None):
@@ -20,3 +22,19 @@ def run_iqtree(input_alignment, output_prefix, iqtree_path="iqtree", extra_args=
     print("Running:", " ".join(cmd))
     result = subprocess.run(cmd)
     return result.returncode
+
+
+def parse_lengths(tree_file):
+    tree = Phylo.read(tree_file, "newick")
+    time_pairs = {}
+    for clade in tree.get_terminals():
+        epi_isl = extract_epi_isl(clade.name)
+        if epi_isl:
+            time_pairs[epi_isl] = clade.branch_length
+    return time_pairs
+
+
+def extract_epi_isl(name):
+    """Extracts the EPI_ISL identifier from a sample name string."""
+    match = re.search(r"EPI_ISL_\d+", name)
+    return match.group(0) if match else None
