@@ -1,3 +1,9 @@
+"""
+This file contains utilities for for phylogenetic tree analysis and modification
+
+Author: Alex Poyer
+"""
+
 import subprocess
 import re
 from Bio import Phylo

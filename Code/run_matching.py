@@ -1,3 +1,9 @@
+"""
+This file contains the main workflow for the matching and phlyogenetic tree processes
+
+Author: Alex Poyer
+"""
+
 import sys
 import matching
 import tree_utils
