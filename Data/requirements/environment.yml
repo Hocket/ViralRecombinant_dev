@@ -1,0 +1,36 @@
+name: viral_recombinant
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - bzip2=1.0.8=h80987f9_6
+  - ca-certificates=2025.12.2=hca03da5_0
+  - expat=2.7.1=h313beb8_0
+  - iqtree=3.0.1=h39b84e0_0
+  - libcxx=19.1.7=hb09ecce_3
+  - libffi=3.4.4=hca03da5_1
+  - libmpdec=4.0.0=h80987f9_0
+  - llvm-openmp=19.1.7=h3b2fb71_2
+  - ncurses=6.5=hee39554_0
+  - openssl=3.0.18=h9b4081a_0
+  - pip=25.1=pyhc872135_2
+  - python=3.13.5=h2eb94d5_100_cp313
+  - python_abi=3.13=0_cp313
+  - readline=8.3=h0b18652_0
+  - setuptools=78.1.1=py313hca03da5_0
+  - sqlite=3.50.2=h79febb2_1
+  - tk=8.6.15=hcd8a7d5_0
+  - wheel=0.45.1=py313hca03da5_0
+  - xz=5.6.4=h80987f9_1
+  - zlib=1.2.13=h18a0788_1
+  - pip:
+      - biopython==1.86
+      - et-xmlfile==2.0.0
+      - numpy==2.3.2
+      - openpyxl==3.1.5
+      - pandas==2.3.1
+      - python-dateutil==2.9.0.post0
+      - pytz==2025.2
+      - six==1.17.0
+      - tzdata==2025.2
+prefix: /opt/miniconda3/envs/mikeF
