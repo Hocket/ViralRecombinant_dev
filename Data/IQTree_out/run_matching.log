@@ -1,0 +1,2098 @@
+IQ-TREE version 3.0.1 for MacOS ARM 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    AtPoyers-MacBook-Air-2.local (SSE4.2, 16 GB RAM)
+Command: iqtree -s ../Data/InputFiles/ALIGNEDSEQ213.fasta -pre ../Data/IQTree_out/run_matching -m GTR -bb 1000 -alrt 1000 -nt AUTO
+Seed:    64244 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Dec 22 13:38:45 2025
+Kernel:  SSE2 - auto-detect threads (10 CPU cores detected)
+
+Reading alignment file ../Data/InputFiles/ALIGNEDSEQ213.fasta ... Fasta format detected
+Reading fasta file: done in 0.302399 secs using 89.69% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.134882 secs using 84.6% CPU
+WARNING: 1802 sites contain only gaps or ambiguous characters.
+Alignment has 213 sequences with 198855 columns, 2431 distinct patterns
+210 parsimony-informative, 442 singleton sites, 198203 constant sites
+                                                                     Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000494003 secs using 270.2% CPU
+   1  hMpxV/DRC/HGRK-1L/2024|EPI_ISL_18886301|2024-01-15                     1.58%    passed     99.38%
+   2  hMpxV/Germany/un-RKI-1213/2024|EPI_ISL_19785226|2024-12                5.25%    passed     82.60%
+   3  hMpxV/Germany/NW-RKI-1142/2024|EPI_ISL_19502532|2024-10-12             5.01%    passed     81.85%
+   4  hMpxV/Germany/un-RKI-1216/2025|EPI_ISL_19785218|2025-01                5.21%    passed     43.71%
+   5  hMpxV/Germany/un-RKI-1351/2025|EPI_ISL_19887806|2025-04                5.04%    passed     73.49%
+   6  hMpxV/Germany/un-RKI-1349/2025|EPI_ISL_19887833|2025-04                5.20%    passed     72.59%
+   7  hMpxV/DRC/CRSN-4/2023|EPI_ISL_19079342|2023-12-23                      2.04%    passed     45.16%
+   8  hMpxV/DRC/CRSN-6/2024|EPI_ISL_19079344|2024-01-14                      2.08%    passed     35.78%
+   9  hMpxV/DRC/INRB-0239V/2024|EPI_ISL_19093791|2024-01-10                  1.64%    passed     99.98%
+  10  hMpxV/DRC/INRB-0224C/2023|EPI_ISL_19093830|2023-12-25                  1.64%    passed     99.97%
+  11  hMpxV/DRC/INRB-0231V/2023|EPI_ISL_19093810|2023-12-21                  1.64%    passed     99.99%
+  12  hMpxV/DRC/INRB-0240V/2024|EPI_ISL_19093812|2024-01-14                  1.66%    passed     99.99%
+  13  hMpxV/DRC/INRB-0230C/2023|EPI_ISL_19093827|2023-12-31                  1.66%    passed     99.99%
+  14  hMpxV/Thailand/KCMH-ID24110/2024|EPI_ISL_19366744|2024-08-16           1.67%    passed     99.99%
+  15  hMpxV/DRC/INRB-0223C/2023|EPI_ISL_19093831|2023-12-26                  1.64%    passed     99.98%
+  16  hMpxV/DRC/INRB-0209V/2024|EPI_ISL_19093803|2024-01-19                  1.67%    passed     99.98%
+  17  hMpxV/DRC/INRB-0220V/2024|EPI_ISL_19093817|2024-01-26                  1.65%    passed     99.99%
+  18  hMpxV/DRC/INRB-0226V/2023|EPI_ISL_19093809|2023-12-26                  1.75%    passed     99.56%
+  19  hMpxV/DRC/INRB-0201V/2024|EPI_ISL_19093808|2024-01-23                  2.61%    passed     99.98%
+  20  hMpxV/DRC/INRB-0198V/2024|EPI_ISL_19093796|2024-01-23                  1.90%    passed     96.81%
+  21  hMpxV/DRC/INRB-010/2023|EPI_ISL_19093833|2023-10-13                    1.93%    passed     98.94%
+  22  hMpxV/Kenya/nvrl220/2024|EPI_ISL_19302262|2024-07-25                   1.78%    passed     99.21%
+  23  hMpxV/Kenya/KEMRI-00107/2024|EPI_ISL_19345034|2024-07-25               1.78%    passed     99.17%
+  24  hMpxV/Thailand/BIDI-001/2025|EPI_ISL_19673536|2025-01-06               1.61%    passed     99.93%
+  25  hMpxV/United_Kingdom/UKHSA-0072/2024|EPI_ISL_19557976|2024-10-27       2.11%    passed     99.33%
+  26  hMpxV/Thailand/BIDI-002/2025|EPI_ISL_19694853|2025-01-17               1.62%    passed    100.00%
+  27  hMpxV/Thailand/BIDI-003/2025|EPI_ISL_19694854|2025-01-22               1.62%    passed    100.00%
+  28  hMpxV/Canada/MB-NML-6349/2024|EPI_ISL_19791290|2024-11-21              1.88%    passed     99.89%
+  29  hMpxV/Canada/MB-NML-6348/2024|EPI_ISL_19791292|2024-11-21              1.88%    passed     99.90%
+  30  hMpxV/Canada/MB-NML-6350/2024|EPI_ISL_19791291|2024-11-21              1.90%    passed     99.90%
+  31  hMpxV/Brazil/SP-LEIAL-4448/2025|EPI_ISL_19762724|2025-02-24            1.59%    passed     99.99%
+  32  hMpxV/Uganda/UVRI-MP125/2024|EPI_ISL_19867562|2024-08-18               1.74%    passed     99.90%
+  33  hMpxV/Thailand/BIDI-004/2025|EPI_ISL_19818649|2025-03-29               1.61%    passed     99.99%
+  34  hMpxV/USA/NY-CDC-0100/2025|EPI_ISL_19818650|2025-02                    1.74%    passed     99.94%
+  35  hMpxV/China/ZJ-ZCDC-001/2024|EPI_ISL_19870071|2024-12-30               1.78%    passed     99.72%
+  36  hMpxV/Sweden/PHAS-11304/2024|EPI_ISL_19348512|2024-08-13               1.68%    passed     99.98%
+  37  hMpxV/Thailand/NIC-31/2024|EPI_ISL_19350788|2024-08-16                 1.67%    passed     99.99%
+  38  hMpxV/India/KL-ICMR-176_1054/2024|EPI_ISL_19484958|2024-09-21          1.98%    passed     98.95%
+  39  hMpxV/Uganda/CPHL-002/2024|EPI_ISL_19456777|2024-09-08                 1.73%    passed     99.99%
+  40  hMpxV/USA/CA-CDC-0100/2024|EPI_ISL_19586581|2024-11                    1.81%    passed     99.87%
+  41  hMpxV/USA/NH-CDC-0100/2025|EPI_ISL_19785231|2025-02                    1.76%    passed     99.96%
+  42  hMpxV/USA/GA-CDC-0100/2025|EPI_ISL_19686354|2025-01                    1.70%    passed     99.95%
+  43  hMpxV/Uganda/UVRI-MP173/2024|EPI_ISL_19867563|2024-08-25               1.80%    passed     99.80%
+  44  hMpxV/USA/MA-CDC-0100/2025|EPI_ISL_20056547|2025-06                    1.76%    passed     99.97%
+  45  hMpxV/Italy/un-INMI-0001/2025|EPI_ISL_20055054|2025-05                 1.89%    passed     99.08%
+  46  hMpxV/Pakistan/NIH-KMU-006/2024|EPI_ISL_19713336|2024-12-02            1.59%    passed     99.98%
+  47  hMpxV/India/UP-MCL-H-196-2884-1197/2025|EPI_ISL_19902083|2025-05-03    1.54%    passed     99.97%
+  48  hMpxV/Uganda/UVRI-012/2024|EPI_ISL_19305614|2024-07-12                 1.55%    passed     99.98%
+  49  hMpxV/Uganda/UVRI-MP349/2024|EPI_ISL_19587230|2024-09-08               1.60%    passed     99.99%
+  50  hMpxV/Uganda/UVRI-059/2024|EPI_ISL_19612235|2024-12-04                 1.62%    passed     99.99%
+  51  hMpxV/Uganda/UVRI-MP765/2024|EPI_ISL_19587258|2024-10-24               1.61%    passed    100.00%
+  52  hMpxV/Uganda/UVRI-MP350A1/2024|EPI_ISL_19587231|2024-09-08             1.60%    passed    100.00%
+  53  hMpxV/Uganda/UVRI-MP812/2024|EPI_ISL_19602363|2024-11-01               1.60%    passed    100.00%
+  54  hMpxV/Uganda/UVRI-MP1172/2024|EPI_ISL_19693784|2024-11-21              1.60%    passed    100.00%
+  55  hMpxV/Uganda/UVRI-MP350A2/2024|EPI_ISL_19587232|2024-09-08             1.60%    passed    100.00%
+  56  hMpxV/Uganda/UVRI-MP1249/2024|EPI_ISL_19612231|2024-11-30              1.60%    passed     99.99%
+  57  hMpxV/Uganda/UVRI-MP636/2024|EPI_ISL_19587243|2024-10-21               1.60%    passed     99.99%
+  58  hMpxV/Uganda/UVRI-MP619/2024|EPI_ISL_19587240|2024-10-18               1.60%    passed     99.99%
+  59  hMpxV/Uganda/UVRI-MP789/2024|EPI_ISL_19602362|2024-10-30               1.60%    passed     99.99%
+  60  hMpxV/Uganda/UVRI-MP1247/2024|EPI_ISL_19693786|2024-12-03              1.61%    passed     99.99%
+  61  hMpxV/Uganda/UVRI-MP813/2024|EPI_ISL_19602364|2024-11-01               1.60%    passed    100.00%
+  62  hMpxV/Uganda/UVRI-MP1183/2024|EPI_ISL_19602382|2024-11-22              1.61%    passed     99.99%
+  63  hMpxV/Uganda/UVRI-MP757/2024|EPI_ISL_19587253|2024-10-18               1.60%    passed    100.00%
+  64  hMpxV/Uganda/UVRI-MP848/2024|EPI_ISL_19602371|2024-10-30               1.60%    passed    100.00%
+  65  hMpxV/Uganda/UVRI-MP678/2024|EPI_ISL_19587250|2024-10-19               1.60%    passed    100.00%
+  66  hMpxV/Uganda/UVRI-MP920/2024|EPI_ISL_19602378|2024-11-05               1.60%    passed    100.00%
+  67  hMpxV/Uganda/UVRI-MP667/2024|EPI_ISL_19587249|2024-10-21               1.60%    passed    100.00%
+  68  hMpxV/Uganda/UVRI-MP1597/2025|EPI_ISL_20047717|2025-01-23              1.61%    passed     99.99%
+  69  hMpxV/Uganda/UVRI-MP768/2024|EPI_ISL_19587261|2024-10-25               1.60%    passed     99.99%
+  70  hMpxV/Uganda/UVRI-MP822/2024|EPI_ISL_19602369|2024-11-01               1.60%    passed    100.00%
+  71  hMpxV/Uganda/UVRI-MP762/2024|EPI_ISL_19587255|2024-10-24               1.60%    passed    100.00%
+  72  hMpxV/Uganda/UVRI-MP2103/2025|EPI_ISL_20047711|2025-01-23              1.60%    passed     99.99%
+  73  hMpxV/Uganda/UVRI-MP632/2024|EPI_ISL_19587242|2024-10-17               1.60%    passed    100.00%
+  74  hMpxV/Uganda/UVRI-MP2094/2025|EPI_ISL_20047706|2025-02-03              1.60%    passed    100.00%
+  75  hMpxV/Uganda/UVRI-MP1155/2024|EPI_ISL_19693779|2024-11-20              1.61%    passed    100.00%
+  76  hMpxV/Uganda/UVRI-MP2062/2025|EPI_ISL_20047730|2025-02-18              1.60%    passed    100.00%
+  77  hMpxV/Uganda/UVRI-MP1286/2024|EPI_ISL_19612234|2024-12-01              1.61%    passed    100.00%
+  78  hMpxV/Uganda/UVRI-MP1285/2024|EPI_ISL_19612233|2024-12-01              1.60%    passed     99.99%
+  79  hMpxV/Uganda/UVRI-MP1137/2024|EPI_ISL_19693776|2024-11-15              1.61%    passed     99.99%
+  80  hMpxV/Uganda/UVRI-MP903/2024|EPI_ISL_19602376|2024-11-02               1.60%    passed     99.99%
+  81  hMpxV/Uganda/UVRI-MP1173/2024|EPI_ISL_19693785|2024-11-21              1.61%    passed    100.00%
+  82  hMpxV/Uganda/UVRI-MP1602/2025|EPI_ISL_20047712|2025-02-04              1.61%    passed     99.99%
+  83  hMpxV/Uganda/UVRI-MP1590/2025|EPI_ISL_20047714|2024-12-10              1.61%    passed    100.00%
+  84  hMpxV/Uganda/UVRI-MP901/2024|EPI_ISL_19602375|2024-11-06               1.60%    passed    100.00%
+  85  hMpxV/Uganda/UVRI-MP1544/2025|EPI_ISL_20047724|2025-02-06              1.61%    passed    100.00%
+  86  hMpxV/Uganda/UVRI-MP350B/2024|EPI_ISL_19587233|2024-09-08              1.60%    passed    100.00%
+  87  hMpxV/Uganda/UVRI-MP454/2024|EPI_ISL_19587236|2024-09-22               1.60%    passed    100.00%
+  88  hMpxV/Uganda/UVRI-MP819/2024|EPI_ISL_19602368|2024-11-01               1.60%    passed    100.00%
+  89  hMpxV/Uganda/UVRI-MP769/2024|EPI_ISL_19587262|2024-10-25               1.60%    passed    100.00%
+  90  hMpxV/Uganda/UVRI-MP350C/2024|EPI_ISL_19587234|2024-09-08              1.60%    passed    100.00%
+  91  hMpxV/Uganda/UVRI-MP350D/2024|EPI_ISL_19587235|2024-09-08              1.60%    passed    100.00%
+  92  hMpxV/Uganda/UVRI-MP742/2024|EPI_ISL_19587252|2024-10                  1.60%    passed    100.00%
+  93  hMpxV/Uganda/UVRI-MP663/2024|EPI_ISL_19587248|2024-10-21               1.60%    passed    100.00%
+  94  hMpxV/Uganda/UVRI-MP1222/2024|EPI_ISL_19612228|2024-11-27              1.60%    passed     99.99%
+  95  hMpxV/Uganda/UVRI-MP655/2024|EPI_ISL_19587246|2024-10-18               1.60%    passed     99.99%
+  96  hMpxV/Uganda/UVRI-MP863/2024|EPI_ISL_19602373|2024-11-01               1.60%    passed    100.00%
+  97  hMpxV/Uganda/UVRI-MP1596/2025|EPI_ISL_20047727|2025-02-10              1.61%    passed     99.99%
+  98  hMpxV/Uganda/UVRI-MP828/2024|EPI_ISL_19602370|2024-10-30               1.60%    passed    100.00%
+  99  hMpxV/Uganda/UVRI-MP1512/2025|EPI_ISL_20047718|2025-02-05              1.61%    passed    100.00%
+ 100  hMpxV/Uganda/UVRI-MP2102/2025|EPI_ISL_20047710|2025-02-03              1.60%    passed    100.00%
+ 101  hMpxV/Uganda/UVRI-MP764/2024|EPI_ISL_19587257|2024-10-21               1.61%    passed    100.00%
+ 102  hMpxV/Uganda/UVRI-MP558/2024|EPI_ISL_19587265|2024-10-07               1.60%    passed     99.99%
+ 103  hMpxV/Uganda/UVRI-MP2092/2025|EPI_ISL_20047705|2024-12-09              1.62%    passed    100.00%
+ 104  hMpxV/Uganda/UVRI-MP1581/2025|EPI_ISL_20047725|2025-02-06              1.60%    passed     99.99%
+ 105  hMpxV/Uganda/UVRI-MP644/2024|EPI_ISL_19587244|2024-10-21               1.60%    passed    100.00%
+ 106  hMpxV/Uganda/UVRI-MP652/2024|EPI_ISL_19587245|2024-10-21               1.60%    passed    100.00%
+ 107  hMpxV/Uganda/UVRI-MP763/2024|EPI_ISL_19587256|2024-10-21               1.60%    passed    100.00%
+ 108  hMpxV/Uganda/UVRI-MP770/2024|EPI_ISL_19587263|2024-10-27               1.60%    passed    100.00%
+ 109  hMpxV/Uganda/UVRI-MP688/2024|EPI_ISL_19587251|2024-10-19               1.60%    passed    100.00%
+ 110  hMpxV/Uganda/UVRI-MP880/2024|EPI_ISL_19602374|2024-11-04               1.60%    passed     99.99%
+ 111  hMpxV/Uganda/UVRI-MP919/2024|EPI_ISL_19602377|2024-11-06               1.60%    passed     99.99%
+ 112  hMpxV/Uganda/UVRI-MP1039/2024|EPI_ISL_19602380|2024-11-22              1.60%    passed    100.00%
+ 113  hMpxV/Uganda/UVRI-MP2089/2025|EPI_ISL_20047704|2025-02-17              1.60%    passed    100.00%
+ 114  hMpxV/Uganda/UVRI-MP1562/2025|EPI_ISL_20047722|2025-01-21              1.60%    passed    100.00%
+ 115  hMpxV/Uganda/UVRI-MP674/2024|EPI_ISL_19587254|2024-10-19               1.61%    passed     99.99%
+ 116  hMpxV/Uganda/UVRI-MP766/2024|EPI_ISL_19587259|2024-10-25               1.61%    passed    100.00%
+ 117  hMpxV/Uganda/UVRI-MP1483/2025|EPI_ISL_20047735|2025-02-04              1.64%    passed    100.00%
+ 118  hMpxV/Uganda/UVRI-MP1271/2024|EPI_ISL_19612232|2024-11-30              1.61%    passed    100.00%
+ 119  hMpxV/Uganda/UVRI-MP2080/2025|EPI_ISL_20047742|2025-02-17              1.62%    passed     99.99%
+ 120  hMpxV/Uganda/UVRI-MP1221/2024|EPI_ISL_19612227|2024-11-26              1.61%    passed    100.00%
+ 121  hMpxV/Uganda/UVRI-MP1287/2024|EPI_ISL_19693787|2024-12-04              1.63%    passed     99.99%
+ 122  hMpxV/Uganda/UVRI-MP2079/2025|EPI_ISL_20047741|2025-02-10              1.65%    passed     99.97%
+ 123  hMpxV/Uganda/UVRI-MP1605/2025|EPI_ISL_20047720|2024-12-10              1.61%    passed    100.00%
+ 124  hMpxV/Uganda/UVRI-MP1604/2025|EPI_ISL_20047716|2024-12-10              1.61%    passed    100.00%
+ 125  hMpxV/Uganda/UVRI-MP1236/2024|EPI_ISL_19612229|2024-11-29              1.62%    passed     99.99%
+ 126  hMpxV/Uganda/UVRI-MP538/2024|EPI_ISL_19587264|2024-10                  1.60%    passed    100.00%
+ 127  hMpxV/Uganda/UVRI-MP1474/2024|EPI_ISL_20047731|2024-12-10              1.61%    passed    100.00%
+ 128  hMpxV/Uganda/UVRI-MP814/2024|EPI_ISL_19602365|2024-11-01               1.60%    passed     99.99%
+ 129  hMpxV/Uganda/UVRI-MP1606/2025|EPI_ISL_20047715|2025-02-14              1.60%    passed     99.99%
+ 130  hMpxV/Uganda/UVRI-MP817/2024|EPI_ISL_19602366|2024-11-01               1.60%    passed    100.00%
+ 131  hMpxV/Uganda/UVRI-MP767/2024|EPI_ISL_19587260|2024-10-27               1.60%    passed    100.00%
+ 132  hMpxV/Uganda/UVRI-MP1595/2025|EPI_ISL_20047721|2025-02-03              1.61%    passed    100.00%
+ 133  hMpxV/Uganda/UVRI-MP1537/2025|EPI_ISL_20047723|2025-02-06              1.67%    passed     99.99%
+ 134  hMpxV/Uganda/UVRI-MP1171/2024|EPI_ISL_19693783|2024-11-21              1.61%    passed    100.00%
+ 135  hMpxV/Uganda/UVRI-MP1049/2024|EPI_ISL_19693771|2024-11-13              1.62%    passed     99.99%
+ 136  hMpxV/Uganda/UVRI-MP859/2024|EPI_ISL_19602372|2024-10-30               1.60%    passed    100.00%
+ 137  hMpxV/Uganda/UVRI-MP1582/2024|EPI_ISL_20047729|2024-12-09              1.62%    passed     99.99%
+ 138  hMpxV/Uganda/UVRI-MP2101/2025|EPI_ISL_20047708|2025-01-22              1.61%    passed    100.00%
+ 139  hMpxV/Uganda/UVRI-MP2096/2025|EPI_ISL_20047707|2025-02-14              1.61%    passed    100.00%
+ 140  hMpxV/Uganda/UVRI-MP1185/2024|EPI_ISL_19602383|2024-11-22              1.60%    passed    100.00%
+ 141  hMpxV/Uganda/UVRI-MP1473/2025|EPI_ISL_20047726|2025-02-11              1.64%    passed    100.00%
+ 142  hMpxV/Uganda/UVRI-MP1180/2024|EPI_ISL_19602381|2024-11-22              1.61%    passed     99.99%
+ 143  hMpxV/Uganda/UVRI-MP786/2024|EPI_ISL_19693769|2024-11-01               1.62%    passed     99.99%
+ 144  hMpxV/Uganda/UVRI-MP1212/2024|EPI_ISL_19612226|2024-11-27              1.61%    passed    100.00%
+ 145  hMpxV/Uganda/UVRI-MP1246/2024|EPI_ISL_19612230|2024-11-29              1.61%    passed    100.00%
+ 146  hMpxV/Uganda/UVRI-MP1574/2025|EPI_ISL_20047713|2024-12-09              1.60%    passed    100.00%
+ 147  hMpxV/Uganda/UVRI-MP787/2024|EPI_ISL_19693770|2024-11-01               1.62%    passed     99.99%
+ 148  hMpxV/Uganda/UVRI-MP1116/2024|EPI_ISL_19693772|2024-11-15              1.69%    passed     99.99%
+ 149  hMpxV/Uganda/UVRI-MP1142/2024|EPI_ISL_19693777|2024-11-18              1.61%    passed     99.99%
+ 150  hMpxV/Uganda/UVRI-MP1129/2024|EPI_ISL_19693774|2024-11-15              1.61%    passed     99.99%
+ 151  hMpxV/Uganda/UVRI-MP1130/2024|EPI_ISL_19693775|2024-11-15              1.66%    passed     99.99%
+ 152  hMpxV/Uganda/UVRI-MP2073/2025|EPI_ISL_20047738|2025-02-18              1.62%    passed    100.00%
+ 153  hMpxV/Uganda/UVRI-MP659/2024|EPI_ISL_19587247|2024-10-18               1.60%    passed    100.00%
+ 154  hMpxV/Uganda/UVRI-MP2061/2025|EPI_ISL_20047719|2025-02-18             11.29%    passed     17.66%
+ 155  hMpxV/Uganda/UVRI-MP1186/2024|EPI_ISL_19602384|2024-11-22              1.62%    passed    100.00%
+ 156  hMpxV/Uganda/UVRI-MP2082/2025|EPI_ISL_20047702|2025-02-18              1.64%    passed     99.98%
+ 157  hMpxV/Uganda/UVRI-060/2024|EPI_ISL_19612236|2024-12-04                 1.61%    passed    100.00%
+ 158  hMpxV/Uganda/UVRI-062/2024|EPI_ISL_19612237|2024-12-03                 1.61%    passed    100.00%
+ 159  hMpxV/Uganda/UVRI-MP2060/2025|EPI_ISL_20047709|2025-02-18              1.61%    passed     99.99%
+ 160  hMpxV/Uganda/UVRI-MP512/2024|EPI_ISL_19587237|2024-09-24               1.60%    passed    100.00%
+ 161  hMpxV/Uganda/UVRI-MP2072/2025|EPI_ISL_20047737|2025-02-18              1.60%    passed     99.99%
+ 162  hMpxV/Uganda/UVRI-MP1472/2025|EPI_ISL_20047736|2025-02-07              1.61%    passed    100.00%
+ 163  hMpxV/Uganda/UVRI-MP1575/2025|EPI_ISL_20047732|2025-01-05              1.62%    passed     99.99%
+ 164  hMpxV/Uganda/UVRI-MP1563/2025|EPI_ISL_20047734|2025-01-31              1.61%    passed     99.99%
+ 165  hMpxV/Uganda/UVRI-MP783/2024|EPI_ISL_19693768|2024-10-30               1.61%    passed     99.99%
+ 166  hMpxV/Uganda/UVRI-MP818/2024|EPI_ISL_19602367|2024-11-01               1.60%    passed     99.99%
+ 167  hMpxV/Uganda/UVRI-MP1167/2024|EPI_ISL_19693782|2024-11-20              1.63%    passed     99.98%
+ 168  hMpxV/Uganda/UVRI-MP1023/2024|EPI_ISL_19602379|2024-11-08              1.60%    passed     99.99%
+ 169  hMpxV/Uganda/UVRI-MP1153/2024|EPI_ISL_19693778|2024-11-20              1.62%    passed     99.99%
+ 170  hMpxV/Uganda/UVRI-MP1569/2025|EPI_ISL_20047733|2025-01-29              1.61%    passed     99.99%
+ 171  hMpxV/Uganda/UVRI-MP1600/2024|EPI_ISL_20047728|2024-12-09              2.01%    passed     99.97%
+ 172  hMpxV/Uganda/UVRI-MP2077/2025|EPI_ISL_20047740|2025-02-14              1.63%    passed    100.00%
+ 173  hMpxV/Uganda/UVRI-MP1159/2024|EPI_ISL_19693780|2024-11-20              1.67%    passed    100.00%
+ 174  hMpxV/Uganda/UVRI-MP587/2024|EPI_ISL_19587238|2024-10-14               1.61%    passed     99.99%
+ 175  hMpxV/Uganda/UVRI-MP588/2024|EPI_ISL_19587239|2024-10-14               1.63%    passed     99.98%
+ 176  hMpxV/Uganda/UVRI-MP2088/2025|EPI_ISL_20047703|2025-02-15              2.45%    passed     99.65%
+ 177  hMpxV/DRC/HGRK-78/2023|EPI_ISL_19439696|2023-12-06                     2.51%    passed     98.13%
+ 178  hMpxV/DRC/HGRK-36/2023|EPI_ISL_19381268|2023-12-12                     2.57%    passed     97.76%
+ 179  hMpxV/DRC/HGRK-04m/2024|EPI_ISL_19621388|2024-08-12                    1.70%    passed     99.98%
+ 180  hMpxV/DRC/HGRK-8MM/2024|EPI_ISL_19689376|2024-08-12                    1.70%    passed     99.98%
+ 181  hMpxV/DRC/HGRK-5MM/2024|EPI_ISL_19689373|2024-08-15                    1.71%    passed     99.99%
+ 182  hMpxV/DRC/HGRK-2N/2024|EPI_ISL_19689372|2024-08-22                     1.71%    passed     99.98%
+ 183  hMpxV/DRC/HGRK-7N/2024|EPI_ISL_19689375|2024-08-22                     1.69%    passed     99.99%
+ 184  hMpxV/DRC/HGRK-6K/2024|EPI_ISL_19689374|2024-08-30                     1.71%    passed     99.98%
+ 185  hMpxV/DRC/HGRK-20K/2024|EPI_ISL_19689707|2024-09-01                    1.71%    passed     99.99%
+ 186  hMpxV/DRC/HGRK-1M/2024|EPI_ISL_19689371|2024-09-02                     2.62%    passed     98.24%
+ 187  hMpxV/DRC/HGRK-11K/2024|EPI_ISL_19689378|2024-09-01                    1.81%    passed     99.87%
+ 188  hMpxV/DRC/HGRK-19K/2024|EPI_ISL_19689685|2024-09-01                    1.81%    passed     99.86%
+ 189  hMpxV/DRC/HGRK-13K/2024|EPI_ISL_19689380|2024-09-01                    1.86%    passed     99.84%
+ 190  hMpxV/DRC/HGRK-12K/2024|EPI_ISL_19689379|2024-09-01                    1.83%    passed     99.85%
+ 191  hMpxV/DRC/HGRK-15K/2024|EPI_ISL_19689381|2024-09-01                    1.75%    passed     99.78%
+ 192  hMpxV/DRC/HGRK-18K/2024|EPI_ISL_19689632|2024-09-01                    1.69%    passed     99.99%
+ 193  hMpxV/DRC/HGRK-16K/2024|EPI_ISL_19689399|2024-09-01                    1.68%    passed     99.93%
+ 194  hMpxV/DRC/HGRK-17K/2024|EPI_ISL_19689575|2024-09-01                    2.61%    passed     95.22%
+ 195  hMpxV/DRC/HGRK-9MM/2024|EPI_ISL_19689377|2024-08-15                    1.71%    passed     99.99%
+ 196  hMpxV/Burundi/INSP-1447/2024|EPI_ISL_19599243|2024-09-14               2.56%    passed     97.70%
+ 197  hMpxV/Burundi/INSP-1529/2024|EPI_ISL_19599257|2024-09-16               3.00%    passed     95.37%
+ 198  hMpxV/DRC/INRB-2832V/2024|EPI_ISL_19857759|2024-09-06                  1.83%    passed     99.59%
+ 199  hMpxV/DRC/INRB-2925V/2024|EPI_ISL_19858736|2024-09-09                  1.90%    passed     98.78%
+ 200  hMpxV/DRC/INRB-3101C/2024|EPI_ISL_19858194|2024-09-13                  1.96%    passed     98.23%
+ 201  hMpxV/DRC/INRB-2497V/2024|EPI_ISL_19858796|2024-08-30                  2.03%    passed     97.90%
+ 202  hMpxV/Congo/BZV-LNSP-CG000/2024|EPI_ISL_19810233|2024-08-08            5.04%    passed     89.19%
+ 203  hMpxV/Congo/BZV-LNSP-CG001/2024|EPI_ISL_19810234|2024-12-23            3.39%    passed     94.69%
+ 204  hMpxV/Congo/BZV-LNSP-CG018/2025|EPI_ISL_19810235|2025-01-09            2.96%    passed     98.99%
+ 205  hMpxV/Congo/BZV-LNSP-CG022/2025|EPI_ISL_19810238|2025-02-19            2.99%    passed     98.83%
+ 206  hMpxV/Congo/BZV-LNSP-CG020/2025|EPI_ISL_19810236|2025-02-13            3.34%    passed     95.48%
+ 207  hMpxV/Congo/BZV-LNSP-CG021/2025|EPI_ISL_19810237|2025-02-17            2.98%    passed     98.71%
+ 208  hMpxV/Congo/BZV-LNSP-CG032/2025|EPI_ISL_19810240|2025-03-05            3.92%    passed     97.99%
+ 209  hMpxV/DRC/CRSN-5/2024|EPI_ISL_19079343|2024-01-06                      2.12%    passed     35.40%
+ 210  hMpxV/Germany/un-RKI-1214/2024|EPI_ISL_19785230|2024-12                5.12%    passed     79.90%
+ 211  hMpxV/DRC/CRSN-1/2023|EPI_ISL_19004044|2023-11-02                      1.77%    passed     99.88%
+ 212  hMpxV/DRC/CRSN-2/2023|EPI_ISL_19004045|2023-11-15                      1.76%    passed     99.88%
+ 213  hMpxV/DRC/CRSN-3/2023|EPI_ISL_19004046|2023-12-23                      1.78%    passed     99.87%
+****  TOTAL                                                                  1.90%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: minimal branch length is reduced to 0.000000502879 for long alignment
+NOTE: hMpxV/DRC/HGRK-8MM/2024|EPI_ISL_19689376|2024-08-12 is identical to hMpxV/DRC/HGRK-04m/2024|EPI_ISL_19621388|2024-08-12 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.000503063 secs using 180.5% CPU
+Creating fast initial parsimony tree by random order stepwise addition...
+7.358 seconds, parsimony score: 1075 (based on 652 sites)
+Generating 1000 samples for ultrafast bootstrap (seed: 64244)...
+
+NOTE: 26 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 10 CPU cores
+Increase to 10 rounds for branch lengths
+96 trees examined
+Threads: 1 / Time: 10.052 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -293040
+Threads: 2 / Time: 9.809 sec / Speedup: 1.025 / Efficiency: 51% / LogL: -293040
+Threads: 3 / Time: 8.234 sec / Speedup: 1.221 / Efficiency: 41% / LogL: -293040
+Determining AUTO threadcount: done in 28.0962 secs using 129.8% CPU
+BEST NUMBER OF THREADS: 1
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -274690.940
+2. Current log-likelihood: -274430.004
+3. Current log-likelihood: -274425.681
+4. Current log-likelihood: -274424.226
+5. Current log-likelihood: -274423.546
+6. Current log-likelihood: -274423.214
+Optimal log-likelihood: -274423.139
+Rate parameters:  A-C: 1.02868  A-G: 4.03892  A-T: 1.01775  C-G: 0.80729  C-T: 3.24580  G-T: 1.00000
+Base frequencies:  A: 0.335  C: 0.165  G: 0.165  T: 0.334
+Parameters optimization took 6 rounds (0.426 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.132621 secs using 99.7% CPU
+Computing ML distances took 0.133612 sec (of wall-clock time) 0.133150 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.00058794 secs using 162.6% CPU
+Constructing RapidNJ tree: done in 0.00150681 secs using 180.5% CPU
+Computing RapidNJ tree took 0.002120 sec (of wall-clock time) 0.003713 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -275161.057
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.911 second
+Computing log-likelihood of 98 initial trees ... 1.537 seconds
+Current best score: -274300.065
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 1.05334 secs using 99.81% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -274219.378
+Optimizing NNI: done in 0.973025 secs using 99.89% CPU
+Optimizing NNI: done in 0.892165 secs using 99.89% CPU
+Optimizing NNI: done in 0.666469 secs using 99.9% CPU
+Optimizing NNI: done in 0.629417 secs using 99.86% CPU
+Optimizing NNI: done in 1.23396 secs using 99.91% CPU
+Optimizing NNI: done in 1.2383 secs using 99.91% CPU
+Optimizing NNI: done in 1.23798 secs using 99.92% CPU
+Optimizing NNI: done in 1.35461 secs using 99.92% CPU
+Optimizing NNI: done in 1.41142 secs using 99.73% CPU
+Iteration 10 / LogL: -274275.297 / Time: 0h:0m:50s
+Optimizing NNI: done in 1.74094 secs using 99.91% CPU
+Optimizing NNI: done in 1.32235 secs using 99.91% CPU
+Optimizing NNI: done in 1.66119 secs using 99.92% CPU
+Optimizing NNI: done in 1.28208 secs using 99.92% CPU
+Optimizing NNI: done in 1.10916 secs using 99.92% CPU
+Optimizing NNI: done in 1.2807 secs using 99.91% CPU
+Optimizing NNI: done in 0.995825 secs using 99.92% CPU
+Optimizing NNI: done in 1.45822 secs using 99.92% CPU
+Optimizing NNI: done in 1.26313 secs using 99.92% CPU
+Optimizing NNI: done in 1.09455 secs using 99.89% CPU
+Iteration 20 / LogL: -274324.686 / Time: 0h:1m:3s
+Finish initializing candidate tree set (20)
+Current best tree score: -274219.378 / CPU time: 27.581
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 0.661361 secs using 99.9% CPU
+Optimizing NNI: done in 0.659901 secs using 99.88% CPU
+Optimizing NNI: done in 0.860631 secs using 98.61% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 23: -274206.852
+Optimizing NNI: done in 0.621039 secs using 99.88% CPU
+Optimizing NNI: done in 0.505262 secs using 99.89% CPU
+Optimizing NNI: done in 0.530358 secs using 99.89% CPU
+Optimizing NNI: done in 0.555868 secs using 99.84% CPU
+Optimizing NNI: done in 0.525521 secs using 99.62% CPU
+Optimizing NNI: done in 0.482953 secs using 99.9% CPU
+Optimizing NNI: done in 0.583192 secs using 99.9% CPU
+Iteration 30 / LogL: -274222.987 / Time: 0h:1m:9s (0h:3m:20s left)
+Optimizing NNI: done in 0.652421 secs using 99.8% CPU
+Optimizing NNI: done in 0.806997 secs using 99.94% CPU
+Optimizing NNI: done in 1 secs using 99.91% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 33: -274174.659
+Optimizing NNI: done in 0.388021 secs using 99.8% CPU
+Optimizing NNI: done in 0.634559 secs using 99.91% CPU
+Optimizing NNI: done in 0.559976 secs using 99.88% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 36: -274169.718
+Optimizing NNI: done in 0.857337 secs using 99.88% CPU
+Optimizing NNI: done in 0.720043 secs using 99.85% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 38: -274168.295
+Optimizing NNI: done in 0.906362 secs using 99.91% CPU
+Optimizing NNI: done in 0.577308 secs using 99.89% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 40: -274164.769
+Iteration 40 / LogL: -274164.769 / Time: 0h:1m:17s (0h:2m:59s left)
+Optimizing NNI: done in 0.614976 secs using 99.89% CPU
+Optimizing NNI: done in 0.467969 secs using 99.88% CPU
+Optimizing NNI: done in 0.661572 secs using 99.91% CPU
+Optimizing NNI: done in 0.710217 secs using 99.92% CPU
+Optimizing NNI: done in 0.723395 secs using 99.83% CPU
+Optimizing NNI: done in 0.635103 secs using 99.83% CPU
+Optimizing NNI: done in 0.956016 secs using 99.92% CPU
+Optimizing NNI: done in 0.68523 secs using 99.89% CPU
+Optimizing NNI: done in 0.744029 secs using 99.9% CPU
+Optimizing NNI: done in 0.621899 secs using 99.9% CPU
+Iteration 50 / LogL: -274178.437 / Time: 0h:1m:24s (0h:2m:21s left)
+Log-likelihood cutoff on original alignment: -274402.964
+Optimizing NNI: done in 0.696525 secs using 99.92% CPU
+Optimizing NNI: done in 0.88971 secs using 99.92% CPU
+Optimizing NNI: done in 1.00371 secs using 99.91% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 53: -274156.511
+Optimizing NNI: done in 0.848062 secs using 99.92% CPU
+Optimizing NNI: done in 0.834395 secs using 99.85% CPU
+Optimizing NNI: done in 0.637052 secs using 99.92% CPU
+Optimizing NNI: done in 0.746062 secs using 99.91% CPU
+Optimizing NNI: done in 0.694684 secs using 99.91% CPU
+Optimizing NNI: done in 0.726983 secs using 99.9% CPU
+Optimizing NNI: done in 0.82402 secs using 99.92% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 60: -274148.552
+Iteration 60 / LogL: -274148.552 / Time: 0h:1m:32s (0h:2m:24s left)
+Optimizing NNI: done in 0.409761 secs using 99.87% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 61: -274145.912
+Optimizing NNI: done in 0.542523 secs using 99.89% CPU
+Optimizing NNI: done in 0.513652 secs using 99.91% CPU
+Optimizing NNI: done in 0.70773 secs using 99.85% CPU
+Optimizing NNI: done in 0.762364 secs using 99.92% CPU
+Optimizing NNI: done in 0.782735 secs using 99.92% CPU
+Optimizing NNI: done in 0.533186 secs using 99.92% CPU
+Optimizing NNI: done in 0.563839 secs using 99.89% CPU
+Optimizing NNI: done in 0.865165 secs using 99.92% CPU
+Optimizing NNI: done in 0.68335 secs using 99.91% CPU
+Iteration 70 / LogL: -274165.361 / Time: 0h:1m:39s (0h:2m:1s left)
+Optimizing NNI: done in 0.825977 secs using 99.87% CPU
+Optimizing NNI: done in 0.724863 secs using 99.92% CPU
+Optimizing NNI: done in 0.436259 secs using 99.87% CPU
+Optimizing NNI: done in 0.781946 secs using 99.92% CPU
+Optimizing NNI: done in 0.719832 secs using 99.92% CPU
+Optimizing NNI: done in 0.661047 secs using 99.9% CPU
+Optimizing NNI: done in 0.647222 secs using 99.92% CPU
+Optimizing NNI: done in 0.615552 secs using 99.92% CPU
+Optimizing NNI: done in 0.743517 secs using 99.88% CPU
+Optimizing NNI: done in 0.553832 secs using 99.9% CPU
+Iteration 80 / LogL: -274198.493 / Time: 0h:1m:46s (0h:1m:41s left)
+Optimizing NNI: done in 0.643921 secs using 99.88% CPU
+Optimizing NNI: done in 0.620828 secs using 99.91% CPU
+Optimizing NNI: done in 0.780116 secs using 99.9% CPU
+Optimizing NNI: done in 0.643466 secs using 99.91% CPU
+Optimizing NNI: done in 0.628915 secs using 99.32% CPU
+Optimizing NNI: done in 0.703948 secs using 99.92% CPU
+Optimizing NNI: done in 0.684169 secs using 99.91% CPU
+Optimizing NNI: done in 0.863085 secs using 99.94% CPU
+Optimizing NNI: done in 0.876738 secs using 99.91% CPU
+Optimizing NNI: done in 0.686459 secs using 99.92% CPU
+Iteration 90 / LogL: -274193.336 / Time: 0h:1m:53s (0h:1m:24s left)
+Optimizing NNI: done in 0.850351 secs using 99.91% CPU
+Optimizing NNI: done in 0.616426 secs using 99.91% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 92: -274138.345
+Optimizing NNI: done in 0.621588 secs using 99.89% CPU
+Optimizing NNI: done in 0.629695 secs using 99.9% CPU
+Optimizing NNI: done in 0.708511 secs using 98.94% CPU
+Optimizing NNI: done in 0.651114 secs using 99.92% CPU
+Optimizing NNI: done in 0.704297 secs using 99.91% CPU
+Optimizing NNI: done in 0.807772 secs using 99.93% CPU
+Optimizing NNI: done in 0.640001 secs using 99.89% CPU
+Optimizing NNI: done in 0.567059 secs using 99.86% CPU
+Iteration 100 / LogL: -274172.729 / Time: 0h:2m:0s (0h:1m:45s left)
+Log-likelihood cutoff on original alignment: -274402.964
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.980
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 0.830628 secs using 99.84% CPU
+Optimizing NNI: done in 0.62733 secs using 99.8% CPU
+Optimizing NNI: done in 0.570186 secs using 99.91% CPU
+Optimizing NNI: done in 0.666821 secs using 99.86% CPU
+Optimizing NNI: done in 0.574065 secs using 99.9% CPU
+Optimizing NNI: done in 0.765486 secs using 99.91% CPU
+Optimizing NNI: done in 0.570457 secs using 99.88% CPU
+Optimizing NNI: done in 0.747633 secs using 99.88% CPU
+Optimizing NNI: done in 0.347191 secs using 99.86% CPU
+Optimizing NNI: done in 0.71032 secs using 99.87% CPU
+Iteration 110 / LogL: -274156.786 / Time: 0h:2m:7s (0h:1m:39s left)
+Optimizing NNI: done in 0.385254 secs using 99.85% CPU
+Optimizing NNI: done in 0.701356 secs using 99.89% CPU
+Optimizing NNI: done in 0.739643 secs using 99.85% CPU
+Optimizing NNI: done in 0.755745 secs using 99.91% CPU
+Optimizing NNI: done in 0.762022 secs using 99.85% CPU
+Optimizing NNI: done in 0.819806 secs using 99.92% CPU
+Optimizing NNI: done in 0.715557 secs using 99.94% CPU
+Optimizing NNI: done in 0.724083 secs using 99.91% CPU
+Optimizing NNI: done in 0.581586 secs using 99.89% CPU
+Optimizing NNI: done in 0.701457 secs using 99.9% CPU
+Iteration 120 / LogL: -274208.439 / Time: 0h:2m:14s (0h:1m:25s left)
+Optimizing NNI: done in 0.613324 secs using 99.84% CPU
+Optimizing NNI: done in 0.730602 secs using 99.94% CPU
+Optimizing NNI: done in 0.662432 secs using 99.91% CPU
+Optimizing NNI: done in 0.657332 secs using 99.91% CPU
+Optimizing NNI: done in 0.546826 secs using 99.86% CPU
+Optimizing NNI: done in 0.684035 secs using 99.85% CPU
+Optimizing NNI: done in 0.652577 secs using 99.9% CPU
+Optimizing NNI: done in 0.51643 secs using 99.91% CPU
+Optimizing NNI: done in 0.653059 secs using 99.9% CPU
+Optimizing NNI: done in 0.721743 secs using 99.87% CPU
+Iteration 130 / LogL: -274228.481 / Time: 0h:2m:21s (0h:1m:12s left)
+Optimizing NNI: done in 0.616961 secs using 99.91% CPU
+Optimizing NNI: done in 0.636183 secs using 99.9% CPU
+Optimizing NNI: done in 0.631328 secs using 99.9% CPU
+Optimizing NNI: done in 0.629091 secs using 99.91% CPU
+Optimizing NNI: done in 0.660666 secs using 99.92% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 135: -274136.291
+Optimizing NNI: done in 0.715718 secs using 99.91% CPU
+Optimizing NNI: done in 0.616862 secs using 99.83% CPU
+Optimizing NNI: done in 0.546727 secs using 99.79% CPU
+Optimizing NNI: done in 0.750925 secs using 99.38% CPU
+Optimizing NNI: done in 0.69367 secs using 99.06% CPU
+Iteration 140 / LogL: -274154.323 / Time: 0h:2m:28s (0h:1m:36s left)
+Optimizing NNI: done in 0.624572 secs using 99.9% CPU
+Optimizing NNI: done in 0.737927 secs using 99.84% CPU
+Optimizing NNI: done in 0.570993 secs using 99.92% CPU
+Optimizing NNI: done in 0.624411 secs using 99.93% CPU
+Optimizing NNI: done in 0.646946 secs using 99.89% CPU
+Optimizing NNI: done in 0.580988 secs using 99.9% CPU
+Optimizing NNI: done in 0.591873 secs using 99.91% CPU
+Optimizing NNI: done in 0.773413 secs using 99.9% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 148: -274124.004
+Optimizing NNI: done in 1.09774 secs using 99.91% CPU
+Optimizing NNI: done in 0.661557 secs using 99.86% CPU
+Iteration 150 / LogL: -274168.254 / Time: 0h:2m:35s (0h:1m:37s left)
+Log-likelihood cutoff on original alignment: -274402.964
+Optimizing NNI: done in 0.583298 secs using 99.93% CPU
+Optimizing NNI: done in 0.798803 secs using 99.92% CPU
+Optimizing NNI: done in 0.617221 secs using 99.93% CPU
+Optimizing NNI: done in 0.73212 secs using 99.89% CPU
+Optimizing NNI: done in 0.642239 secs using 99.93% CPU
+Optimizing NNI: done in 0.616281 secs using 99.93% CPU
+Optimizing NNI: done in 0.689384 secs using 99.91% CPU
+Optimizing NNI: done in 0.590481 secs using 99.93% CPU
+Optimizing NNI: done in 0.678772 secs using 99.86% CPU
+Optimizing NNI: done in 0.465558 secs using 99.92% CPU
+Iteration 160 / LogL: -274149.811 / Time: 0h:2m:42s (0h:1m:25s left)
+Optimizing NNI: done in 0.643057 secs using 99.92% CPU
+Optimizing NNI: done in 0.797387 secs using 99.93% CPU
+Optimizing NNI: done in 0.687805 secs using 99.89% CPU
+Optimizing NNI: done in 0.585823 secs using 99.93% CPU
+Optimizing NNI: done in 0.562045 secs using 99.88% CPU
+Optimizing NNI: done in 0.51312 secs using 99.91% CPU
+Optimizing NNI: done in 0.788655 secs using 99.92% CPU
+Optimizing NNI: done in 0.63237 secs using 99.91% CPU
+Optimizing NNI: done in 0.867074 secs using 99.91% CPU
+Optimizing NNI: done in 0.610508 secs using 99.61% CPU
+Iteration 170 / LogL: -274153.758 / Time: 0h:2m:49s (0h:1m:14s left)
+Optimizing NNI: done in 0.513989 secs using 99.9% CPU
+Optimizing NNI: done in 0.853707 secs using 99.92% CPU
+Optimizing NNI: done in 0.720742 secs using 99.92% CPU
+Optimizing NNI: done in 0.510733 secs using 99.91% CPU
+Optimizing NNI: done in 0.632349 secs using 99.92% CPU
+Optimizing NNI: done in 0.968324 secs using 99.93% CPU
+Optimizing NNI: done in 0.622473 secs using 99.92% CPU
+Optimizing NNI: done in 0.681738 secs using 99.92% CPU
+Optimizing NNI: done in 0.746852 secs using 99.92% CPU
+Optimizing NNI: done in 0.538861 secs using 99.93% CPU
+Iteration 180 / LogL: -274226.381 / Time: 0h:2m:56s (0h:1m:4s left)
+Optimizing NNI: done in 0.605973 secs using 99.92% CPU
+Optimizing NNI: done in 0.814481 secs using 99.92% CPU
+Optimizing NNI: done in 0.442993 secs using 99.85% CPU
+Optimizing NNI: done in 0.689753 secs using 99.93% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 184: -274122.912
+Optimizing NNI: done in 0.43086 secs using 99.89% CPU
+Optimizing NNI: done in 0.609546 secs using 99.92% CPU
+Optimizing NNI: done in 0.903409 secs using 99.87% CPU
+Optimizing NNI: done in 0.674314 secs using 99.94% CPU
+Optimizing NNI: done in 0.742396 secs using 99.91% CPU
+Optimizing NNI: done in 0.546892 secs using 99.91% CPU
+Iteration 190 / LogL: -274132.810 / Time: 0h:3m:3s (0h:1m:27s left)
+Optimizing NNI: done in 0.614735 secs using 99.94% CPU
+Optimizing NNI: done in 0.705239 secs using 99.93% CPU
+Optimizing NNI: done in 0.643607 secs using 99.91% CPU
+Optimizing NNI: done in 0.700014 secs using 99.91% CPU
+Optimizing NNI: done in 0.617365 secs using 99.92% CPU
+Optimizing NNI: done in 0.584436 secs using 99.93% CPU
+Optimizing NNI: done in 0.703376 secs using 99.93% CPU
+Optimizing NNI: done in 0.59168 secs using 99.89% CPU
+Optimizing NNI: done in 0.654113 secs using 99.86% CPU
+Optimizing NNI: done in 0.49972 secs using 99.84% CPU
+Iteration 200 / LogL: -274143.419 / Time: 0h:3m:10s (0h:1m:17s left)
+Log-likelihood cutoff on original alignment: -274402.964
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.973
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 0.886442 secs using 99.93% CPU
+Optimizing NNI: done in 0.586745 secs using 99.91% CPU
+Optimizing NNI: done in 0.541476 secs using 99.83% CPU
+Optimizing NNI: done in 0.587046 secs using 99.9% CPU
+Optimizing NNI: done in 0.451107 secs using 99.9% CPU
+Optimizing NNI: done in 0.76209 secs using 99.92% CPU
+Optimizing NNI: done in 0.563296 secs using 99.93% CPU
+Optimizing NNI: done in 0.661932 secs using 99.93% CPU
+Optimizing NNI: done in 0.712358 secs using 99.92% CPU
+Optimizing NNI: done in 0.546323 secs using 99.93% CPU
+Iteration 210 / LogL: -274135.420 / Time: 0h:3m:17s (0h:1m:21s left)
+Optimizing NNI: done in 0.666723 secs using 99.93% CPU
+Optimizing NNI: done in 0.570112 secs using 99.9% CPU
+Optimizing NNI: done in 0.758532 secs using 99.94% CPU
+Optimizing NNI: done in 0.711784 secs using 99.92% CPU
+Optimizing NNI: done in 0.694178 secs using 99.87% CPU
+Optimizing NNI: done in 0.615628 secs using 99.89% CPU
+Optimizing NNI: done in 0.516642 secs using 99.94% CPU
+Optimizing NNI: done in 0.593538 secs using 99.92% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 218: -274119.637
+Optimizing NNI: done in 0.583775 secs using 99.88% CPU
+Optimizing NNI: done in 0.723887 secs using 99.92% CPU
+Iteration 220 / LogL: -274144.142 / Time: 0h:3m:24s (0h:1m:28s left)
+Optimizing NNI: done in 0.559551 secs using 99.88% CPU
+Optimizing NNI: done in 0.700957 secs using 99.91% CPU
+Optimizing NNI: done in 0.755403 secs using 99.73% CPU
+Optimizing NNI: done in 0.699716 secs using 99.89% CPU
+Optimizing NNI: done in 0.848464 secs using 99.93% CPU
+Optimizing NNI: done in 0.542029 secs using 99.9% CPU
+Optimizing NNI: done in 0.681434 secs using 99.92% CPU
+Optimizing NNI: done in 0.514368 secs using 99.87% CPU
+Optimizing NNI: done in 0.965021 secs using 99.92% CPU
+Optimizing NNI: done in 0.620576 secs using 99.9% CPU
+Iteration 230 / LogL: -274126.434 / Time: 0h:3m:31s (0h:1m:18s left)
+Optimizing NNI: done in 0.596985 secs using 99.9% CPU
+Optimizing NNI: done in 0.798899 secs using 99.9% CPU
+Optimizing NNI: done in 0.698574 secs using 99.89% CPU
+Optimizing NNI: done in 0.578829 secs using 99.91% CPU
+Optimizing NNI: done in 0.696032 secs using 99.93% CPU
+Optimizing NNI: done in 0.748724 secs using 99.93% CPU
+Optimizing NNI: done in 0.668557 secs using 99.93% CPU
+Optimizing NNI: done in 0.690779 secs using 99.93% CPU
+Optimizing NNI: done in 0.803063 secs using 99.93% CPU
+Optimizing NNI: done in 0.790015 secs using 99.92% CPU
+Iteration 240 / LogL: -274161.064 / Time: 0h:3m:39s (0h:1m:9s left)
+Optimizing NNI: done in 0.707881 secs using 99.93% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 241: -274118.969
+Optimizing NNI: done in 0.698108 secs using 99.92% CPU
+Optimizing NNI: done in 0.705538 secs using 99.87% CPU
+Optimizing NNI: done in 0.653531 secs using 99.77% CPU
+Optimizing NNI: done in 0.576055 secs using 99.92% CPU
+Optimizing NNI: done in 0.706414 secs using 99.85% CPU
+Optimizing NNI: done in 0.474037 secs using 99.92% CPU
+Optimizing NNI: done in 0.844309 secs using 99.93% CPU
+Optimizing NNI: done in 0.58979 secs using 99.92% CPU
+Optimizing NNI: done in 0.780551 secs using 99.93% CPU
+Iteration 250 / LogL: -274121.490 / Time: 0h:3m:46s (0h:1m:20s left)
+Log-likelihood cutoff on original alignment: -274402.964
+Optimizing NNI: done in 0.789333 secs using 99.93% CPU
+Optimizing NNI: done in 0.703534 secs using 99.92% CPU
+Optimizing NNI: done in 0.685489 secs using 99.92% CPU
+Optimizing NNI: done in 0.558893 secs using 99.94% CPU
+Optimizing NNI: done in 0.759734 secs using 99.68% CPU
+Optimizing NNI: done in 0.576165 secs using 99.91% CPU
+Optimizing NNI: done in 0.574257 secs using 99.92% CPU
+Optimizing NNI: done in 0.572859 secs using 99.91% CPU
+Optimizing NNI: done in 0.512715 secs using 99.91% CPU
+Optimizing NNI: done in 0.739555 secs using 99.9% CPU
+Iteration 260 / LogL: -274181.738 / Time: 0h:3m:53s (0h:1m:10s left)
+Optimizing NNI: done in 0.664613 secs using 99.93% CPU
+Optimizing NNI: done in 0.768428 secs using 99.93% CPU
+Optimizing NNI: done in 0.681637 secs using 99.92% CPU
+Optimizing NNI: done in 0.616133 secs using 99.92% CPU
+Optimizing NNI: done in 0.422792 secs using 99.95% CPU
+Optimizing NNI: done in 0.642319 secs using 99.93% CPU
+Optimizing NNI: done in 0.729482 secs using 99.91% CPU
+Optimizing NNI: done in 0.782143 secs using 99.94% CPU
+Optimizing NNI: done in 0.615616 secs using 99.92% CPU
+Optimizing NNI: done in 0.589952 secs using 99.92% CPU
+Iteration 270 / LogL: -274154.041 / Time: 0h:4m:1s (0h:1m:1s left)
+Optimizing NNI: done in 0.775227 secs using 99.93% CPU
+Optimizing NNI: done in 0.606538 secs using 99.92% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 272: -274118.268
+Optimizing NNI: done in 0.666362 secs using 99.9% CPU
+Optimizing NNI: done in 0.682779 secs using 99.88% CPU
+Optimizing NNI: done in 0.653936 secs using 99.9% CPU
+Optimizing NNI: done in 0.702198 secs using 99.93% CPU
+Optimizing NNI: done in 0.661345 secs using 99.92% CPU
+Optimizing NNI: done in 0.531756 secs using 99.93% CPU
+Optimizing NNI: done in 0.759581 secs using 99.94% CPU
+Optimizing NNI: done in 0.592923 secs using 99.88% CPU
+Iteration 280 / LogL: -274149.920 / Time: 0h:4m:8s (0h:1m:19s left)
+Optimizing NNI: done in 0.712776 secs using 99.88% CPU
+Optimizing NNI: done in 0.73564 secs using 99.93% CPU
+Optimizing NNI: done in 0.742156 secs using 99.84% CPU
+Optimizing NNI: done in 0.648958 secs using 99.9% CPU
+Optimizing NNI: done in 0.674174 secs using 99.91% CPU
+Optimizing NNI: done in 0.644008 secs using 99.91% CPU
+Optimizing NNI: done in 0.654915 secs using 99.56% CPU
+Optimizing NNI: done in 0.771967 secs using 99.91% CPU
+Optimizing NNI: done in 0.679854 secs using 99.85% CPU
+Optimizing NNI: done in 0.743066 secs using 99.92% CPU
+Iteration 290 / LogL: -274128.010 / Time: 0h:4m:15s (0h:1m:10s left)
+Optimizing NNI: done in 0.724441 secs using 99.93% CPU
+Optimizing NNI: done in 0.539219 secs using 99.92% CPU
+Optimizing NNI: done in 0.516657 secs using 99.93% CPU
+Optimizing NNI: done in 0.691902 secs using 99.89% CPU
+Optimizing NNI: done in 0.774978 secs using 99.93% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 295: -274118.243
+Optimizing NNI: done in 0.554737 secs using 99.91% CPU
+Optimizing NNI: done in 0.76013 secs using 99.9% CPU
+Optimizing NNI: done in 0.499141 secs using 99.83% CPU
+Optimizing NNI: done in 0.550314 secs using 99.92% CPU
+Optimizing NNI: done in 0.807876 secs using 99.91% CPU
+Iteration 300 / LogL: -274119.824 / Time: 0h:4m:22s (0h:1m:21s left)
+Log-likelihood cutoff on original alignment: -274402.964
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.977
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 0.62455 secs using 99.91% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 301: -274118.181
+Optimizing NNI: done in 0.5066 secs using 99.9% CPU
+Optimizing NNI: done in 0.647021 secs using 99.93% CPU
+Optimizing NNI: done in 0.888509 secs using 99.9% CPU
+Optimizing NNI: done in 0.616054 secs using 99.91% CPU
+Optimizing NNI: done in 0.681389 secs using 99.93% CPU
+Optimizing NNI: done in 0.751873 secs using 99.94% CPU
+Optimizing NNI: done in 0.897292 secs using 99.93% CPU
+Optimizing NNI: done in 0.654322 secs using 99.91% CPU
+Optimizing NNI: done in 0.943373 secs using 99.94% CPU
+Iteration 310 / LogL: -274157.788 / Time: 0h:4m:31s (0h:1m:17s left)
+Optimizing NNI: done in 0.797166 secs using 99.89% CPU
+Optimizing NNI: done in 0.540615 secs using 99.91% CPU
+Optimizing NNI: done in 0.647407 secs using 99.91% CPU
+Optimizing NNI: done in 0.55374 secs using 99.9% CPU
+Optimizing NNI: done in 0.578929 secs using 99.92% CPU
+Optimizing NNI: done in 0.698127 secs using 99.92% CPU
+Optimizing NNI: done in 0.548803 secs using 99.92% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 317: -274116.907
+Optimizing NNI: done in 0.674616 secs using 99.9% CPU
+Optimizing NNI: done in 0.65133 secs using 99.88% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 319: -274115.919
+Optimizing NNI: done in 0.427915 secs using 99.86% CPU
+Iteration 320 / LogL: -274196.545 / Time: 0h:4m:38s (0h:1m:24s left)
+Optimizing NNI: done in 0.744822 secs using 99.93% CPU
+Optimizing NNI: done in 0.596605 secs using 99.93% CPU
+Optimizing NNI: done in 0.73797 secs using 99.93% CPU
+Optimizing NNI: done in 0.611533 secs using 99.9% CPU
+Optimizing NNI: done in 0.702403 secs using 99.92% CPU
+Optimizing NNI: done in 0.560632 secs using 99.88% CPU
+Optimizing NNI: done in 0.513902 secs using 99.84% CPU
+Optimizing NNI: done in 0.775245 secs using 99.93% CPU
+Optimizing NNI: done in 0.863674 secs using 99.93% CPU
+Optimizing NNI: done in 0.628416 secs using 99.92% CPU
+Iteration 330 / LogL: -274128.851 / Time: 0h:4m:45s (0h:1m:15s left)
+Optimizing NNI: done in 0.688731 secs using 99.83% CPU
+Optimizing NNI: done in 0.808674 secs using 99.94% CPU
+Optimizing NNI: done in 0.70813 secs using 99.94% CPU
+Optimizing NNI: done in 0.702644 secs using 99.92% CPU
+Optimizing NNI: done in 0.70207 secs using 99.93% CPU
+Optimizing NNI: done in 0.702728 secs using 99.92% CPU
+Optimizing NNI: done in 0.673503 secs using 99.92% CPU
+Optimizing NNI: done in 0.713318 secs using 99.91% CPU
+Optimizing NNI: done in 0.657613 secs using 99.93% CPU
+Optimizing NNI: done in 0.691216 secs using 99.91% CPU
+Iteration 340 / LogL: -274128.797 / Time: 0h:4m:53s (0h:1m:6s left)
+Optimizing NNI: done in 0.679549 secs using 99.91% CPU
+Optimizing NNI: done in 0.712258 secs using 99.92% CPU
+Optimizing NNI: done in 0.538392 secs using 99.9% CPU
+Optimizing NNI: done in 0.597078 secs using 99.93% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 344: -274105.475
+Optimizing NNI: done in 0.781732 secs using 99.9% CPU
+Optimizing NNI: done in 0.736653 secs using 99.89% CPU
+Optimizing NNI: done in 0.733558 secs using 99.9% CPU
+Optimizing NNI: done in 0.762356 secs using 99.92% CPU
+Optimizing NNI: done in 0.738894 secs using 99.94% CPU
+Optimizing NNI: done in 0.7068 secs using 99.93% CPU
+Iteration 350 / LogL: -274139.455 / Time: 0h:5m:0s (0h:1m:19s left)
+Log-likelihood cutoff on original alignment: -274402.964
+Optimizing NNI: done in 0.7566 secs using 99.93% CPU
+Optimizing NNI: done in 0.566361 secs using 99.91% CPU
+Optimizing NNI: done in 0.612831 secs using 99.93% CPU
+Optimizing NNI: done in 0.707255 secs using 99.91% CPU
+Optimizing NNI: done in 0.687187 secs using 99.94% CPU
+Optimizing NNI: done in 0.559124 secs using 99.93% CPU
+Optimizing NNI: done in 0.654827 secs using 99.92% CPU
+Optimizing NNI: done in 0.556959 secs using 99.94% CPU
+Optimizing NNI: done in 0.849893 secs using 99.93% CPU
+Optimizing NNI: done in 0.730176 secs using 99.94% CPU
+Iteration 360 / LogL: -274116.089 / Time: 0h:5m:8s (0h:1m:10s left)
+Optimizing NNI: done in 0.644779 secs using 99.92% CPU
+Optimizing NNI: done in 0.605494 secs using 99.93% CPU
+Optimizing NNI: done in 0.667052 secs using 99.89% CPU
+Optimizing NNI: done in 0.763208 secs using 99.89% CPU
+Optimizing NNI: done in 0.915271 secs using 99.93% CPU
+Optimizing NNI: done in 0.648048 secs using 99.92% CPU
+Optimizing NNI: done in 0.649559 secs using 99.53% CPU
+Optimizing NNI: done in 0.737474 secs using 99.92% CPU
+Optimizing NNI: done in 0.67863 secs using 99.92% CPU
+Optimizing NNI: done in 0.851053 secs using 99.94% CPU
+Iteration 370 / LogL: -274149.989 / Time: 0h:5m:16s (0h:1m:2s left)
+Optimizing NNI: done in 0.743854 secs using 99.9% CPU
+Optimizing NNI: done in 0.562273 secs using 99.92% CPU
+Optimizing NNI: done in 0.696613 secs using 99.91% CPU
+Optimizing NNI: done in 0.866958 secs using 99.94% CPU
+Optimizing NNI: done in 0.660565 secs using 99.94% CPU
+Optimizing NNI: done in 0.633563 secs using 99.86% CPU
+Optimizing NNI: done in 0.555987 secs using 99.94% CPU
+Optimizing NNI: done in 0.745781 secs using 99.94% CPU
+Optimizing NNI: done in 0.606956 secs using 99.93% CPU
+Optimizing NNI: done in 0.819995 secs using 99.91% CPU
+Iteration 380 / LogL: -274177.418 / Time: 0h:5m:24s (0h:0m:53s left)
+Optimizing NNI: done in 0.76299 secs using 99.93% CPU
+Optimizing NNI: done in 0.633679 secs using 99.93% CPU
+Optimizing NNI: done in 0.399405 secs using 99.91% CPU
+Optimizing NNI: done in 0.478174 secs using 99.85% CPU
+Optimizing NNI: done in 0.603753 secs using 99.94% CPU
+Optimizing NNI: done in 0.538408 secs using 99.8% CPU
+Optimizing NNI: done in 0.65988 secs using 99.88% CPU
+Optimizing NNI: done in 0.62558 secs using 99.9% CPU
+Optimizing NNI: done in 0.595864 secs using 99.88% CPU
+Optimizing NNI: done in 0.881499 secs using 99.91% CPU
+Iteration 390 / LogL: -274123.000 / Time: 0h:5m:31s (0h:0m:44s left)
+Optimizing NNI: done in 0.602437 secs using 99.89% CPU
+Optimizing NNI: done in 0.658798 secs using 99.88% CPU
+Optimizing NNI: done in 0.796015 secs using 99.87% CPU
+Optimizing NNI: done in 0.679443 secs using 99.88% CPU
+Optimizing NNI: done in 0.774227 secs using 99.92% CPU
+Optimizing NNI: done in 0.658958 secs using 99.92% CPU
+Optimizing NNI: done in 0.646694 secs using 99.93% CPU
+Optimizing NNI: done in 0.566732 secs using 99.91% CPU
+Optimizing NNI: done in 0.782685 secs using 99.93% CPU
+Optimizing NNI: done in 0.621701 secs using 99.92% CPU
+Iteration 400 / LogL: -274122.180 / Time: 0h:5m:38s (0h:0m:36s left)
+Log-likelihood cutoff on original alignment: -274402.964
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.977
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 0.725263 secs using 99.94% CPU
+Optimizing NNI: done in 0.762072 secs using 99.93% CPU
+Optimizing NNI: done in 0.758488 secs using 99.92% CPU
+Optimizing NNI: done in 0.826203 secs using 99.93% CPU
+Optimizing NNI: done in 0.889609 secs using 99.93% CPU
+Optimizing NNI: done in 0.559464 secs using 99.9% CPU
+Optimizing NNI: done in 0.8789 secs using 99.93% CPU
+Optimizing NNI: done in 0.738422 secs using 99.92% CPU
+Optimizing NNI: done in 0.634132 secs using 99.9% CPU
+Optimizing NNI: done in 0.501075 secs using 99.92% CPU
+Iteration 410 / LogL: -274168.420 / Time: 0h:5m:47s (0h:1m:14s left)
+Optimizing NNI: done in 0.668891 secs using 99.86% CPU
+Optimizing NNI: done in 0.632 secs using 99.92% CPU
+Optimizing NNI: done in 0.625266 secs using 99.93% CPU
+Optimizing NNI: done in 0.67844 secs using 99.93% CPU
+Optimizing NNI: done in 0.545078 secs using 99.92% CPU
+Optimizing NNI: done in 0.612221 secs using 99.9% CPU
+Optimizing NNI: done in 0.577619 secs using 99.92% CPU
+Optimizing NNI: done in 0.621422 secs using 99.93% CPU
+Optimizing NNI: done in 0.570465 secs using 99.92% CPU
+Optimizing NNI: done in 0.727588 secs using 99.9% CPU
+Iteration 420 / LogL: -274129.816 / Time: 0h:5m:54s (0h:1m:6s left)
+Optimizing NNI: done in 0.581849 secs using 99.93% CPU
+Optimizing NNI: done in 0.538756 secs using 99.92% CPU
+Optimizing NNI: done in 0.808285 secs using 99.93% CPU
+Optimizing NNI: done in 0.579925 secs using 99.92% CPU
+Optimizing NNI: done in 0.557109 secs using 99.93% CPU
+Optimizing NNI: done in 0.593163 secs using 99.93% CPU
+Optimizing NNI: done in 0.817949 secs using 99.93% CPU
+Optimizing NNI: done in 0.703178 secs using 99.93% CPU
+Optimizing NNI: done in 0.628347 secs using 99.89% CPU
+Optimizing NNI: done in 0.741143 secs using 99.91% CPU
+Iteration 430 / LogL: -274133.974 / Time: 0h:6m:1s (0h:0m:57s left)
+Optimizing NNI: done in 0.806828 secs using 99.93% CPU
+Optimizing NNI: done in 0.929768 secs using 99.93% CPU
+Optimizing NNI: done in 0.601032 secs using 99.94% CPU
+Optimizing NNI: done in 0.680893 secs using 99.94% CPU
+Optimizing NNI: done in 0.621902 secs using 99.93% CPU
+Optimizing NNI: done in 0.682549 secs using 99.92% CPU
+Optimizing NNI: done in 0.580698 secs using 99.93% CPU
+Optimizing NNI: done in 0.658648 secs using 99.94% CPU
+Optimizing NNI: done in 0.816886 secs using 99.92% CPU
+Optimizing NNI: done in 0.800824 secs using 99.92% CPU
+Iteration 440 / LogL: -274113.310 / Time: 0h:6m:9s (0h:0m:49s left)
+Optimizing NNI: done in 0.678543 secs using 99.93% CPU
+Optimizing NNI: done in 0.737594 secs using 99.85% CPU
+Optimizing NNI: done in 0.63889 secs using 99.88% CPU
+Optimizing NNI: done in 0.778202 secs using 99.9% CPU
+Optimizing NNI: done in 0.848753 secs using 99.9% CPU
+Optimizing NNI: done in 1.01061 secs using 99.91% CPU
+Optimizing NNI: done in 0.726801 secs using 99.93% CPU
+Optimizing NNI: done in 0.690174 secs using 99.93% CPU
+Optimizing NNI: done in 0.780009 secs using 99.93% CPU
+Optimizing NNI: done in 0.677675 secs using 99.92% CPU
+Iteration 450 / LogL: -274113.683 / Time: 0h:6m:18s (0h:0m:41s left)
+Log-likelihood cutoff on original alignment: -274402.964
+Optimizing NNI: done in 0.617577 secs using 99.86% CPU
+Optimizing NNI: done in 0.589714 secs using 99.95% CPU
+Optimizing NNI: done in 0.720252 secs using 99.94% CPU
+Optimizing NNI: done in 0.724346 secs using 99.89% CPU
+Optimizing NNI: done in 0.645066 secs using 99.94% CPU
+Optimizing NNI: done in 0.651051 secs using 99.93% CPU
+Optimizing NNI: done in 0.80319 secs using 99.91% CPU
+Optimizing NNI: done in 0.69491 secs using 99.93% CPU
+Optimizing NNI: done in 0.648676 secs using 99.93% CPU
+Optimizing NNI: done in 0.812992 secs using 99.89% CPU
+Iteration 460 / LogL: -274113.833 / Time: 0h:6m:26s (0h:0m:33s left)
+Optimizing NNI: done in 0.700934 secs using 99.93% CPU
+Optimizing NNI: done in 0.677454 secs using 99.93% CPU
+Optimizing NNI: done in 0.590958 secs using 99.91% CPU
+Optimizing NNI: done in 0.794373 secs using 99.54% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 464: -274104.562
+Optimizing NNI: done in 0.809011 secs using 99.92% CPU
+Optimizing NNI: done in 0.630015 secs using 99.24% CPU
+Optimizing NNI: done in 0.728339 secs using 99.92% CPU
+Optimizing NNI: done in 0.67195 secs using 99.92% CPU
+Optimizing NNI: done in 0.724583 secs using 99.9% CPU
+Optimizing NNI: done in 0.657799 secs using 99.92% CPU
+Iteration 470 / LogL: -274107.063 / Time: 0h:6m:34s (0h:1m:17s left)
+Optimizing NNI: done in 0.725036 secs using 99.93% CPU
+Optimizing NNI: done in 0.805915 secs using 99.93% CPU
+Optimizing NNI: done in 0.576955 secs using 99.94% CPU
+Optimizing NNI: done in 0.572665 secs using 99.93% CPU
+Optimizing NNI: done in 0.716273 secs using 99.95% CPU
+Optimizing NNI: done in 0.617991 secs using 99.9% CPU
+Optimizing NNI: done in 0.703217 secs using 99.94% CPU
+Optimizing NNI: done in 0.702154 secs using 99.94% CPU
+Optimizing NNI: done in 0.755642 secs using 99.93% CPU
+Optimizing NNI: done in 0.542946 secs using 99.93% CPU
+Iteration 480 / LogL: -274125.451 / Time: 0h:6m:42s (0h:1m:9s left)
+Optimizing NNI: done in 0.615993 secs using 99.95% CPU
+Optimizing NNI: done in 0.668003 secs using 99.92% CPU
+Optimizing NNI: done in 0.71392 secs using 99.93% CPU
+Optimizing NNI: done in 0.585678 secs using 99.93% CPU
+Optimizing NNI: done in 0.576309 secs using 99.95% CPU
+Optimizing NNI: done in 0.725875 secs using 99.92% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 486: -274104.278
+Optimizing NNI: done in 0.718916 secs using 99.92% CPU
+Optimizing NNI: done in 0.483118 secs using 99.9% CPU
+Optimizing NNI: done in 0.855477 secs using 99.89% CPU
+Optimizing NNI: done in 0.580219 secs using 99.85% CPU
+Iteration 490 / LogL: -274126.662 / Time: 0h:6m:49s (0h:1m:19s left)
+Optimizing NNI: done in 0.78667 secs using 99.94% CPU
+Optimizing NNI: done in 0.66676 secs using 99.93% CPU
+Optimizing NNI: done in 0.616385 secs using 99.92% CPU
+Optimizing NNI: done in 0.564908 secs using 99.93% CPU
+Optimizing NNI: done in 0.725408 secs using 99.93% CPU
+Optimizing NNI: done in 0.826262 secs using 99.91% CPU
+Optimizing NNI: done in 0.582636 secs using 99.91% CPU
+Optimizing NNI: done in 0.65612 secs using 99.93% CPU
+Optimizing NNI: done in 0.600988 secs using 99.92% CPU
+Optimizing NNI: done in 0.864921 secs using 99.94% CPU
+Iteration 500 / LogL: -274132.182 / Time: 0h:6m:57s (0h:1m:10s left)
+Log-likelihood cutoff on original alignment: -274402.964
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.976
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 0.541532 secs using 99.91% CPU
+Optimizing NNI: done in 0.66497 secs using 99.91% CPU
+Optimizing NNI: done in 0.702164 secs using 99.93% CPU
+Optimizing NNI: done in 0.841283 secs using 99.94% CPU
+Optimizing NNI: done in 0.57164 secs using 99.93% CPU
+Optimizing NNI: done in 0.53506 secs using 99.93% CPU
+Optimizing NNI: done in 0.687506 secs using 99.93% CPU
+Optimizing NNI: done in 0.728129 secs using 99.92% CPU
+Optimizing NNI: done in 0.643989 secs using 99.94% CPU
+Optimizing NNI: done in 0.860192 secs using 99.94% CPU
+Iteration 510 / LogL: -274129.656 / Time: 0h:7m:5s (0h:1m:14s left)
+Optimizing NNI: done in 0.714451 secs using 99.94% CPU
+Optimizing NNI: done in 0.838333 secs using 99.93% CPU
+Optimizing NNI: done in 0.502016 secs using 99.94% CPU
+Optimizing NNI: done in 0.812497 secs using 99.92% CPU
+Optimizing NNI: done in 0.698393 secs using 99.94% CPU
+Optimizing NNI: done in 0.688567 secs using 99.92% CPU
+Optimizing NNI: done in 0.767726 secs using 99.9% CPU
+Optimizing NNI: done in 0.657055 secs using 99.93% CPU
+Optimizing NNI: done in 0.836295 secs using 99.87% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 519: -274100.729
+Optimizing NNI: done in 0.651468 secs using 97.07% CPU
+Iteration 520 / LogL: -274104.360 / Time: 0h:7m:14s (0h:1m:21s left)
+Optimizing NNI: done in 0.684461 secs using 99.9% CPU
+Optimizing NNI: done in 0.634608 secs using 99.9% CPU
+Optimizing NNI: done in 0.713522 secs using 99.85% CPU
+Optimizing NNI: done in 0.491341 secs using 99.85% CPU
+Optimizing NNI: done in 0.704329 secs using 99.83% CPU
+Optimizing NNI: done in 0.58537 secs using 99.91% CPU
+Optimizing NNI: done in 0.592709 secs using 99.93% CPU
+Optimizing NNI: done in 0.575368 secs using 99.92% CPU
+Optimizing NNI: done in 0.566173 secs using 99.86% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 529: -274095.744
+Optimizing NNI: done in 0.733356 secs using 99.88% CPU
+Iteration 530 / LogL: -274122.863 / Time: 0h:7m:21s (0h:1m:21s left)
+Optimizing NNI: done in 0.764323 secs using 99.9% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 531: -274094.535
+Optimizing NNI: done in 0.59221 secs using 99.92% CPU
+Optimizing NNI: done in 0.58664 secs using 99.92% CPU
+Optimizing NNI: done in 0.679993 secs using 99.94% CPU
+Optimizing NNI: done in 0.737086 secs using 99.94% CPU
+Optimizing NNI: done in 0.661464 secs using 99.94% CPU
+Optimizing NNI: done in 0.822711 secs using 99.89% CPU
+Optimizing NNI: done in 0.587077 secs using 99.88% CPU
+Optimizing NNI: done in 0.631961 secs using 99.91% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 539: -274094.227
+Optimizing NNI: done in 0.631264 secs using 99.65% CPU
+Iteration 540 / LogL: -274166.598 / Time: 0h:7m:29s (0h:1m:21s left)
+Optimizing NNI: done in 0.736093 secs using 99.9% CPU
+Optimizing NNI: done in 0.726164 secs using 99.88% CPU
+Optimizing NNI: done in 0.734558 secs using 99.89% CPU
+Optimizing NNI: done in 0.619417 secs using 98.91% CPU
+Optimizing NNI: done in 0.818464 secs using 99.91% CPU
+Optimizing NNI: done in 0.66618 secs using 99.87% CPU
+Optimizing NNI: done in 0.585886 secs using 99.92% CPU
+Optimizing NNI: done in 0.525578 secs using 99.92% CPU
+Optimizing NNI: done in 0.591998 secs using 99.9% CPU
+Optimizing NNI: done in 0.669201 secs using 99.92% CPU
+Iteration 550 / LogL: -274095.942 / Time: 0h:7m:37s (0h:1m:12s left)
+Log-likelihood cutoff on original alignment: -274402.964
+Optimizing NNI: done in 0.634982 secs using 99.93% CPU
+Optimizing NNI: done in 0.628876 secs using 99.91% CPU
+Optimizing NNI: done in 0.595277 secs using 99.91% CPU
+Optimizing NNI: done in 0.604261 secs using 99.82% CPU
+Optimizing NNI: done in 0.51255 secs using 99.9% CPU
+Optimizing NNI: done in 0.66622 secs using 99.92% CPU
+Optimizing NNI: done in 0.679107 secs using 99.93% CPU
+Optimizing NNI: done in 0.657808 secs using 99.92% CPU
+Optimizing NNI: done in 0.686862 secs using 99.93% CPU
+Optimizing NNI: done in 0.790457 secs using 99.91% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 560: -274093.884
+Iteration 560 / LogL: -274093.884 / Time: 0h:7m:45s (0h:1m:21s left)
+Optimizing NNI: done in 0.825473 secs using 99.93% CPU
+Optimizing NNI: done in 0.57295 secs using 99.86% CPU
+Optimizing NNI: done in 0.681821 secs using 99.92% CPU
+Optimizing NNI: done in 0.71319 secs using 99.6% CPU
+Optimizing NNI: done in 0.877107 secs using 99.94% CPU
+Optimizing NNI: done in 0.635223 secs using 99.93% CPU
+Optimizing NNI: done in 0.663176 secs using 99.94% CPU
+Optimizing NNI: done in 0.721225 secs using 99.89% CPU
+Optimizing NNI: done in 0.725627 secs using 99.95% CPU
+Optimizing NNI: done in 0.585313 secs using 99.91% CPU
+Iteration 570 / LogL: -274110.720 / Time: 0h:7m:53s (0h:1m:13s left)
+Optimizing NNI: done in 0.565745 secs using 99.92% CPU
+Optimizing NNI: done in 0.516965 secs using 99.95% CPU
+Optimizing NNI: done in 0.505232 secs using 99.93% CPU
+Optimizing NNI: done in 0.712066 secs using 99.94% CPU
+Optimizing NNI: done in 0.644824 secs using 99.9% CPU
+Optimizing NNI: done in 0.655364 secs using 99.93% CPU
+Optimizing NNI: done in 0.484607 secs using 99.92% CPU
+Optimizing NNI: done in 0.894985 secs using 99.94% CPU
+Optimizing NNI: done in 0.644343 secs using 99.94% CPU
+Optimizing NNI: done in 0.527266 secs using 99.94% CPU
+Iteration 580 / LogL: -274135.291 / Time: 0h:8m:1s (0h:1m:5s left)
+Optimizing NNI: done in 0.636655 secs using 99.93% CPU
+Optimizing NNI: done in 0.565135 secs using 99.94% CPU
+Optimizing NNI: done in 0.740092 secs using 99.94% CPU
+Optimizing NNI: done in 0.626247 secs using 99.92% CPU
+Optimizing NNI: done in 0.758997 secs using 99.94% CPU
+Optimizing NNI: done in 0.486218 secs using 99.93% CPU
+Optimizing NNI: done in 0.469744 secs using 99.93% CPU
+Optimizing NNI: done in 0.60311 secs using 99.92% CPU
+Optimizing NNI: done in 0.790056 secs using 99.94% CPU
+Optimizing NNI: done in 0.621607 secs using 99.93% CPU
+Iteration 590 / LogL: -274171.459 / Time: 0h:8m:8s (0h:0m:57s left)
+Optimizing NNI: done in 0.545961 secs using 99.91% CPU
+Optimizing NNI: done in 0.614889 secs using 99.93% CPU
+Optimizing NNI: done in 0.751416 secs using 99.93% CPU
+Optimizing NNI: done in 0.667669 secs using 99.92% CPU
+Optimizing NNI: done in 0.876011 secs using 99.88% CPU
+Optimizing NNI: done in 0.681762 secs using 99.93% CPU
+Optimizing NNI: done in 0.711939 secs using 99.93% CPU
+Optimizing NNI: done in 0.672726 secs using 99.94% CPU
+Optimizing NNI: done in 0.68076 secs using 99.94% CPU
+Optimizing NNI: done in 0.730194 secs using 99.94% CPU
+Iteration 600 / LogL: -274104.950 / Time: 0h:8m:16s (0h:0m:49s left)
+Log-likelihood cutoff on original alignment: -274402.964
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.974
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 0.737071 secs using 99.91% CPU
+Optimizing NNI: done in 0.577541 secs using 99.93% CPU
+Optimizing NNI: done in 0.739584 secs using 99.93% CPU
+Optimizing NNI: done in 0.511912 secs using 99.89% CPU
+Optimizing NNI: done in 0.623195 secs using 99.94% CPU
+Optimizing NNI: done in 0.650509 secs using 99.89% CPU
+Optimizing NNI: done in 0.805672 secs using 99.92% CPU
+Optimizing NNI: done in 0.771787 secs using 99.85% CPU
+Optimizing NNI: done in 0.635166 secs using 99.91% CPU
+Optimizing NNI: done in 0.713134 secs using 99.94% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 610: -274093.704
+Iteration 610 / LogL: -274093.704 / Time: 0h:8m:25s (0h:1m:21s left)
+Optimizing NNI: done in 0.701392 secs using 99.93% CPU
+Optimizing NNI: done in 0.631691 secs using 99.88% CPU
+Optimizing NNI: done in 0.509586 secs using 99.9% CPU
+Optimizing NNI: done in 0.770122 secs using 99.95% CPU
+Optimizing NNI: done in 0.570039 secs using 99.92% CPU
+Optimizing NNI: done in 0.434048 secs using 99.93% CPU
+Optimizing NNI: done in 0.759871 secs using 99.94% CPU
+Optimizing NNI: done in 0.509316 secs using 99.95% CPU
+Optimizing NNI: done in 0.566401 secs using 99.93% CPU
+Optimizing NNI: done in 0.645981 secs using 99.94% CPU
+Iteration 620 / LogL: -274165.186 / Time: 0h:8m:32s (0h:1m:13s left)
+Optimizing NNI: done in 0.526985 secs using 99.93% CPU
+Optimizing NNI: done in 0.515921 secs using 99.92% CPU
+Optimizing NNI: done in 0.638928 secs using 99.93% CPU
+Optimizing NNI: done in 0.643589 secs using 99.93% CPU
+Optimizing NNI: done in 0.520975 secs using 99.94% CPU
+Optimizing NNI: done in 0.466338 secs using 99.93% CPU
+Optimizing NNI: done in 0.669773 secs using 99.94% CPU
+Optimizing NNI: done in 0.687077 secs using 99.9% CPU
+Optimizing NNI: done in 0.629714 secs using 99.93% CPU
+Optimizing NNI: done in 0.508829 secs using 99.91% CPU
+Iteration 630 / LogL: -274094.889 / Time: 0h:8m:39s (0h:1m:5s left)
+Optimizing NNI: done in 0.881418 secs using 99.93% CPU
+Optimizing NNI: done in 0.553696 secs using 99.92% CPU
+Optimizing NNI: done in 0.554712 secs using 99.95% CPU
+Optimizing NNI: done in 0.802281 secs using 99.95% CPU
+Optimizing NNI: done in 0.69329 secs using 99.9% CPU
+Optimizing NNI: done in 0.763392 secs using 99.95% CPU
+Optimizing NNI: done in 0.544941 secs using 99.94% CPU
+Optimizing NNI: done in 0.523796 secs using 99.93% CPU
+Optimizing NNI: done in 0.66767 secs using 99.94% CPU
+Optimizing NNI: done in 0.647296 secs using 99.59% CPU
+Iteration 640 / LogL: -274124.965 / Time: 0h:8m:47s (0h:0m:57s left)
+Optimizing NNI: done in 0.631228 secs using 99.94% CPU
+Optimizing NNI: done in 0.588934 secs using 99.93% CPU
+Optimizing NNI: done in 0.80786 secs using 99.94% CPU
+Optimizing NNI: done in 0.448478 secs using 99.93% CPU
+Optimizing NNI: done in 0.719675 secs using 99.94% CPU
+Optimizing NNI: done in 0.689381 secs using 99.93% CPU
+Optimizing NNI: done in 0.553123 secs using 99.94% CPU
+Optimizing NNI: done in 0.757367 secs using 99.87% CPU
+Optimizing NNI: done in 0.568597 secs using 99.94% CPU
+Optimizing NNI: done in 0.535 secs using 99.93% CPU
+Iteration 650 / LogL: -274180.214 / Time: 0h:8m:55s (0h:0m:48s left)
+Log-likelihood cutoff on original alignment: -274402.964
+Optimizing NNI: done in 0.588031 secs using 99.94% CPU
+Optimizing NNI: done in 0.735137 secs using 99.94% CPU
+Optimizing NNI: done in 0.592232 secs using 99.94% CPU
+Optimizing NNI: done in 0.66759 secs using 99.93% CPU
+Optimizing NNI: done in 0.445857 secs using 99.89% CPU
+Optimizing NNI: done in 0.526218 secs using 99.93% CPU
+Optimizing NNI: done in 0.638197 secs using 99.94% CPU
+Optimizing NNI: done in 0.584516 secs using 99.92% CPU
+Optimizing NNI: done in 0.664564 secs using 99.93% CPU
+Optimizing NNI: done in 0.668698 secs using 99.94% CPU
+Iteration 660 / LogL: -274134.123 / Time: 0h:9m:3s (0h:0m:40s left)
+Optimizing NNI: done in 0.599486 secs using 99.91% CPU
+Optimizing NNI: done in 0.803942 secs using 99.94% CPU
+Optimizing NNI: done in 0.639757 secs using 99.94% CPU
+Optimizing NNI: done in 0.455958 secs using 99.93% CPU
+Optimizing NNI: done in 0.554022 secs using 99.92% CPU
+Optimizing NNI: done in 0.65472 secs using 99.95% CPU
+Optimizing NNI: done in 0.680951 secs using 99.94% CPU
+Optimizing NNI: done in 0.926511 secs using 99.94% CPU
+Optimizing NNI: done in 0.7328 secs using 99.93% CPU
+Optimizing NNI: done in 0.606824 secs using 99.94% CPU
+Iteration 670 / LogL: -274109.296 / Time: 0h:9m:11s (0h:0m:32s left)
+Optimizing NNI: done in 0.536141 secs using 99.94% CPU
+Optimizing NNI: done in 0.770449 secs using 99.9% CPU
+Optimizing NNI: done in 0.482257 secs using 99.87% CPU
+Optimizing NNI: done in 0.545618 secs using 99.94% CPU
+Optimizing NNI: done in 0.74937 secs using 99.93% CPU
+Optimizing NNI: done in 0.473162 secs using 99.6% CPU
+Optimizing NNI: done in 0.740983 secs using 99.94% CPU
+Optimizing NNI: done in 0.639612 secs using 99.93% CPU
+Optimizing NNI: done in 0.539014 secs using 99.94% CPU
+Optimizing NNI: done in 0.815509 secs using 99.93% CPU
+Iteration 680 / LogL: -274104.688 / Time: 0h:9m:18s (0h:0m:24s left)
+Optimizing NNI: done in 0.57361 secs using 99.94% CPU
+Optimizing NNI: done in 0.655119 secs using 99.91% CPU
+Optimizing NNI: done in 0.75738 secs using 99.91% CPU
+Optimizing NNI: done in 0.822715 secs using 99.93% CPU
+Optimizing NNI: done in 0.636041 secs using 99.95% CPU
+Optimizing NNI: done in 0.655306 secs using 99.92% CPU
+Optimizing NNI: done in 0.680648 secs using 99.95% CPU
+Optimizing NNI: done in 0.564406 secs using 99.89% CPU
+Optimizing NNI: done in 0.629131 secs using 99.93% CPU
+Optimizing NNI: done in 0.662225 secs using 99.94% CPU
+Iteration 690 / LogL: -274112.505 / Time: 0h:9m:27s (0h:0m:16s left)
+Optimizing NNI: done in 0.650917 secs using 99.93% CPU
+Optimizing NNI: done in 0.61995 secs using 99.94% CPU
+Optimizing NNI: done in 0.709218 secs using 99.94% CPU
+Optimizing NNI: done in 0.573736 secs using 99.94% CPU
+Optimizing NNI: done in 0.67185 secs using 99.95% CPU
+Optimizing NNI: done in 0.47434 secs using 99.93% CPU
+Optimizing NNI: done in 0.626043 secs using 99.93% CPU
+Optimizing NNI: done in 0.420729 secs using 99.94% CPU
+Optimizing NNI: done in 0.672128 secs using 99.92% CPU
+Optimizing NNI: done in 0.71647 secs using 99.93% CPU
+Iteration 700 / LogL: -274174.309 / Time: 0h:9m:34s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -274402.964
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.979
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 0.705352 secs using 99.93% CPU
+Optimizing NNI: done in 0.737553 secs using 99.93% CPU
+Optimizing NNI: done in 0.805053 secs using 99.94% CPU
+Optimizing NNI: done in 0.584495 secs using 99.93% CPU
+Optimizing NNI: done in 0.719875 secs using 99.92% CPU
+Optimizing NNI: done in 0.407628 secs using 99.94% CPU
+Optimizing NNI: done in 0.683684 secs using 99.94% CPU
+Optimizing NNI: done in 0.506358 secs using 99.83% CPU
+Optimizing NNI: done in 0.569244 secs using 99.93% CPU
+Optimizing NNI: done in 0.978629 secs using 99.94% CPU
+Iteration 710 / LogL: -274108.359 / Time: 0h:9m:43s (0h:1m:13s left)
+Optimizing NNI: done in 0.649961 secs using 99.91% CPU
+Optimizing NNI: done in 0.650559 secs using 99.94% CPU
+Optimizing NNI: done in 0.759322 secs using 99.93% CPU
+Optimizing NNI: done in 0.501858 secs using 99.91% CPU
+Optimizing NNI: done in 0.727903 secs using 99.95% CPU
+Optimizing NNI: done in 0.855966 secs using 99.55% CPU
+Optimizing NNI: done in 0.679579 secs using 99.91% CPU
+Optimizing NNI: done in 0.951588 secs using 99.9% CPU
+Optimizing NNI: done in 0.607677 secs using 99.91% CPU
+Optimizing NNI: done in 0.80522 secs using 99.91% CPU
+Iteration 720 / LogL: -274107.213 / Time: 0h:9m:51s (0h:1m:5s left)
+Optimizing NNI: done in 0.513379 secs using 99.86% CPU
+Optimizing NNI: done in 0.755246 secs using 99.88% CPU
+Optimizing NNI: done in 0.701545 secs using 99.92% CPU
+Optimizing NNI: done in 0.725935 secs using 99.93% CPU
+Optimizing NNI: done in 0.483852 secs using 99.91% CPU
+Optimizing NNI: done in 0.600316 secs using 99.88% CPU
+Optimizing NNI: done in 0.572273 secs using 99.93% CPU
+Optimizing NNI: done in 0.500611 secs using 99.94% CPU
+Optimizing NNI: done in 0.897273 secs using 99.94% CPU
+Optimizing NNI: done in 0.618059 secs using 99.93% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 730: -274093.443
+Iteration 730 / LogL: -274093.443 / Time: 0h:9m:59s (0h:1m:21s left)
+Optimizing NNI: done in 0.618599 secs using 99.95% CPU
+Optimizing NNI: done in 0.634678 secs using 99.92% CPU
+Optimizing NNI: done in 0.576566 secs using 99.87% CPU
+Optimizing NNI: done in 0.601852 secs using 99.85% CPU
+Optimizing NNI: done in 0.89798 secs using 99.93% CPU
+Optimizing NNI: done in 0.661966 secs using 99.94% CPU
+Optimizing NNI: done in 0.778652 secs using 99.94% CPU
+Optimizing NNI: done in 0.695787 secs using 99.93% CPU
+Optimizing NNI: done in 0.594826 secs using 99.95% CPU
+Optimizing NNI: done in 0.680963 secs using 99.94% CPU
+Iteration 740 / LogL: -274130.209 / Time: 0h:10m:8s (0h:1m:13s left)
+Optimizing NNI: done in 0.7939 secs using 99.92% CPU
+Optimizing NNI: done in 0.763731 secs using 99.91% CPU
+Optimizing NNI: done in 0.716171 secs using 99.62% CPU
+Optimizing NNI: done in 0.620601 secs using 99.94% CPU
+Optimizing NNI: done in 0.841232 secs using 99.93% CPU
+Optimizing NNI: done in 0.601932 secs using 99.82% CPU
+Optimizing NNI: done in 0.745434 secs using 99.94% CPU
+Optimizing NNI: done in 0.611359 secs using 99.94% CPU
+Optimizing NNI: done in 0.650032 secs using 99.94% CPU
+Optimizing NNI: done in 0.6565 secs using 99.93% CPU
+Iteration 750 / LogL: -274148.976 / Time: 0h:10m:16s (0h:1m:5s left)
+Log-likelihood cutoff on original alignment: -274402.964
+Optimizing NNI: done in 0.611395 secs using 99.94% CPU
+Optimizing NNI: done in 0.741048 secs using 97.39% CPU
+Optimizing NNI: done in 0.553429 secs using 99% CPU
+Optimizing NNI: done in 0.520393 secs using 99.77% CPU
+Optimizing NNI: done in 0.585817 secs using 99.71% CPU
+Optimizing NNI: done in 0.394978 secs using 99.82% CPU
+Optimizing NNI: done in 0.652289 secs using 99.68% CPU
+Optimizing NNI: done in 0.66894 secs using 99.66% CPU
+Optimizing NNI: done in 0.589256 secs using 99.75% CPU
+Optimizing NNI: done in 0.735953 secs using 99.65% CPU
+Iteration 760 / LogL: -274107.947 / Time: 0h:10m:24s (0h:0m:56s left)
+Optimizing NNI: done in 0.663465 secs using 99.56% CPU
+Optimizing NNI: done in 0.764473 secs using 99.93% CPU
+Optimizing NNI: done in 0.695428 secs using 99.85% CPU
+Optimizing NNI: done in 0.617035 secs using 99.92% CPU
+Optimizing NNI: done in 0.661286 secs using 99.92% CPU
+Optimizing NNI: done in 0.597387 secs using 99.93% CPU
+Optimizing NNI: done in 0.850377 secs using 99.93% CPU
+Optimizing NNI: done in 0.745561 secs using 99.94% CPU
+Optimizing NNI: done in 0.517788 secs using 99.94% CPU
+Optimizing NNI: done in 0.699 secs using 99.94% CPU
+Iteration 770 / LogL: -274103.312 / Time: 0h:10m:33s (0h:0m:48s left)
+Optimizing NNI: done in 0.745444 secs using 99.91% CPU
+Optimizing NNI: done in 0.640988 secs using 99.91% CPU
+Optimizing NNI: done in 0.734812 secs using 99.94% CPU
+Optimizing NNI: done in 0.550472 secs using 99.94% CPU
+Optimizing NNI: done in 0.711477 secs using 99.92% CPU
+Optimizing NNI: done in 0.632729 secs using 99.94% CPU
+Optimizing NNI: done in 0.714534 secs using 99.94% CPU
+Optimizing NNI: done in 0.504864 secs using 99.93% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 778: -274093.428
+Optimizing NNI: done in 0.586252 secs using 99.94% CPU
+Optimizing NNI: done in 0.695126 secs using 99.9% CPU
+Iteration 780 / LogL: -274107.347 / Time: 0h:10m:41s (0h:1m:19s left)
+Optimizing NNI: done in 0.766353 secs using 99.91% CPU
+Optimizing NNI: done in 0.716699 secs using 99.94% CPU
+Optimizing NNI: done in 0.708758 secs using 99.93% CPU
+Optimizing NNI: done in 0.863152 secs using 99.86% CPU
+
+******************************************************
+CHECKPOINT: Resuming analysis from ../Data/IQTree_out/run_matching.ckp.gz
+
+IQ-TREE version 3.0.1 for MacOS ARM 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    AtPoyers-MacBook-Air-2.local (SSE4.2, 16 GB RAM)
+Command: iqtree -s ../Data/InputFiles/ALIGNEDSEQ213.fasta -pre ../Data/IQTree_out/run_matching -m GTR -bb 1000 -alrt 1000 -nt AUTO
+Seed:    600349 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Dec 22 14:30:48 2025
+Kernel:  SSE2 - auto-detect threads (10 CPU cores detected)
+
+Reading alignment file ../Data/InputFiles/ALIGNEDSEQ213.fasta ... Fasta format detected
+Reading fasta file: done in 0.333122 secs using 86.11% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.137038 secs using 84.51% CPU
+WARNING: 1802 sites contain only gaps or ambiguous characters.
+Alignment has 213 sequences with 198855 columns, 2431 distinct patterns
+210 parsimony-informative, 442 singleton sites, 198203 constant sites
+                                                                     Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000228882 secs using 495.5% CPU
+   1  hMpxV/DRC/HGRK-1L/2024|EPI_ISL_18886301|2024-01-15                     1.58%    passed     99.38%
+   2  hMpxV/Germany/un-RKI-1213/2024|EPI_ISL_19785226|2024-12                5.25%    passed     82.60%
+   3  hMpxV/Germany/NW-RKI-1142/2024|EPI_ISL_19502532|2024-10-12             5.01%    passed     81.85%
+   4  hMpxV/Germany/un-RKI-1216/2025|EPI_ISL_19785218|2025-01                5.21%    passed     43.71%
+   5  hMpxV/Germany/un-RKI-1351/2025|EPI_ISL_19887806|2025-04                5.04%    passed     73.49%
+   6  hMpxV/Germany/un-RKI-1349/2025|EPI_ISL_19887833|2025-04                5.20%    passed     72.59%
+   7  hMpxV/DRC/CRSN-4/2023|EPI_ISL_19079342|2023-12-23                      2.04%    passed     45.16%
+   8  hMpxV/DRC/CRSN-6/2024|EPI_ISL_19079344|2024-01-14                      2.08%    passed     35.78%
+   9  hMpxV/DRC/INRB-0239V/2024|EPI_ISL_19093791|2024-01-10                  1.64%    passed     99.98%
+  10  hMpxV/DRC/INRB-0224C/2023|EPI_ISL_19093830|2023-12-25                  1.64%    passed     99.97%
+  11  hMpxV/DRC/INRB-0231V/2023|EPI_ISL_19093810|2023-12-21                  1.64%    passed     99.99%
+  12  hMpxV/DRC/INRB-0240V/2024|EPI_ISL_19093812|2024-01-14                  1.66%    passed     99.99%
+  13  hMpxV/DRC/INRB-0230C/2023|EPI_ISL_19093827|2023-12-31                  1.66%    passed     99.99%
+  14  hMpxV/Thailand/KCMH-ID24110/2024|EPI_ISL_19366744|2024-08-16           1.67%    passed     99.99%
+  15  hMpxV/DRC/INRB-0223C/2023|EPI_ISL_19093831|2023-12-26                  1.64%    passed     99.98%
+  16  hMpxV/DRC/INRB-0209V/2024|EPI_ISL_19093803|2024-01-19                  1.67%    passed     99.98%
+  17  hMpxV/DRC/INRB-0220V/2024|EPI_ISL_19093817|2024-01-26                  1.65%    passed     99.99%
+  18  hMpxV/DRC/INRB-0226V/2023|EPI_ISL_19093809|2023-12-26                  1.75%    passed     99.56%
+  19  hMpxV/DRC/INRB-0201V/2024|EPI_ISL_19093808|2024-01-23                  2.61%    passed     99.98%
+  20  hMpxV/DRC/INRB-0198V/2024|EPI_ISL_19093796|2024-01-23                  1.90%    passed     96.81%
+  21  hMpxV/DRC/INRB-010/2023|EPI_ISL_19093833|2023-10-13                    1.93%    passed     98.94%
+  22  hMpxV/Kenya/nvrl220/2024|EPI_ISL_19302262|2024-07-25                   1.78%    passed     99.21%
+  23  hMpxV/Kenya/KEMRI-00107/2024|EPI_ISL_19345034|2024-07-25               1.78%    passed     99.17%
+  24  hMpxV/Thailand/BIDI-001/2025|EPI_ISL_19673536|2025-01-06               1.61%    passed     99.93%
+  25  hMpxV/United_Kingdom/UKHSA-0072/2024|EPI_ISL_19557976|2024-10-27       2.11%    passed     99.33%
+  26  hMpxV/Thailand/BIDI-002/2025|EPI_ISL_19694853|2025-01-17               1.62%    passed    100.00%
+  27  hMpxV/Thailand/BIDI-003/2025|EPI_ISL_19694854|2025-01-22               1.62%    passed    100.00%
+  28  hMpxV/Canada/MB-NML-6349/2024|EPI_ISL_19791290|2024-11-21              1.88%    passed     99.89%
+  29  hMpxV/Canada/MB-NML-6348/2024|EPI_ISL_19791292|2024-11-21              1.88%    passed     99.90%
+  30  hMpxV/Canada/MB-NML-6350/2024|EPI_ISL_19791291|2024-11-21              1.90%    passed     99.90%
+  31  hMpxV/Brazil/SP-LEIAL-4448/2025|EPI_ISL_19762724|2025-02-24            1.59%    passed     99.99%
+  32  hMpxV/Uganda/UVRI-MP125/2024|EPI_ISL_19867562|2024-08-18               1.74%    passed     99.90%
+  33  hMpxV/Thailand/BIDI-004/2025|EPI_ISL_19818649|2025-03-29               1.61%    passed     99.99%
+  34  hMpxV/USA/NY-CDC-0100/2025|EPI_ISL_19818650|2025-02                    1.74%    passed     99.94%
+  35  hMpxV/China/ZJ-ZCDC-001/2024|EPI_ISL_19870071|2024-12-30               1.78%    passed     99.72%
+  36  hMpxV/Sweden/PHAS-11304/2024|EPI_ISL_19348512|2024-08-13               1.68%    passed     99.98%
+  37  hMpxV/Thailand/NIC-31/2024|EPI_ISL_19350788|2024-08-16                 1.67%    passed     99.99%
+  38  hMpxV/India/KL-ICMR-176_1054/2024|EPI_ISL_19484958|2024-09-21          1.98%    passed     98.95%
+  39  hMpxV/Uganda/CPHL-002/2024|EPI_ISL_19456777|2024-09-08                 1.73%    passed     99.99%
+  40  hMpxV/USA/CA-CDC-0100/2024|EPI_ISL_19586581|2024-11                    1.81%    passed     99.87%
+  41  hMpxV/USA/NH-CDC-0100/2025|EPI_ISL_19785231|2025-02                    1.76%    passed     99.96%
+  42  hMpxV/USA/GA-CDC-0100/2025|EPI_ISL_19686354|2025-01                    1.70%    passed     99.95%
+  43  hMpxV/Uganda/UVRI-MP173/2024|EPI_ISL_19867563|2024-08-25               1.80%    passed     99.80%
+  44  hMpxV/USA/MA-CDC-0100/2025|EPI_ISL_20056547|2025-06                    1.76%    passed     99.97%
+  45  hMpxV/Italy/un-INMI-0001/2025|EPI_ISL_20055054|2025-05                 1.89%    passed     99.08%
+  46  hMpxV/Pakistan/NIH-KMU-006/2024|EPI_ISL_19713336|2024-12-02            1.59%    passed     99.98%
+  47  hMpxV/India/UP-MCL-H-196-2884-1197/2025|EPI_ISL_19902083|2025-05-03    1.54%    passed     99.97%
+  48  hMpxV/Uganda/UVRI-012/2024|EPI_ISL_19305614|2024-07-12                 1.55%    passed     99.98%
+  49  hMpxV/Uganda/UVRI-MP349/2024|EPI_ISL_19587230|2024-09-08               1.60%    passed     99.99%
+  50  hMpxV/Uganda/UVRI-059/2024|EPI_ISL_19612235|2024-12-04                 1.62%    passed     99.99%
+  51  hMpxV/Uganda/UVRI-MP765/2024|EPI_ISL_19587258|2024-10-24               1.61%    passed    100.00%
+  52  hMpxV/Uganda/UVRI-MP350A1/2024|EPI_ISL_19587231|2024-09-08             1.60%    passed    100.00%
+  53  hMpxV/Uganda/UVRI-MP812/2024|EPI_ISL_19602363|2024-11-01               1.60%    passed    100.00%
+  54  hMpxV/Uganda/UVRI-MP1172/2024|EPI_ISL_19693784|2024-11-21              1.60%    passed    100.00%
+  55  hMpxV/Uganda/UVRI-MP350A2/2024|EPI_ISL_19587232|2024-09-08             1.60%    passed    100.00%
+  56  hMpxV/Uganda/UVRI-MP1249/2024|EPI_ISL_19612231|2024-11-30              1.60%    passed     99.99%
+  57  hMpxV/Uganda/UVRI-MP636/2024|EPI_ISL_19587243|2024-10-21               1.60%    passed     99.99%
+  58  hMpxV/Uganda/UVRI-MP619/2024|EPI_ISL_19587240|2024-10-18               1.60%    passed     99.99%
+  59  hMpxV/Uganda/UVRI-MP789/2024|EPI_ISL_19602362|2024-10-30               1.60%    passed     99.99%
+  60  hMpxV/Uganda/UVRI-MP1247/2024|EPI_ISL_19693786|2024-12-03              1.61%    passed     99.99%
+  61  hMpxV/Uganda/UVRI-MP813/2024|EPI_ISL_19602364|2024-11-01               1.60%    passed    100.00%
+  62  hMpxV/Uganda/UVRI-MP1183/2024|EPI_ISL_19602382|2024-11-22              1.61%    passed     99.99%
+  63  hMpxV/Uganda/UVRI-MP757/2024|EPI_ISL_19587253|2024-10-18               1.60%    passed    100.00%
+  64  hMpxV/Uganda/UVRI-MP848/2024|EPI_ISL_19602371|2024-10-30               1.60%    passed    100.00%
+  65  hMpxV/Uganda/UVRI-MP678/2024|EPI_ISL_19587250|2024-10-19               1.60%    passed    100.00%
+  66  hMpxV/Uganda/UVRI-MP920/2024|EPI_ISL_19602378|2024-11-05               1.60%    passed    100.00%
+  67  hMpxV/Uganda/UVRI-MP667/2024|EPI_ISL_19587249|2024-10-21               1.60%    passed    100.00%
+  68  hMpxV/Uganda/UVRI-MP1597/2025|EPI_ISL_20047717|2025-01-23              1.61%    passed     99.99%
+  69  hMpxV/Uganda/UVRI-MP768/2024|EPI_ISL_19587261|2024-10-25               1.60%    passed     99.99%
+  70  hMpxV/Uganda/UVRI-MP822/2024|EPI_ISL_19602369|2024-11-01               1.60%    passed    100.00%
+  71  hMpxV/Uganda/UVRI-MP762/2024|EPI_ISL_19587255|2024-10-24               1.60%    passed    100.00%
+  72  hMpxV/Uganda/UVRI-MP2103/2025|EPI_ISL_20047711|2025-01-23              1.60%    passed     99.99%
+  73  hMpxV/Uganda/UVRI-MP632/2024|EPI_ISL_19587242|2024-10-17               1.60%    passed    100.00%
+  74  hMpxV/Uganda/UVRI-MP2094/2025|EPI_ISL_20047706|2025-02-03              1.60%    passed    100.00%
+  75  hMpxV/Uganda/UVRI-MP1155/2024|EPI_ISL_19693779|2024-11-20              1.61%    passed    100.00%
+  76  hMpxV/Uganda/UVRI-MP2062/2025|EPI_ISL_20047730|2025-02-18              1.60%    passed    100.00%
+  77  hMpxV/Uganda/UVRI-MP1286/2024|EPI_ISL_19612234|2024-12-01              1.61%    passed    100.00%
+  78  hMpxV/Uganda/UVRI-MP1285/2024|EPI_ISL_19612233|2024-12-01              1.60%    passed     99.99%
+  79  hMpxV/Uganda/UVRI-MP1137/2024|EPI_ISL_19693776|2024-11-15              1.61%    passed     99.99%
+  80  hMpxV/Uganda/UVRI-MP903/2024|EPI_ISL_19602376|2024-11-02               1.60%    passed     99.99%
+  81  hMpxV/Uganda/UVRI-MP1173/2024|EPI_ISL_19693785|2024-11-21              1.61%    passed    100.00%
+  82  hMpxV/Uganda/UVRI-MP1602/2025|EPI_ISL_20047712|2025-02-04              1.61%    passed     99.99%
+  83  hMpxV/Uganda/UVRI-MP1590/2025|EPI_ISL_20047714|2024-12-10              1.61%    passed    100.00%
+  84  hMpxV/Uganda/UVRI-MP901/2024|EPI_ISL_19602375|2024-11-06               1.60%    passed    100.00%
+  85  hMpxV/Uganda/UVRI-MP1544/2025|EPI_ISL_20047724|2025-02-06              1.61%    passed    100.00%
+  86  hMpxV/Uganda/UVRI-MP350B/2024|EPI_ISL_19587233|2024-09-08              1.60%    passed    100.00%
+  87  hMpxV/Uganda/UVRI-MP454/2024|EPI_ISL_19587236|2024-09-22               1.60%    passed    100.00%
+  88  hMpxV/Uganda/UVRI-MP819/2024|EPI_ISL_19602368|2024-11-01               1.60%    passed    100.00%
+  89  hMpxV/Uganda/UVRI-MP769/2024|EPI_ISL_19587262|2024-10-25               1.60%    passed    100.00%
+  90  hMpxV/Uganda/UVRI-MP350C/2024|EPI_ISL_19587234|2024-09-08              1.60%    passed    100.00%
+  91  hMpxV/Uganda/UVRI-MP350D/2024|EPI_ISL_19587235|2024-09-08              1.60%    passed    100.00%
+  92  hMpxV/Uganda/UVRI-MP742/2024|EPI_ISL_19587252|2024-10                  1.60%    passed    100.00%
+  93  hMpxV/Uganda/UVRI-MP663/2024|EPI_ISL_19587248|2024-10-21               1.60%    passed    100.00%
+  94  hMpxV/Uganda/UVRI-MP1222/2024|EPI_ISL_19612228|2024-11-27              1.60%    passed     99.99%
+  95  hMpxV/Uganda/UVRI-MP655/2024|EPI_ISL_19587246|2024-10-18               1.60%    passed     99.99%
+  96  hMpxV/Uganda/UVRI-MP863/2024|EPI_ISL_19602373|2024-11-01               1.60%    passed    100.00%
+  97  hMpxV/Uganda/UVRI-MP1596/2025|EPI_ISL_20047727|2025-02-10              1.61%    passed     99.99%
+  98  hMpxV/Uganda/UVRI-MP828/2024|EPI_ISL_19602370|2024-10-30               1.60%    passed    100.00%
+  99  hMpxV/Uganda/UVRI-MP1512/2025|EPI_ISL_20047718|2025-02-05              1.61%    passed    100.00%
+ 100  hMpxV/Uganda/UVRI-MP2102/2025|EPI_ISL_20047710|2025-02-03              1.60%    passed    100.00%
+ 101  hMpxV/Uganda/UVRI-MP764/2024|EPI_ISL_19587257|2024-10-21               1.61%    passed    100.00%
+ 102  hMpxV/Uganda/UVRI-MP558/2024|EPI_ISL_19587265|2024-10-07               1.60%    passed     99.99%
+ 103  hMpxV/Uganda/UVRI-MP2092/2025|EPI_ISL_20047705|2024-12-09              1.62%    passed    100.00%
+ 104  hMpxV/Uganda/UVRI-MP1581/2025|EPI_ISL_20047725|2025-02-06              1.60%    passed     99.99%
+ 105  hMpxV/Uganda/UVRI-MP644/2024|EPI_ISL_19587244|2024-10-21               1.60%    passed    100.00%
+ 106  hMpxV/Uganda/UVRI-MP652/2024|EPI_ISL_19587245|2024-10-21               1.60%    passed    100.00%
+ 107  hMpxV/Uganda/UVRI-MP763/2024|EPI_ISL_19587256|2024-10-21               1.60%    passed    100.00%
+ 108  hMpxV/Uganda/UVRI-MP770/2024|EPI_ISL_19587263|2024-10-27               1.60%    passed    100.00%
+ 109  hMpxV/Uganda/UVRI-MP688/2024|EPI_ISL_19587251|2024-10-19               1.60%    passed    100.00%
+ 110  hMpxV/Uganda/UVRI-MP880/2024|EPI_ISL_19602374|2024-11-04               1.60%    passed     99.99%
+ 111  hMpxV/Uganda/UVRI-MP919/2024|EPI_ISL_19602377|2024-11-06               1.60%    passed     99.99%
+ 112  hMpxV/Uganda/UVRI-MP1039/2024|EPI_ISL_19602380|2024-11-22              1.60%    passed    100.00%
+ 113  hMpxV/Uganda/UVRI-MP2089/2025|EPI_ISL_20047704|2025-02-17              1.60%    passed    100.00%
+ 114  hMpxV/Uganda/UVRI-MP1562/2025|EPI_ISL_20047722|2025-01-21              1.60%    passed    100.00%
+ 115  hMpxV/Uganda/UVRI-MP674/2024|EPI_ISL_19587254|2024-10-19               1.61%    passed     99.99%
+ 116  hMpxV/Uganda/UVRI-MP766/2024|EPI_ISL_19587259|2024-10-25               1.61%    passed    100.00%
+ 117  hMpxV/Uganda/UVRI-MP1483/2025|EPI_ISL_20047735|2025-02-04              1.64%    passed    100.00%
+ 118  hMpxV/Uganda/UVRI-MP1271/2024|EPI_ISL_19612232|2024-11-30              1.61%    passed    100.00%
+ 119  hMpxV/Uganda/UVRI-MP2080/2025|EPI_ISL_20047742|2025-02-17              1.62%    passed     99.99%
+ 120  hMpxV/Uganda/UVRI-MP1221/2024|EPI_ISL_19612227|2024-11-26              1.61%    passed    100.00%
+ 121  hMpxV/Uganda/UVRI-MP1287/2024|EPI_ISL_19693787|2024-12-04              1.63%    passed     99.99%
+ 122  hMpxV/Uganda/UVRI-MP2079/2025|EPI_ISL_20047741|2025-02-10              1.65%    passed     99.97%
+ 123  hMpxV/Uganda/UVRI-MP1605/2025|EPI_ISL_20047720|2024-12-10              1.61%    passed    100.00%
+ 124  hMpxV/Uganda/UVRI-MP1604/2025|EPI_ISL_20047716|2024-12-10              1.61%    passed    100.00%
+ 125  hMpxV/Uganda/UVRI-MP1236/2024|EPI_ISL_19612229|2024-11-29              1.62%    passed     99.99%
+ 126  hMpxV/Uganda/UVRI-MP538/2024|EPI_ISL_19587264|2024-10                  1.60%    passed    100.00%
+ 127  hMpxV/Uganda/UVRI-MP1474/2024|EPI_ISL_20047731|2024-12-10              1.61%    passed    100.00%
+ 128  hMpxV/Uganda/UVRI-MP814/2024|EPI_ISL_19602365|2024-11-01               1.60%    passed     99.99%
+ 129  hMpxV/Uganda/UVRI-MP1606/2025|EPI_ISL_20047715|2025-02-14              1.60%    passed     99.99%
+ 130  hMpxV/Uganda/UVRI-MP817/2024|EPI_ISL_19602366|2024-11-01               1.60%    passed    100.00%
+ 131  hMpxV/Uganda/UVRI-MP767/2024|EPI_ISL_19587260|2024-10-27               1.60%    passed    100.00%
+ 132  hMpxV/Uganda/UVRI-MP1595/2025|EPI_ISL_20047721|2025-02-03              1.61%    passed    100.00%
+ 133  hMpxV/Uganda/UVRI-MP1537/2025|EPI_ISL_20047723|2025-02-06              1.67%    passed     99.99%
+ 134  hMpxV/Uganda/UVRI-MP1171/2024|EPI_ISL_19693783|2024-11-21              1.61%    passed    100.00%
+ 135  hMpxV/Uganda/UVRI-MP1049/2024|EPI_ISL_19693771|2024-11-13              1.62%    passed     99.99%
+ 136  hMpxV/Uganda/UVRI-MP859/2024|EPI_ISL_19602372|2024-10-30               1.60%    passed    100.00%
+ 137  hMpxV/Uganda/UVRI-MP1582/2024|EPI_ISL_20047729|2024-12-09              1.62%    passed     99.99%
+ 138  hMpxV/Uganda/UVRI-MP2101/2025|EPI_ISL_20047708|2025-01-22              1.61%    passed    100.00%
+ 139  hMpxV/Uganda/UVRI-MP2096/2025|EPI_ISL_20047707|2025-02-14              1.61%    passed    100.00%
+ 140  hMpxV/Uganda/UVRI-MP1185/2024|EPI_ISL_19602383|2024-11-22              1.60%    passed    100.00%
+ 141  hMpxV/Uganda/UVRI-MP1473/2025|EPI_ISL_20047726|2025-02-11              1.64%    passed    100.00%
+ 142  hMpxV/Uganda/UVRI-MP1180/2024|EPI_ISL_19602381|2024-11-22              1.61%    passed     99.99%
+ 143  hMpxV/Uganda/UVRI-MP786/2024|EPI_ISL_19693769|2024-11-01               1.62%    passed     99.99%
+ 144  hMpxV/Uganda/UVRI-MP1212/2024|EPI_ISL_19612226|2024-11-27              1.61%    passed    100.00%
+ 145  hMpxV/Uganda/UVRI-MP1246/2024|EPI_ISL_19612230|2024-11-29              1.61%    passed    100.00%
+ 146  hMpxV/Uganda/UVRI-MP1574/2025|EPI_ISL_20047713|2024-12-09              1.60%    passed    100.00%
+ 147  hMpxV/Uganda/UVRI-MP787/2024|EPI_ISL_19693770|2024-11-01               1.62%    passed     99.99%
+ 148  hMpxV/Uganda/UVRI-MP1116/2024|EPI_ISL_19693772|2024-11-15              1.69%    passed     99.99%
+ 149  hMpxV/Uganda/UVRI-MP1142/2024|EPI_ISL_19693777|2024-11-18              1.61%    passed     99.99%
+ 150  hMpxV/Uganda/UVRI-MP1129/2024|EPI_ISL_19693774|2024-11-15              1.61%    passed     99.99%
+ 151  hMpxV/Uganda/UVRI-MP1130/2024|EPI_ISL_19693775|2024-11-15              1.66%    passed     99.99%
+ 152  hMpxV/Uganda/UVRI-MP2073/2025|EPI_ISL_20047738|2025-02-18              1.62%    passed    100.00%
+ 153  hMpxV/Uganda/UVRI-MP659/2024|EPI_ISL_19587247|2024-10-18               1.60%    passed    100.00%
+ 154  hMpxV/Uganda/UVRI-MP2061/2025|EPI_ISL_20047719|2025-02-18             11.29%    passed     17.66%
+ 155  hMpxV/Uganda/UVRI-MP1186/2024|EPI_ISL_19602384|2024-11-22              1.62%    passed    100.00%
+ 156  hMpxV/Uganda/UVRI-MP2082/2025|EPI_ISL_20047702|2025-02-18              1.64%    passed     99.98%
+ 157  hMpxV/Uganda/UVRI-060/2024|EPI_ISL_19612236|2024-12-04                 1.61%    passed    100.00%
+ 158  hMpxV/Uganda/UVRI-062/2024|EPI_ISL_19612237|2024-12-03                 1.61%    passed    100.00%
+ 159  hMpxV/Uganda/UVRI-MP2060/2025|EPI_ISL_20047709|2025-02-18              1.61%    passed     99.99%
+ 160  hMpxV/Uganda/UVRI-MP512/2024|EPI_ISL_19587237|2024-09-24               1.60%    passed    100.00%
+ 161  hMpxV/Uganda/UVRI-MP2072/2025|EPI_ISL_20047737|2025-02-18              1.60%    passed     99.99%
+ 162  hMpxV/Uganda/UVRI-MP1472/2025|EPI_ISL_20047736|2025-02-07              1.61%    passed    100.00%
+ 163  hMpxV/Uganda/UVRI-MP1575/2025|EPI_ISL_20047732|2025-01-05              1.62%    passed     99.99%
+ 164  hMpxV/Uganda/UVRI-MP1563/2025|EPI_ISL_20047734|2025-01-31              1.61%    passed     99.99%
+ 165  hMpxV/Uganda/UVRI-MP783/2024|EPI_ISL_19693768|2024-10-30               1.61%    passed     99.99%
+ 166  hMpxV/Uganda/UVRI-MP818/2024|EPI_ISL_19602367|2024-11-01               1.60%    passed     99.99%
+ 167  hMpxV/Uganda/UVRI-MP1167/2024|EPI_ISL_19693782|2024-11-20              1.63%    passed     99.98%
+ 168  hMpxV/Uganda/UVRI-MP1023/2024|EPI_ISL_19602379|2024-11-08              1.60%    passed     99.99%
+ 169  hMpxV/Uganda/UVRI-MP1153/2024|EPI_ISL_19693778|2024-11-20              1.62%    passed     99.99%
+ 170  hMpxV/Uganda/UVRI-MP1569/2025|EPI_ISL_20047733|2025-01-29              1.61%    passed     99.99%
+ 171  hMpxV/Uganda/UVRI-MP1600/2024|EPI_ISL_20047728|2024-12-09              2.01%    passed     99.97%
+ 172  hMpxV/Uganda/UVRI-MP2077/2025|EPI_ISL_20047740|2025-02-14              1.63%    passed    100.00%
+ 173  hMpxV/Uganda/UVRI-MP1159/2024|EPI_ISL_19693780|2024-11-20              1.67%    passed    100.00%
+ 174  hMpxV/Uganda/UVRI-MP587/2024|EPI_ISL_19587238|2024-10-14               1.61%    passed     99.99%
+ 175  hMpxV/Uganda/UVRI-MP588/2024|EPI_ISL_19587239|2024-10-14               1.63%    passed     99.98%
+ 176  hMpxV/Uganda/UVRI-MP2088/2025|EPI_ISL_20047703|2025-02-15              2.45%    passed     99.65%
+ 177  hMpxV/DRC/HGRK-78/2023|EPI_ISL_19439696|2023-12-06                     2.51%    passed     98.13%
+ 178  hMpxV/DRC/HGRK-36/2023|EPI_ISL_19381268|2023-12-12                     2.57%    passed     97.76%
+ 179  hMpxV/DRC/HGRK-04m/2024|EPI_ISL_19621388|2024-08-12                    1.70%    passed     99.98%
+ 180  hMpxV/DRC/HGRK-8MM/2024|EPI_ISL_19689376|2024-08-12                    1.70%    passed     99.98%
+ 181  hMpxV/DRC/HGRK-5MM/2024|EPI_ISL_19689373|2024-08-15                    1.71%    passed     99.99%
+ 182  hMpxV/DRC/HGRK-2N/2024|EPI_ISL_19689372|2024-08-22                     1.71%    passed     99.98%
+ 183  hMpxV/DRC/HGRK-7N/2024|EPI_ISL_19689375|2024-08-22                     1.69%    passed     99.99%
+ 184  hMpxV/DRC/HGRK-6K/2024|EPI_ISL_19689374|2024-08-30                     1.71%    passed     99.98%
+ 185  hMpxV/DRC/HGRK-20K/2024|EPI_ISL_19689707|2024-09-01                    1.71%    passed     99.99%
+ 186  hMpxV/DRC/HGRK-1M/2024|EPI_ISL_19689371|2024-09-02                     2.62%    passed     98.24%
+ 187  hMpxV/DRC/HGRK-11K/2024|EPI_ISL_19689378|2024-09-01                    1.81%    passed     99.87%
+ 188  hMpxV/DRC/HGRK-19K/2024|EPI_ISL_19689685|2024-09-01                    1.81%    passed     99.86%
+ 189  hMpxV/DRC/HGRK-13K/2024|EPI_ISL_19689380|2024-09-01                    1.86%    passed     99.84%
+ 190  hMpxV/DRC/HGRK-12K/2024|EPI_ISL_19689379|2024-09-01                    1.83%    passed     99.85%
+ 191  hMpxV/DRC/HGRK-15K/2024|EPI_ISL_19689381|2024-09-01                    1.75%    passed     99.78%
+ 192  hMpxV/DRC/HGRK-18K/2024|EPI_ISL_19689632|2024-09-01                    1.69%    passed     99.99%
+ 193  hMpxV/DRC/HGRK-16K/2024|EPI_ISL_19689399|2024-09-01                    1.68%    passed     99.93%
+ 194  hMpxV/DRC/HGRK-17K/2024|EPI_ISL_19689575|2024-09-01                    2.61%    passed     95.22%
+ 195  hMpxV/DRC/HGRK-9MM/2024|EPI_ISL_19689377|2024-08-15                    1.71%    passed     99.99%
+ 196  hMpxV/Burundi/INSP-1447/2024|EPI_ISL_19599243|2024-09-14               2.56%    passed     97.70%
+ 197  hMpxV/Burundi/INSP-1529/2024|EPI_ISL_19599257|2024-09-16               3.00%    passed     95.37%
+ 198  hMpxV/DRC/INRB-2832V/2024|EPI_ISL_19857759|2024-09-06                  1.83%    passed     99.59%
+ 199  hMpxV/DRC/INRB-2925V/2024|EPI_ISL_19858736|2024-09-09                  1.90%    passed     98.78%
+ 200  hMpxV/DRC/INRB-3101C/2024|EPI_ISL_19858194|2024-09-13                  1.96%    passed     98.23%
+ 201  hMpxV/DRC/INRB-2497V/2024|EPI_ISL_19858796|2024-08-30                  2.03%    passed     97.90%
+ 202  hMpxV/Congo/BZV-LNSP-CG000/2024|EPI_ISL_19810233|2024-08-08            5.04%    passed     89.19%
+ 203  hMpxV/Congo/BZV-LNSP-CG001/2024|EPI_ISL_19810234|2024-12-23            3.39%    passed     94.69%
+ 204  hMpxV/Congo/BZV-LNSP-CG018/2025|EPI_ISL_19810235|2025-01-09            2.96%    passed     98.99%
+ 205  hMpxV/Congo/BZV-LNSP-CG022/2025|EPI_ISL_19810238|2025-02-19            2.99%    passed     98.83%
+ 206  hMpxV/Congo/BZV-LNSP-CG020/2025|EPI_ISL_19810236|2025-02-13            3.34%    passed     95.48%
+ 207  hMpxV/Congo/BZV-LNSP-CG021/2025|EPI_ISL_19810237|2025-02-17            2.98%    passed     98.71%
+ 208  hMpxV/Congo/BZV-LNSP-CG032/2025|EPI_ISL_19810240|2025-03-05            3.92%    passed     97.99%
+ 209  hMpxV/DRC/CRSN-5/2024|EPI_ISL_19079343|2024-01-06                      2.12%    passed     35.40%
+ 210  hMpxV/Germany/un-RKI-1214/2024|EPI_ISL_19785230|2024-12                5.12%    passed     79.90%
+ 211  hMpxV/DRC/CRSN-1/2023|EPI_ISL_19004044|2023-11-02                      1.77%    passed     99.88%
+ 212  hMpxV/DRC/CRSN-2/2023|EPI_ISL_19004045|2023-11-15                      1.76%    passed     99.88%
+ 213  hMpxV/DRC/CRSN-3/2023|EPI_ISL_19004046|2023-12-23                      1.78%    passed     99.87%
+****  TOTAL                                                                  1.90%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: minimal branch length is reduced to 0.000000502879 for long alignment
+NOTE: hMpxV/DRC/HGRK-8MM/2024|EPI_ISL_19689376|2024-08-12 is identical to hMpxV/DRC/HGRK-04m/2024|EPI_ISL_19621388|2024-08-12 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.000977993 secs using 141.4% CPU
+
+CHECKPOINT: Initial tree restored
+Generating 1000 samples for ultrafast bootstrap (seed: 600349)...
+CHECKPOINT: 1000 UFBoot trees and 14 UFBootSplits restored
+
+NOTE: 26 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 10 CPU cores
+Increase to 10 rounds for branch lengths
+
+******************************************************
+CHECKPOINT: Resuming analysis from ../Data/IQTree_out/run_matching.ckp.gz
+
+IQ-TREE version 3.0.1 for MacOS ARM 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    AtPoyers-MacBook-Air-2.local (SSE4.2, 16 GB RAM)
+Command: iqtree -s ../Data/InputFiles/ALIGNEDSEQ213.fasta -pre ../Data/IQTree_out/run_matching -m GTR -bb 1000 -alrt 1000 -nt AUTO
+Seed:    351964 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Dec 22 14:34:21 2025
+Kernel:  SSE2 - auto-detect threads (10 CPU cores detected)
+
+Reading alignment file ../Data/InputFiles/ALIGNEDSEQ213.fasta ... Fasta format detected
+Reading fasta file: done in 0.323498 secs using 84.28% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.135365 secs using 84.93% CPU
+WARNING: 1802 sites contain only gaps or ambiguous characters.
+Alignment has 213 sequences with 198855 columns, 2431 distinct patterns
+210 parsimony-informative, 442 singleton sites, 198203 constant sites
+                                                                     Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000347853 secs using 336.6% CPU
+   1  hMpxV/DRC/HGRK-1L/2024|EPI_ISL_18886301|2024-01-15                     1.58%    passed     99.38%
+   2  hMpxV/Germany/un-RKI-1213/2024|EPI_ISL_19785226|2024-12                5.25%    passed     82.60%
+   3  hMpxV/Germany/NW-RKI-1142/2024|EPI_ISL_19502532|2024-10-12             5.01%    passed     81.85%
+   4  hMpxV/Germany/un-RKI-1216/2025|EPI_ISL_19785218|2025-01                5.21%    passed     43.71%
+   5  hMpxV/Germany/un-RKI-1351/2025|EPI_ISL_19887806|2025-04                5.04%    passed     73.49%
+   6  hMpxV/Germany/un-RKI-1349/2025|EPI_ISL_19887833|2025-04                5.20%    passed     72.59%
+   7  hMpxV/DRC/CRSN-4/2023|EPI_ISL_19079342|2023-12-23                      2.04%    passed     45.16%
+   8  hMpxV/DRC/CRSN-6/2024|EPI_ISL_19079344|2024-01-14                      2.08%    passed     35.78%
+   9  hMpxV/DRC/INRB-0239V/2024|EPI_ISL_19093791|2024-01-10                  1.64%    passed     99.98%
+  10  hMpxV/DRC/INRB-0224C/2023|EPI_ISL_19093830|2023-12-25                  1.64%    passed     99.97%
+  11  hMpxV/DRC/INRB-0231V/2023|EPI_ISL_19093810|2023-12-21                  1.64%    passed     99.99%
+  12  hMpxV/DRC/INRB-0240V/2024|EPI_ISL_19093812|2024-01-14                  1.66%    passed     99.99%
+  13  hMpxV/DRC/INRB-0230C/2023|EPI_ISL_19093827|2023-12-31                  1.66%    passed     99.99%
+  14  hMpxV/Thailand/KCMH-ID24110/2024|EPI_ISL_19366744|2024-08-16           1.67%    passed     99.99%
+  15  hMpxV/DRC/INRB-0223C/2023|EPI_ISL_19093831|2023-12-26                  1.64%    passed     99.98%
+  16  hMpxV/DRC/INRB-0209V/2024|EPI_ISL_19093803|2024-01-19                  1.67%    passed     99.98%
+  17  hMpxV/DRC/INRB-0220V/2024|EPI_ISL_19093817|2024-01-26                  1.65%    passed     99.99%
+  18  hMpxV/DRC/INRB-0226V/2023|EPI_ISL_19093809|2023-12-26                  1.75%    passed     99.56%
+  19  hMpxV/DRC/INRB-0201V/2024|EPI_ISL_19093808|2024-01-23                  2.61%    passed     99.98%
+  20  hMpxV/DRC/INRB-0198V/2024|EPI_ISL_19093796|2024-01-23                  1.90%    passed     96.81%
+  21  hMpxV/DRC/INRB-010/2023|EPI_ISL_19093833|2023-10-13                    1.93%    passed     98.94%
+  22  hMpxV/Kenya/nvrl220/2024|EPI_ISL_19302262|2024-07-25                   1.78%    passed     99.21%
+  23  hMpxV/Kenya/KEMRI-00107/2024|EPI_ISL_19345034|2024-07-25               1.78%    passed     99.17%
+  24  hMpxV/Thailand/BIDI-001/2025|EPI_ISL_19673536|2025-01-06               1.61%    passed     99.93%
+  25  hMpxV/United_Kingdom/UKHSA-0072/2024|EPI_ISL_19557976|2024-10-27       2.11%    passed     99.33%
+  26  hMpxV/Thailand/BIDI-002/2025|EPI_ISL_19694853|2025-01-17               1.62%    passed    100.00%
+  27  hMpxV/Thailand/BIDI-003/2025|EPI_ISL_19694854|2025-01-22               1.62%    passed    100.00%
+  28  hMpxV/Canada/MB-NML-6349/2024|EPI_ISL_19791290|2024-11-21              1.88%    passed     99.89%
+  29  hMpxV/Canada/MB-NML-6348/2024|EPI_ISL_19791292|2024-11-21              1.88%    passed     99.90%
+  30  hMpxV/Canada/MB-NML-6350/2024|EPI_ISL_19791291|2024-11-21              1.90%    passed     99.90%
+  31  hMpxV/Brazil/SP-LEIAL-4448/2025|EPI_ISL_19762724|2025-02-24            1.59%    passed     99.99%
+  32  hMpxV/Uganda/UVRI-MP125/2024|EPI_ISL_19867562|2024-08-18               1.74%    passed     99.90%
+  33  hMpxV/Thailand/BIDI-004/2025|EPI_ISL_19818649|2025-03-29               1.61%    passed     99.99%
+  34  hMpxV/USA/NY-CDC-0100/2025|EPI_ISL_19818650|2025-02                    1.74%    passed     99.94%
+  35  hMpxV/China/ZJ-ZCDC-001/2024|EPI_ISL_19870071|2024-12-30               1.78%    passed     99.72%
+  36  hMpxV/Sweden/PHAS-11304/2024|EPI_ISL_19348512|2024-08-13               1.68%    passed     99.98%
+  37  hMpxV/Thailand/NIC-31/2024|EPI_ISL_19350788|2024-08-16                 1.67%    passed     99.99%
+  38  hMpxV/India/KL-ICMR-176_1054/2024|EPI_ISL_19484958|2024-09-21          1.98%    passed     98.95%
+  39  hMpxV/Uganda/CPHL-002/2024|EPI_ISL_19456777|2024-09-08                 1.73%    passed     99.99%
+  40  hMpxV/USA/CA-CDC-0100/2024|EPI_ISL_19586581|2024-11                    1.81%    passed     99.87%
+  41  hMpxV/USA/NH-CDC-0100/2025|EPI_ISL_19785231|2025-02                    1.76%    passed     99.96%
+  42  hMpxV/USA/GA-CDC-0100/2025|EPI_ISL_19686354|2025-01                    1.70%    passed     99.95%
+  43  hMpxV/Uganda/UVRI-MP173/2024|EPI_ISL_19867563|2024-08-25               1.80%    passed     99.80%
+  44  hMpxV/USA/MA-CDC-0100/2025|EPI_ISL_20056547|2025-06                    1.76%    passed     99.97%
+  45  hMpxV/Italy/un-INMI-0001/2025|EPI_ISL_20055054|2025-05                 1.89%    passed     99.08%
+  46  hMpxV/Pakistan/NIH-KMU-006/2024|EPI_ISL_19713336|2024-12-02            1.59%    passed     99.98%
+  47  hMpxV/India/UP-MCL-H-196-2884-1197/2025|EPI_ISL_19902083|2025-05-03    1.54%    passed     99.97%
+  48  hMpxV/Uganda/UVRI-012/2024|EPI_ISL_19305614|2024-07-12                 1.55%    passed     99.98%
+  49  hMpxV/Uganda/UVRI-MP349/2024|EPI_ISL_19587230|2024-09-08               1.60%    passed     99.99%
+  50  hMpxV/Uganda/UVRI-059/2024|EPI_ISL_19612235|2024-12-04                 1.62%    passed     99.99%
+  51  hMpxV/Uganda/UVRI-MP765/2024|EPI_ISL_19587258|2024-10-24               1.61%    passed    100.00%
+  52  hMpxV/Uganda/UVRI-MP350A1/2024|EPI_ISL_19587231|2024-09-08             1.60%    passed    100.00%
+  53  hMpxV/Uganda/UVRI-MP812/2024|EPI_ISL_19602363|2024-11-01               1.60%    passed    100.00%
+  54  hMpxV/Uganda/UVRI-MP1172/2024|EPI_ISL_19693784|2024-11-21              1.60%    passed    100.00%
+  55  hMpxV/Uganda/UVRI-MP350A2/2024|EPI_ISL_19587232|2024-09-08             1.60%    passed    100.00%
+  56  hMpxV/Uganda/UVRI-MP1249/2024|EPI_ISL_19612231|2024-11-30              1.60%    passed     99.99%
+  57  hMpxV/Uganda/UVRI-MP636/2024|EPI_ISL_19587243|2024-10-21               1.60%    passed     99.99%
+  58  hMpxV/Uganda/UVRI-MP619/2024|EPI_ISL_19587240|2024-10-18               1.60%    passed     99.99%
+  59  hMpxV/Uganda/UVRI-MP789/2024|EPI_ISL_19602362|2024-10-30               1.60%    passed     99.99%
+  60  hMpxV/Uganda/UVRI-MP1247/2024|EPI_ISL_19693786|2024-12-03              1.61%    passed     99.99%
+  61  hMpxV/Uganda/UVRI-MP813/2024|EPI_ISL_19602364|2024-11-01               1.60%    passed    100.00%
+  62  hMpxV/Uganda/UVRI-MP1183/2024|EPI_ISL_19602382|2024-11-22              1.61%    passed     99.99%
+  63  hMpxV/Uganda/UVRI-MP757/2024|EPI_ISL_19587253|2024-10-18               1.60%    passed    100.00%
+  64  hMpxV/Uganda/UVRI-MP848/2024|EPI_ISL_19602371|2024-10-30               1.60%    passed    100.00%
+  65  hMpxV/Uganda/UVRI-MP678/2024|EPI_ISL_19587250|2024-10-19               1.60%    passed    100.00%
+  66  hMpxV/Uganda/UVRI-MP920/2024|EPI_ISL_19602378|2024-11-05               1.60%    passed    100.00%
+  67  hMpxV/Uganda/UVRI-MP667/2024|EPI_ISL_19587249|2024-10-21               1.60%    passed    100.00%
+  68  hMpxV/Uganda/UVRI-MP1597/2025|EPI_ISL_20047717|2025-01-23              1.61%    passed     99.99%
+  69  hMpxV/Uganda/UVRI-MP768/2024|EPI_ISL_19587261|2024-10-25               1.60%    passed     99.99%
+  70  hMpxV/Uganda/UVRI-MP822/2024|EPI_ISL_19602369|2024-11-01               1.60%    passed    100.00%
+  71  hMpxV/Uganda/UVRI-MP762/2024|EPI_ISL_19587255|2024-10-24               1.60%    passed    100.00%
+  72  hMpxV/Uganda/UVRI-MP2103/2025|EPI_ISL_20047711|2025-01-23              1.60%    passed     99.99%
+  73  hMpxV/Uganda/UVRI-MP632/2024|EPI_ISL_19587242|2024-10-17               1.60%    passed    100.00%
+  74  hMpxV/Uganda/UVRI-MP2094/2025|EPI_ISL_20047706|2025-02-03              1.60%    passed    100.00%
+  75  hMpxV/Uganda/UVRI-MP1155/2024|EPI_ISL_19693779|2024-11-20              1.61%    passed    100.00%
+  76  hMpxV/Uganda/UVRI-MP2062/2025|EPI_ISL_20047730|2025-02-18              1.60%    passed    100.00%
+  77  hMpxV/Uganda/UVRI-MP1286/2024|EPI_ISL_19612234|2024-12-01              1.61%    passed    100.00%
+  78  hMpxV/Uganda/UVRI-MP1285/2024|EPI_ISL_19612233|2024-12-01              1.60%    passed     99.99%
+  79  hMpxV/Uganda/UVRI-MP1137/2024|EPI_ISL_19693776|2024-11-15              1.61%    passed     99.99%
+  80  hMpxV/Uganda/UVRI-MP903/2024|EPI_ISL_19602376|2024-11-02               1.60%    passed     99.99%
+  81  hMpxV/Uganda/UVRI-MP1173/2024|EPI_ISL_19693785|2024-11-21              1.61%    passed    100.00%
+  82  hMpxV/Uganda/UVRI-MP1602/2025|EPI_ISL_20047712|2025-02-04              1.61%    passed     99.99%
+  83  hMpxV/Uganda/UVRI-MP1590/2025|EPI_ISL_20047714|2024-12-10              1.61%    passed    100.00%
+  84  hMpxV/Uganda/UVRI-MP901/2024|EPI_ISL_19602375|2024-11-06               1.60%    passed    100.00%
+  85  hMpxV/Uganda/UVRI-MP1544/2025|EPI_ISL_20047724|2025-02-06              1.61%    passed    100.00%
+  86  hMpxV/Uganda/UVRI-MP350B/2024|EPI_ISL_19587233|2024-09-08              1.60%    passed    100.00%
+  87  hMpxV/Uganda/UVRI-MP454/2024|EPI_ISL_19587236|2024-09-22               1.60%    passed    100.00%
+  88  hMpxV/Uganda/UVRI-MP819/2024|EPI_ISL_19602368|2024-11-01               1.60%    passed    100.00%
+  89  hMpxV/Uganda/UVRI-MP769/2024|EPI_ISL_19587262|2024-10-25               1.60%    passed    100.00%
+  90  hMpxV/Uganda/UVRI-MP350C/2024|EPI_ISL_19587234|2024-09-08              1.60%    passed    100.00%
+  91  hMpxV/Uganda/UVRI-MP350D/2024|EPI_ISL_19587235|2024-09-08              1.60%    passed    100.00%
+  92  hMpxV/Uganda/UVRI-MP742/2024|EPI_ISL_19587252|2024-10                  1.60%    passed    100.00%
+  93  hMpxV/Uganda/UVRI-MP663/2024|EPI_ISL_19587248|2024-10-21               1.60%    passed    100.00%
+  94  hMpxV/Uganda/UVRI-MP1222/2024|EPI_ISL_19612228|2024-11-27              1.60%    passed     99.99%
+  95  hMpxV/Uganda/UVRI-MP655/2024|EPI_ISL_19587246|2024-10-18               1.60%    passed     99.99%
+  96  hMpxV/Uganda/UVRI-MP863/2024|EPI_ISL_19602373|2024-11-01               1.60%    passed    100.00%
+  97  hMpxV/Uganda/UVRI-MP1596/2025|EPI_ISL_20047727|2025-02-10              1.61%    passed     99.99%
+  98  hMpxV/Uganda/UVRI-MP828/2024|EPI_ISL_19602370|2024-10-30               1.60%    passed    100.00%
+  99  hMpxV/Uganda/UVRI-MP1512/2025|EPI_ISL_20047718|2025-02-05              1.61%    passed    100.00%
+ 100  hMpxV/Uganda/UVRI-MP2102/2025|EPI_ISL_20047710|2025-02-03              1.60%    passed    100.00%
+ 101  hMpxV/Uganda/UVRI-MP764/2024|EPI_ISL_19587257|2024-10-21               1.61%    passed    100.00%
+ 102  hMpxV/Uganda/UVRI-MP558/2024|EPI_ISL_19587265|2024-10-07               1.60%    passed     99.99%
+ 103  hMpxV/Uganda/UVRI-MP2092/2025|EPI_ISL_20047705|2024-12-09              1.62%    passed    100.00%
+ 104  hMpxV/Uganda/UVRI-MP1581/2025|EPI_ISL_20047725|2025-02-06              1.60%    passed     99.99%
+ 105  hMpxV/Uganda/UVRI-MP644/2024|EPI_ISL_19587244|2024-10-21               1.60%    passed    100.00%
+ 106  hMpxV/Uganda/UVRI-MP652/2024|EPI_ISL_19587245|2024-10-21               1.60%    passed    100.00%
+ 107  hMpxV/Uganda/UVRI-MP763/2024|EPI_ISL_19587256|2024-10-21               1.60%    passed    100.00%
+ 108  hMpxV/Uganda/UVRI-MP770/2024|EPI_ISL_19587263|2024-10-27               1.60%    passed    100.00%
+ 109  hMpxV/Uganda/UVRI-MP688/2024|EPI_ISL_19587251|2024-10-19               1.60%    passed    100.00%
+ 110  hMpxV/Uganda/UVRI-MP880/2024|EPI_ISL_19602374|2024-11-04               1.60%    passed     99.99%
+ 111  hMpxV/Uganda/UVRI-MP919/2024|EPI_ISL_19602377|2024-11-06               1.60%    passed     99.99%
+ 112  hMpxV/Uganda/UVRI-MP1039/2024|EPI_ISL_19602380|2024-11-22              1.60%    passed    100.00%
+ 113  hMpxV/Uganda/UVRI-MP2089/2025|EPI_ISL_20047704|2025-02-17              1.60%    passed    100.00%
+ 114  hMpxV/Uganda/UVRI-MP1562/2025|EPI_ISL_20047722|2025-01-21              1.60%    passed    100.00%
+ 115  hMpxV/Uganda/UVRI-MP674/2024|EPI_ISL_19587254|2024-10-19               1.61%    passed     99.99%
+ 116  hMpxV/Uganda/UVRI-MP766/2024|EPI_ISL_19587259|2024-10-25               1.61%    passed    100.00%
+ 117  hMpxV/Uganda/UVRI-MP1483/2025|EPI_ISL_20047735|2025-02-04              1.64%    passed    100.00%
+ 118  hMpxV/Uganda/UVRI-MP1271/2024|EPI_ISL_19612232|2024-11-30              1.61%    passed    100.00%
+ 119  hMpxV/Uganda/UVRI-MP2080/2025|EPI_ISL_20047742|2025-02-17              1.62%    passed     99.99%
+ 120  hMpxV/Uganda/UVRI-MP1221/2024|EPI_ISL_19612227|2024-11-26              1.61%    passed    100.00%
+ 121  hMpxV/Uganda/UVRI-MP1287/2024|EPI_ISL_19693787|2024-12-04              1.63%    passed     99.99%
+ 122  hMpxV/Uganda/UVRI-MP2079/2025|EPI_ISL_20047741|2025-02-10              1.65%    passed     99.97%
+ 123  hMpxV/Uganda/UVRI-MP1605/2025|EPI_ISL_20047720|2024-12-10              1.61%    passed    100.00%
+ 124  hMpxV/Uganda/UVRI-MP1604/2025|EPI_ISL_20047716|2024-12-10              1.61%    passed    100.00%
+ 125  hMpxV/Uganda/UVRI-MP1236/2024|EPI_ISL_19612229|2024-11-29              1.62%    passed     99.99%
+ 126  hMpxV/Uganda/UVRI-MP538/2024|EPI_ISL_19587264|2024-10                  1.60%    passed    100.00%
+ 127  hMpxV/Uganda/UVRI-MP1474/2024|EPI_ISL_20047731|2024-12-10              1.61%    passed    100.00%
+ 128  hMpxV/Uganda/UVRI-MP814/2024|EPI_ISL_19602365|2024-11-01               1.60%    passed     99.99%
+ 129  hMpxV/Uganda/UVRI-MP1606/2025|EPI_ISL_20047715|2025-02-14              1.60%    passed     99.99%
+ 130  hMpxV/Uganda/UVRI-MP817/2024|EPI_ISL_19602366|2024-11-01               1.60%    passed    100.00%
+ 131  hMpxV/Uganda/UVRI-MP767/2024|EPI_ISL_19587260|2024-10-27               1.60%    passed    100.00%
+ 132  hMpxV/Uganda/UVRI-MP1595/2025|EPI_ISL_20047721|2025-02-03              1.61%    passed    100.00%
+ 133  hMpxV/Uganda/UVRI-MP1537/2025|EPI_ISL_20047723|2025-02-06              1.67%    passed     99.99%
+ 134  hMpxV/Uganda/UVRI-MP1171/2024|EPI_ISL_19693783|2024-11-21              1.61%    passed    100.00%
+ 135  hMpxV/Uganda/UVRI-MP1049/2024|EPI_ISL_19693771|2024-11-13              1.62%    passed     99.99%
+ 136  hMpxV/Uganda/UVRI-MP859/2024|EPI_ISL_19602372|2024-10-30               1.60%    passed    100.00%
+ 137  hMpxV/Uganda/UVRI-MP1582/2024|EPI_ISL_20047729|2024-12-09              1.62%    passed     99.99%
+ 138  hMpxV/Uganda/UVRI-MP2101/2025|EPI_ISL_20047708|2025-01-22              1.61%    passed    100.00%
+ 139  hMpxV/Uganda/UVRI-MP2096/2025|EPI_ISL_20047707|2025-02-14              1.61%    passed    100.00%
+ 140  hMpxV/Uganda/UVRI-MP1185/2024|EPI_ISL_19602383|2024-11-22              1.60%    passed    100.00%
+ 141  hMpxV/Uganda/UVRI-MP1473/2025|EPI_ISL_20047726|2025-02-11              1.64%    passed    100.00%
+ 142  hMpxV/Uganda/UVRI-MP1180/2024|EPI_ISL_19602381|2024-11-22              1.61%    passed     99.99%
+ 143  hMpxV/Uganda/UVRI-MP786/2024|EPI_ISL_19693769|2024-11-01               1.62%    passed     99.99%
+ 144  hMpxV/Uganda/UVRI-MP1212/2024|EPI_ISL_19612226|2024-11-27              1.61%    passed    100.00%
+ 145  hMpxV/Uganda/UVRI-MP1246/2024|EPI_ISL_19612230|2024-11-29              1.61%    passed    100.00%
+ 146  hMpxV/Uganda/UVRI-MP1574/2025|EPI_ISL_20047713|2024-12-09              1.60%    passed    100.00%
+ 147  hMpxV/Uganda/UVRI-MP787/2024|EPI_ISL_19693770|2024-11-01               1.62%    passed     99.99%
+ 148  hMpxV/Uganda/UVRI-MP1116/2024|EPI_ISL_19693772|2024-11-15              1.69%    passed     99.99%
+ 149  hMpxV/Uganda/UVRI-MP1142/2024|EPI_ISL_19693777|2024-11-18              1.61%    passed     99.99%
+ 150  hMpxV/Uganda/UVRI-MP1129/2024|EPI_ISL_19693774|2024-11-15              1.61%    passed     99.99%
+ 151  hMpxV/Uganda/UVRI-MP1130/2024|EPI_ISL_19693775|2024-11-15              1.66%    passed     99.99%
+ 152  hMpxV/Uganda/UVRI-MP2073/2025|EPI_ISL_20047738|2025-02-18              1.62%    passed    100.00%
+ 153  hMpxV/Uganda/UVRI-MP659/2024|EPI_ISL_19587247|2024-10-18               1.60%    passed    100.00%
+ 154  hMpxV/Uganda/UVRI-MP2061/2025|EPI_ISL_20047719|2025-02-18             11.29%    passed     17.66%
+ 155  hMpxV/Uganda/UVRI-MP1186/2024|EPI_ISL_19602384|2024-11-22              1.62%    passed    100.00%
+ 156  hMpxV/Uganda/UVRI-MP2082/2025|EPI_ISL_20047702|2025-02-18              1.64%    passed     99.98%
+ 157  hMpxV/Uganda/UVRI-060/2024|EPI_ISL_19612236|2024-12-04                 1.61%    passed    100.00%
+ 158  hMpxV/Uganda/UVRI-062/2024|EPI_ISL_19612237|2024-12-03                 1.61%    passed    100.00%
+ 159  hMpxV/Uganda/UVRI-MP2060/2025|EPI_ISL_20047709|2025-02-18              1.61%    passed     99.99%
+ 160  hMpxV/Uganda/UVRI-MP512/2024|EPI_ISL_19587237|2024-09-24               1.60%    passed    100.00%
+ 161  hMpxV/Uganda/UVRI-MP2072/2025|EPI_ISL_20047737|2025-02-18              1.60%    passed     99.99%
+ 162  hMpxV/Uganda/UVRI-MP1472/2025|EPI_ISL_20047736|2025-02-07              1.61%    passed    100.00%
+ 163  hMpxV/Uganda/UVRI-MP1575/2025|EPI_ISL_20047732|2025-01-05              1.62%    passed     99.99%
+ 164  hMpxV/Uganda/UVRI-MP1563/2025|EPI_ISL_20047734|2025-01-31              1.61%    passed     99.99%
+ 165  hMpxV/Uganda/UVRI-MP783/2024|EPI_ISL_19693768|2024-10-30               1.61%    passed     99.99%
+ 166  hMpxV/Uganda/UVRI-MP818/2024|EPI_ISL_19602367|2024-11-01               1.60%    passed     99.99%
+ 167  hMpxV/Uganda/UVRI-MP1167/2024|EPI_ISL_19693782|2024-11-20              1.63%    passed     99.98%
+ 168  hMpxV/Uganda/UVRI-MP1023/2024|EPI_ISL_19602379|2024-11-08              1.60%    passed     99.99%
+ 169  hMpxV/Uganda/UVRI-MP1153/2024|EPI_ISL_19693778|2024-11-20              1.62%    passed     99.99%
+ 170  hMpxV/Uganda/UVRI-MP1569/2025|EPI_ISL_20047733|2025-01-29              1.61%    passed     99.99%
+ 171  hMpxV/Uganda/UVRI-MP1600/2024|EPI_ISL_20047728|2024-12-09              2.01%    passed     99.97%
+ 172  hMpxV/Uganda/UVRI-MP2077/2025|EPI_ISL_20047740|2025-02-14              1.63%    passed    100.00%
+ 173  hMpxV/Uganda/UVRI-MP1159/2024|EPI_ISL_19693780|2024-11-20              1.67%    passed    100.00%
+ 174  hMpxV/Uganda/UVRI-MP587/2024|EPI_ISL_19587238|2024-10-14               1.61%    passed     99.99%
+ 175  hMpxV/Uganda/UVRI-MP588/2024|EPI_ISL_19587239|2024-10-14               1.63%    passed     99.98%
+ 176  hMpxV/Uganda/UVRI-MP2088/2025|EPI_ISL_20047703|2025-02-15              2.45%    passed     99.65%
+ 177  hMpxV/DRC/HGRK-78/2023|EPI_ISL_19439696|2023-12-06                     2.51%    passed     98.13%
+ 178  hMpxV/DRC/HGRK-36/2023|EPI_ISL_19381268|2023-12-12                     2.57%    passed     97.76%
+ 179  hMpxV/DRC/HGRK-04m/2024|EPI_ISL_19621388|2024-08-12                    1.70%    passed     99.98%
+ 180  hMpxV/DRC/HGRK-8MM/2024|EPI_ISL_19689376|2024-08-12                    1.70%    passed     99.98%
+ 181  hMpxV/DRC/HGRK-5MM/2024|EPI_ISL_19689373|2024-08-15                    1.71%    passed     99.99%
+ 182  hMpxV/DRC/HGRK-2N/2024|EPI_ISL_19689372|2024-08-22                     1.71%    passed     99.98%
+ 183  hMpxV/DRC/HGRK-7N/2024|EPI_ISL_19689375|2024-08-22                     1.69%    passed     99.99%
+ 184  hMpxV/DRC/HGRK-6K/2024|EPI_ISL_19689374|2024-08-30                     1.71%    passed     99.98%
+ 185  hMpxV/DRC/HGRK-20K/2024|EPI_ISL_19689707|2024-09-01                    1.71%    passed     99.99%
+ 186  hMpxV/DRC/HGRK-1M/2024|EPI_ISL_19689371|2024-09-02                     2.62%    passed     98.24%
+ 187  hMpxV/DRC/HGRK-11K/2024|EPI_ISL_19689378|2024-09-01                    1.81%    passed     99.87%
+ 188  hMpxV/DRC/HGRK-19K/2024|EPI_ISL_19689685|2024-09-01                    1.81%    passed     99.86%
+ 189  hMpxV/DRC/HGRK-13K/2024|EPI_ISL_19689380|2024-09-01                    1.86%    passed     99.84%
+ 190  hMpxV/DRC/HGRK-12K/2024|EPI_ISL_19689379|2024-09-01                    1.83%    passed     99.85%
+ 191  hMpxV/DRC/HGRK-15K/2024|EPI_ISL_19689381|2024-09-01                    1.75%    passed     99.78%
+ 192  hMpxV/DRC/HGRK-18K/2024|EPI_ISL_19689632|2024-09-01                    1.69%    passed     99.99%
+ 193  hMpxV/DRC/HGRK-16K/2024|EPI_ISL_19689399|2024-09-01                    1.68%    passed     99.93%
+ 194  hMpxV/DRC/HGRK-17K/2024|EPI_ISL_19689575|2024-09-01                    2.61%    passed     95.22%
+ 195  hMpxV/DRC/HGRK-9MM/2024|EPI_ISL_19689377|2024-08-15                    1.71%    passed     99.99%
+ 196  hMpxV/Burundi/INSP-1447/2024|EPI_ISL_19599243|2024-09-14               2.56%    passed     97.70%
+ 197  hMpxV/Burundi/INSP-1529/2024|EPI_ISL_19599257|2024-09-16               3.00%    passed     95.37%
+ 198  hMpxV/DRC/INRB-2832V/2024|EPI_ISL_19857759|2024-09-06                  1.83%    passed     99.59%
+ 199  hMpxV/DRC/INRB-2925V/2024|EPI_ISL_19858736|2024-09-09                  1.90%    passed     98.78%
+ 200  hMpxV/DRC/INRB-3101C/2024|EPI_ISL_19858194|2024-09-13                  1.96%    passed     98.23%
+ 201  hMpxV/DRC/INRB-2497V/2024|EPI_ISL_19858796|2024-08-30                  2.03%    passed     97.90%
+ 202  hMpxV/Congo/BZV-LNSP-CG000/2024|EPI_ISL_19810233|2024-08-08            5.04%    passed     89.19%
+ 203  hMpxV/Congo/BZV-LNSP-CG001/2024|EPI_ISL_19810234|2024-12-23            3.39%    passed     94.69%
+ 204  hMpxV/Congo/BZV-LNSP-CG018/2025|EPI_ISL_19810235|2025-01-09            2.96%    passed     98.99%
+ 205  hMpxV/Congo/BZV-LNSP-CG022/2025|EPI_ISL_19810238|2025-02-19            2.99%    passed     98.83%
+ 206  hMpxV/Congo/BZV-LNSP-CG020/2025|EPI_ISL_19810236|2025-02-13            3.34%    passed     95.48%
+ 207  hMpxV/Congo/BZV-LNSP-CG021/2025|EPI_ISL_19810237|2025-02-17            2.98%    passed     98.71%
+ 208  hMpxV/Congo/BZV-LNSP-CG032/2025|EPI_ISL_19810240|2025-03-05            3.92%    passed     97.99%
+ 209  hMpxV/DRC/CRSN-5/2024|EPI_ISL_19079343|2024-01-06                      2.12%    passed     35.40%
+ 210  hMpxV/Germany/un-RKI-1214/2024|EPI_ISL_19785230|2024-12                5.12%    passed     79.90%
+ 211  hMpxV/DRC/CRSN-1/2023|EPI_ISL_19004044|2023-11-02                      1.77%    passed     99.88%
+ 212  hMpxV/DRC/CRSN-2/2023|EPI_ISL_19004045|2023-11-15                      1.76%    passed     99.88%
+ 213  hMpxV/DRC/CRSN-3/2023|EPI_ISL_19004046|2023-12-23                      1.78%    passed     99.87%
+****  TOTAL                                                                  1.90%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: minimal branch length is reduced to 0.000000502879 for long alignment
+NOTE: hMpxV/DRC/HGRK-8MM/2024|EPI_ISL_19689376|2024-08-12 is identical to hMpxV/DRC/HGRK-04m/2024|EPI_ISL_19621388|2024-08-12 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.000527859 secs using 166.7% CPU
+
+CHECKPOINT: Initial tree restored
+Generating 1000 samples for ultrafast bootstrap (seed: 351964)...
+CHECKPOINT: 1000 UFBoot trees and 14 UFBootSplits restored
+
+NOTE: 26 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 10 CPU cores
+Increase to 10 rounds for branch lengths
+97 trees examined
+Threads: 1 / Time: 10.023 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -292430
+Threads: 2 / Time: 9.836 sec / Speedup: 1.019 / Efficiency: 51% / LogL: -292430
+Threads: 3 / Time: 8.296 sec / Speedup: 1.208 / Efficiency: 40% / LogL: -292430
+Determining AUTO threadcount: done in 28.1565 secs using 129.2% CPU
+BEST NUMBER OF THREADS: 1
+
+CHECKPOINT: Model parameters restored, LogL: -274093.443
+Wrote distance file to... 
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+CHECKPOINT: Candidate tree set restored, best LogL: -274093.443
+Finish initializing candidate tree set (20)
+Current best tree score: -274093.443 / CPU time: 0.000
+Number of iterations: 744
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 0.580291 secs using 99.64% CPU
+Optimizing NNI: done in 0.582648 secs using 99.96% CPU
+Optimizing NNI: done in 0.629721 secs using 99.69% CPU
+Optimizing NNI: done in 0.649076 secs using 99.95% CPU
+Optimizing NNI: done in 0.86583 secs using 99.93% CPU
+Optimizing NNI: done in 0.830593 secs using 99.86% CPU
+Iteration 750 / LogL: -274123.187 / Time: 0h:0m:33s (0h:0m:3s left)
+Log-likelihood cutoff on original alignment: -274402.023
+Optimizing NNI: done in 0.567383 secs using 99.92% CPU
+Optimizing NNI: done in 0.799225 secs using 99.96% CPU
+Optimizing NNI: done in 0.759109 secs using 99.97% CPU
+Optimizing NNI: done in 0.752903 secs using 99.49% CPU
+Optimizing NNI: done in 0.769475 secs using 99.1% CPU
+Optimizing NNI: done in 0.708338 secs using 99.92% CPU
+Optimizing NNI: done in 0.649762 secs using 99.95% CPU
+Optimizing NNI: done in 0.494513 secs using 99.96% CPU
+Optimizing NNI: done in 0.602843 secs using 99.97% CPU
+Optimizing NNI: done in 0.714278 secs using 99.97% CPU
+Iteration 760 / LogL: -274129.408 / Time: 0h:0m:41s (0h:0m:3s left)
+Optimizing NNI: done in 0.565415 secs using 99.96% CPU
+Optimizing NNI: done in 0.70121 secs using 99.97% CPU
+Optimizing NNI: done in 0.756252 secs using 99.96% CPU
+Optimizing NNI: done in 0.552362 secs using 99.96% CPU
+Optimizing NNI: done in 0.623069 secs using 99.94% CPU
+Optimizing NNI: done in 0.719636 secs using 99.97% CPU
+Optimizing NNI: done in 0.947255 secs using 99.98% CPU
+Optimizing NNI: done in 0.593678 secs using 99.92% CPU
+Optimizing NNI: done in 0.595487 secs using 99.9% CPU
+Optimizing NNI: done in 0.666008 secs using 99.88% CPU
+Iteration 770 / LogL: -274096.929 / Time: 0h:0m:50s (0h:0m:3s left)
+Optimizing NNI: done in 0.622356 secs using 99.93% CPU
+Optimizing NNI: done in 0.60564 secs using 99.9% CPU
+Optimizing NNI: done in 0.678203 secs using 99.82% CPU
+Optimizing NNI: done in 0.5713 secs using 99.91% CPU
+Optimizing NNI: done in 0.719711 secs using 99.93% CPU
+Optimizing NNI: done in 0.68513 secs using 99.92% CPU
+Optimizing NNI: done in 0.80912 secs using 99.9% CPU
+Optimizing NNI: done in 0.666075 secs using 99.93% CPU
+Optimizing NNI: done in 0.622259 secs using 99.93% CPU
+Optimizing NNI: done in 0.678549 secs using 99.89% CPU
+Iteration 780 / LogL: -274094.544 / Time: 0h:0m:58s (0h:0m:3s left)
+Optimizing NNI: done in 0.562916 secs using 99.91% CPU
+Optimizing NNI: done in 0.571942 secs using 99.93% CPU
+Optimizing NNI: done in 0.87547 secs using 99.89% CPU
+Optimizing NNI: done in 0.740975 secs using 99.92% CPU
+Optimizing NNI: done in 0.791372 secs using 99.92% CPU
+Optimizing NNI: done in 0.526363 secs using 99.93% CPU
+Optimizing NNI: done in 0.939984 secs using 99.92% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 787: -274093.360
+Optimizing NNI: done in 0.682931 secs using 99.91% CPU
+Optimizing NNI: done in 0.805964 secs using 99.73% CPU
+Optimizing NNI: done in 0.376503 secs using 99.89% CPU
+Iteration 790 / LogL: -274128.642 / Time: 0h:1m:7s (0h:0m:8s left)
+Optimizing NNI: done in 0.738959 secs using 99.9% CPU
+Optimizing NNI: done in 0.556915 secs using 99.91% CPU
+Optimizing NNI: done in 0.596469 secs using 99.91% CPU
+Optimizing NNI: done in 0.739712 secs using 99.9% CPU
+Optimizing NNI: done in 0.60913 secs using 99.83% CPU
+Optimizing NNI: done in 0.588975 secs using 99.93% CPU
+Optimizing NNI: done in 0.734151 secs using 99.95% CPU
+Optimizing NNI: done in 0.810139 secs using 99.94% CPU
+Optimizing NNI: done in 0.684303 secs using 99.93% CPU
+Optimizing NNI: done in 0.452799 secs using 99.92% CPU
+Iteration 800 / LogL: -274112.987 / Time: 0h:1m:15s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -274402.023
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.944
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 0.581316 secs using 99.93% CPU
+Optimizing NNI: done in 0.671649 secs using 99.93% CPU
+Optimizing NNI: done in 0.845752 secs using 99.94% CPU
+Optimizing NNI: done in 0.635504 secs using 99.93% CPU
+Optimizing NNI: done in 0.579092 secs using 99.92% CPU
+Optimizing NNI: done in 0.868692 secs using 99.92% CPU
+Optimizing NNI: done in 0.665666 secs using 99.91% CPU
+Optimizing NNI: done in 0.765025 secs using 99.87% CPU
+Optimizing NNI: done in 0.863731 secs using 99.93% CPU
+Optimizing NNI: done in 0.616367 secs using 99.93% CPU
+Iteration 810 / LogL: -274195.502 / Time: 0h:1m:24s (0h:0m:9s left)
+Optimizing NNI: done in 0.598475 secs using 99.93% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 811: -274093.336
+Optimizing NNI: done in 0.767999 secs using 99.67% CPU
+Optimizing NNI: done in 0.614624 secs using 99.71% CPU
+Optimizing NNI: done in 0.595353 secs using 99.93% CPU
+Optimizing NNI: done in 0.553993 secs using 99.91% CPU
+Optimizing NNI: done in 0.69238 secs using 99.92% CPU
+Optimizing NNI: done in 0.593345 secs using 99.92% CPU
+Optimizing NNI: done in 0.769575 secs using 99.92% CPU
+Optimizing NNI: done in 0.530979 secs using 99.75% CPU
+Optimizing NNI: done in 0.655096 secs using 99.88% CPU
+Iteration 820 / LogL: -274103.495 / Time: 0h:1m:32s (0h:0m:10s left)
+Optimizing NNI: done in 0.563885 secs using 99.93% CPU
+Optimizing NNI: done in 0.679663 secs using 99.92% CPU
+Optimizing NNI: done in 0.733811 secs using 99.88% CPU
+Optimizing NNI: done in 0.610816 secs using 99.9% CPU
+Optimizing NNI: done in 0.557299 secs using 99.93% CPU
+Optimizing NNI: done in 0.626846 secs using 99.91% CPU
+Optimizing NNI: done in 0.616346 secs using 99.93% CPU
+Optimizing NNI: done in 0.663633 secs using 99.92% CPU
+Optimizing NNI: done in 0.879236 secs using 99.93% CPU
+Optimizing NNI: done in 0.720895 secs using 99.93% CPU
+Iteration 830 / LogL: -274103.956 / Time: 0h:1m:40s (0h:0m:9s left)
+Optimizing NNI: done in 0.868185 secs using 99.94% CPU
+Optimizing NNI: done in 0.74318 secs using 99.9% CPU
+Optimizing NNI: done in 0.522141 secs using 99.93% CPU
+Optimizing NNI: done in 0.589327 secs using 99.92% CPU
+Optimizing NNI: done in 0.77276 secs using 99.92% CPU
+Optimizing NNI: done in 0.656763 secs using 99.92% CPU
+Optimizing NNI: done in 0.527514 secs using 99.94% CPU
+Optimizing NNI: done in 0.363618 secs using 99.93% CPU
+Optimizing NNI: done in 0.51809 secs using 99.94% CPU
+Optimizing NNI: done in 0.696851 secs using 99.92% CPU
+Iteration 840 / LogL: -274094.876 / Time: 0h:1m:48s (0h:0m:9s left)
+Optimizing NNI: done in 0.692391 secs using 99.92% CPU
+Optimizing NNI: done in 0.670913 secs using 99.93% CPU
+Optimizing NNI: done in 0.528646 secs using 99.92% CPU
+Optimizing NNI: done in 0.617887 secs using 99.91% CPU
+Optimizing NNI: done in 0.653456 secs using 99.89% CPU
+Optimizing NNI: done in 0.618585 secs using 99.86% CPU
+Optimizing NNI: done in 0.676557 secs using 99.92% CPU
+Optimizing NNI: done in 0.532884 secs using 99.93% CPU
+Optimizing NNI: done in 0.574431 secs using 99.94% CPU
+Optimizing NNI: done in 0.538784 secs using 99.94% CPU
+Iteration 850 / LogL: -274148.275 / Time: 0h:1m:56s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -274402.023
+Optimizing NNI: done in 0.666916 secs using 99.94% CPU
+Optimizing NNI: done in 0.770707 secs using 99.9% CPU
+Optimizing NNI: done in 0.696815 secs using 99.93% CPU
+Optimizing NNI: done in 0.612105 secs using 99.95% CPU
+Optimizing NNI: done in 0.921519 secs using 99.97% CPU
+Optimizing NNI: done in 0.577044 secs using 99.97% CPU
+Optimizing NNI: done in 0.552038 secs using 99.96% CPU
+Optimizing NNI: done in 0.896395 secs using 99.96% CPU
+Optimizing NNI: done in 0.716463 secs using 99.94% CPU
+Optimizing NNI: done in 0.645857 secs using 99.94% CPU
+Iteration 860 / LogL: -274113.024 / Time: 0h:2m:5s (0h:0m:7s left)
+Optimizing NNI: done in 0.50984 secs using 99.96% CPU
+Optimizing NNI: done in 0.515653 secs using 99.95% CPU
+Optimizing NNI: done in 0.700129 secs using 99.96% CPU
+Optimizing NNI: done in 0.645038 secs using 99.94% CPU
+Optimizing NNI: done in 0.570812 secs using 99.94% CPU
+Optimizing NNI: done in 0.554278 secs using 99.92% CPU
+Optimizing NNI: done in 0.745482 secs using 99.93% CPU
+Optimizing NNI: done in 0.871781 secs using 99.96% CPU
+Optimizing NNI: done in 0.655805 secs using 99.88% CPU
+Optimizing NNI: done in 0.589609 secs using 99.94% CPU
+Iteration 870 / LogL: -274115.512 / Time: 0h:2m:14s (0h:0m:6s left)
+Optimizing NNI: done in 0.66048 secs using 99.95% CPU
+Optimizing NNI: done in 0.850416 secs using 99.88% CPU
+Optimizing NNI: done in 0.470923 secs using 99.73% CPU
+Optimizing NNI: done in 0.610399 secs using 99.87% CPU
+Optimizing NNI: done in 0.643157 secs using 99.94% CPU
+Optimizing NNI: done in 0.879916 secs using 99.92% CPU
+Optimizing NNI: done in 0.554596 secs using 99.95% CPU
+Optimizing NNI: done in 0.735071 secs using 99.93% CPU
+Optimizing NNI: done in 0.539038 secs using 99.95% CPU
+Optimizing NNI: done in 0.780845 secs using 99.93% CPU
+Iteration 880 / LogL: -274109.173 / Time: 0h:2m:22s (0h:0m:5s left)
+Optimizing NNI: done in 0.71629 secs using 99.92% CPU
+Optimizing NNI: done in 0.484809 secs using 99.88% CPU
+Optimizing NNI: done in 0.506161 secs using 99.94% CPU
+Optimizing NNI: done in 0.598081 secs using 99.93% CPU
+Optimizing NNI: done in 0.710663 secs using 99.61% CPU
+Optimizing NNI: done in 0.755688 secs using 99.95% CPU
+Optimizing NNI: done in 0.607211 secs using 99.95% CPU
+Optimizing NNI: done in 0.54846 secs using 99.94% CPU
+Optimizing NNI: done in 0.429356 secs using 99.92% CPU
+Optimizing NNI: done in 0.612583 secs using 99.9% CPU
+Iteration 890 / LogL: -274146.843 / Time: 0h:2m:30s (0h:0m:3s left)
+Optimizing NNI: done in 0.7277 secs using 99.65% CPU
+Optimizing NNI: done in 0.608293 secs using 99.91% CPU
+Optimizing NNI: done in 0.66573 secs using 99.59% CPU
+Optimizing NNI: done in 0.613489 secs using 99.79% CPU
+Optimizing NNI: done in 0.809784 secs using 99.57% CPU
+Optimizing NNI: done in 0.559723 secs using 99.79% CPU
+Optimizing NNI: done in 0.607886 secs using 99.75% CPU
+Optimizing NNI: done in 0.627101 secs using 99.8% CPU
+Optimizing NNI: done in 0.694476 secs using 99.78% CPU
+Optimizing NNI: done in 0.753008 secs using 99.77% CPU
+Iteration 900 / LogL: -274097.775 / Time: 0h:2m:39s (0h:0m:1s left)
+Log-likelihood cutoff on original alignment: -274402.023
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.950
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 0.532958 secs using 99.78% CPU
+Optimizing NNI: done in 0.508713 secs using 99.66% CPU
+Optimizing NNI: done in 0.682697 secs using 99.78% CPU
+Optimizing NNI: done in 0.68173 secs using 99.76% CPU
+Optimizing NNI: done in 0.589825 secs using 99.71% CPU
+Optimizing NNI: done in 0.668621 secs using 99.76% CPU
+Optimizing NNI: done in 0.587877 secs using 99.79% CPU
+Optimizing NNI: done in 0.654437 secs using 99.75% CPU
+Optimizing NNI: done in 0.858968 secs using 99.76% CPU
+Optimizing NNI: done in 0.919779 secs using 99.7% CPU
+Iteration 910 / LogL: -274144.685 / Time: 0h:2m:47s (0h:0m:16s left)
+Optimizing NNI: done in 0.675757 secs using 99.76% CPU
+Optimizing NNI: done in 0.491074 secs using 99.79% CPU
+Optimizing NNI: done in 0.628903 secs using 99.73% CPU
+Optimizing NNI: done in 0.713401 secs using 99.79% CPU
+Optimizing NNI: done in 0.708086 secs using 99.8% CPU
+Optimizing NNI: done in 0.624528 secs using 99.8% CPU
+Optimizing NNI: done in 0.66989 secs using 99.76% CPU
+Optimizing NNI: done in 0.577082 secs using 99.78% CPU
+Optimizing NNI: done in 0.62182 secs using 99.73% CPU
+Optimizing NNI: done in 0.633227 secs using 99.74% CPU
+Iteration 920 / LogL: -274169.517 / Time: 0h:2m:56s (0h:0m:15s left)
+Optimizing NNI: done in 0.692795 secs using 99.8% CPU
+Optimizing NNI: done in 0.640228 secs using 99.78% CPU
+Optimizing NNI: done in 0.844453 secs using 99.75% CPU
+Optimizing NNI: done in 0.846827 secs using 99.72% CPU
+Optimizing NNI: done in 0.553162 secs using 99.3% CPU
+Optimizing NNI: done in 0.769678 secs using 99.92% CPU
+Optimizing NNI: done in 0.599059 secs using 99.94% CPU
+Optimizing NNI: done in 0.63908 secs using 99.94% CPU
+Optimizing NNI: done in 0.592239 secs using 99.93% CPU
+Optimizing NNI: done in 0.787085 secs using 99.91% CPU
+Iteration 930 / LogL: -274126.897 / Time: 0h:3m:5s (0h:0m:13s left)
+Optimizing NNI: done in 0.793636 secs using 99.93% CPU
+Optimizing NNI: done in 0.669724 secs using 99.93% CPU
+Optimizing NNI: done in 0.73396 secs using 99.93% CPU
+Optimizing NNI: done in 0.65632 secs using 99.92% CPU
+Optimizing NNI: done in 0.65656 secs using 99.87% CPU
+Optimizing NNI: done in 0.694789 secs using 99.93% CPU
+Optimizing NNI: done in 0.617792 secs using 99.94% CPU
+Optimizing NNI: done in 0.69864 secs using 99.94% CPU
+Optimizing NNI: done in 0.55421 secs using 99.94% CPU
+Optimizing NNI: done in 0.679448 secs using 99.92% CPU
+Iteration 940 / LogL: -274104.657 / Time: 0h:3m:13s (0h:0m:12s left)
+Optimizing NNI: done in 0.551555 secs using 99.91% CPU
+Optimizing NNI: done in 0.590181 secs using 99.93% CPU
+Optimizing NNI: done in 0.748542 secs using 99.93% CPU
+Optimizing NNI: done in 0.697047 secs using 99.94% CPU
+Optimizing NNI: done in 0.64619 secs using 99.95% CPU
+Optimizing NNI: done in 0.881321 secs using 99.94% CPU
+Optimizing NNI: done in 0.778525 secs using 99.94% CPU
+Optimizing NNI: done in 0.609379 secs using 99.93% CPU
+Optimizing NNI: done in 0.823328 secs using 99.61% CPU
+Optimizing NNI: done in 0.652656 secs using 99.36% CPU
+Iteration 950 / LogL: -274147.238 / Time: 0h:3m:22s (0h:0m:10s left)
+Log-likelihood cutoff on original alignment: -274402.023
+Optimizing NNI: done in 0.477954 secs using 99.51% CPU
+Optimizing NNI: done in 0.629983 secs using 97.72% CPU
+Optimizing NNI: done in 0.766429 secs using 99.52% CPU
+Optimizing NNI: done in 0.667823 secs using 99.41% CPU
+Optimizing NNI: done in 0.661435 secs using 99.79% CPU
+Optimizing NNI: done in 0.498154 secs using 99.8% CPU
+Optimizing NNI: done in 0.725827 secs using 99.77% CPU
+Optimizing NNI: done in 0.575318 secs using 99.78% CPU
+Optimizing NNI: done in 0.791131 secs using 99.73% CPU
+Optimizing NNI: done in 0.565782 secs using 99.73% CPU
+Iteration 960 / LogL: -274094.031 / Time: 0h:3m:31s (0h:0m:8s left)
+Optimizing NNI: done in 0.693914 secs using 99.74% CPU
+Optimizing NNI: done in 0.679573 secs using 99.79% CPU
+Optimizing NNI: done in 0.66071 secs using 99.76% CPU
+Optimizing NNI: done in 0.555515 secs using 99.79% CPU
+Optimizing NNI: done in 0.536127 secs using 99.82% CPU
+Optimizing NNI: done in 0.582017 secs using 99.8% CPU
+Optimizing NNI: done in 0.764536 secs using 99.77% CPU
+Optimizing NNI: done in 0.665596 secs using 99.76% CPU
+Optimizing NNI: done in 0.584747 secs using 99.78% CPU
+Optimizing NNI: done in 0.587543 secs using 99.76% CPU
+Iteration 970 / LogL: -274120.178 / Time: 0h:3m:39s (0h:0m:6s left)
+Optimizing NNI: done in 0.560759 secs using 99.79% CPU
+Optimizing NNI: done in 0.63455 secs using 99.78% CPU
+Optimizing NNI: done in 0.687253 secs using 99.79% CPU
+Optimizing NNI: done in 0.656079 secs using 99.81% CPU
+Optimizing NNI: done in 0.664841 secs using 99.78% CPU
+Optimizing NNI: done in 0.656246 secs using 99.78% CPU
+Optimizing NNI: done in 0.477964 secs using 99.82% CPU
+Optimizing NNI: done in 0.628749 secs using 99.77% CPU
+Optimizing NNI: done in 0.570497 secs using 99.8% CPU
+Optimizing NNI: done in 0.634054 secs using 99.79% CPU
+Iteration 980 / LogL: -274175.973 / Time: 0h:3m:47s (0h:0m:4s left)
+Optimizing NNI: done in 0.494217 secs using 99.81% CPU
+Optimizing NNI: done in 0.878026 secs using 99.72% CPU
+Optimizing NNI: done in 0.54289 secs using 99.77% CPU
+Optimizing NNI: done in 0.574337 secs using 99.81% CPU
+Optimizing NNI: done in 0.682873 secs using 99.79% CPU
+Optimizing NNI: done in 0.673591 secs using 99.78% CPU
+Optimizing NNI: done in 0.569576 secs using 99.78% CPU
+Optimizing NNI: done in 0.640155 secs using 99.8% CPU
+Optimizing NNI: done in 0.585877 secs using 99.79% CPU
+Optimizing NNI: done in 0.644219 secs using 99.78% CPU
+Iteration 990 / LogL: -274103.593 / Time: 0h:3m:56s (0h:0m:2s left)
+Optimizing NNI: done in 0.612367 secs using 99.82% CPU
+Optimizing NNI: done in 0.672158 secs using 99.78% CPU
+Optimizing NNI: done in 0.840359 secs using 99.76% CPU
+Optimizing NNI: done in 0.665372 secs using 99.75% CPU
+Optimizing NNI: done in 0.585639 secs using 99.74% CPU
+Optimizing NNI: done in 0.614282 secs using 98.5% CPU
+Optimizing NNI: done in 0.710609 secs using 99.66% CPU
+Optimizing NNI: done in 0.567186 secs using 99.94% CPU
+Optimizing NNI: done in 0.55146 secs using 99.91% CPU
+Optimizing NNI: done in 0.898917 secs using 99.93% CPU
+Iteration 1000 / LogL: -274104.326 / Time: 0h:4m:4s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -274402.023
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.957
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 0.573576 secs using 99.92% CPU
+WARNING: bootstrap analysis did not converge. You should rerun with higher number of iterations (-nm option)
+TREE SEARCH COMPLETED AFTER 1001 ITERATIONS / Time: 0h:4m:6s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -274093.336
+Optimal log-likelihood: -274093.335
+Rate parameters:  A-C: 1.03477  A-G: 4.18704  A-T: 0.92028  C-G: 0.81769  C-T: 3.37137  G-T: 1.00000
+Base frequencies:  A: 0.335  C: 0.165  G: 0.165  T: 0.334
+Parameters optimization took 1 rounds (0.064 sec)
+BEST SCORE FOUND : -274093.335
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+19.597 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file ../Data/IQTree_out/run_matching.splits.nex
+Total tree length: 0.005
+
+Total number of iterations: 1001
+CPU time used for tree search: 217.191 sec (0h:3m:37s)
+Wall-clock time used for tree search: 217.762 sec (0h:3m:37s)
+Total CPU time used: 273.851 sec (0h:4m:33s)
+Total wall-clock time used: 266.247 sec (0h:4m:26s)
+
+Computing bootstrap consensus tree...
+Reading input file ../Data/IQTree_out/run_matching.splits.nex...
+213 taxa and 4303 splits.
+Consensus tree written to ../Data/IQTree_out/run_matching.contree
+Reading input trees file ../Data/IQTree_out/run_matching.contree
+Log-likelihood of consensus tree: -274094.757
+
+Analysis results written to: 
+  IQ-TREE report:                ../Data/IQTree_out/run_matching.iqtree
+  Maximum-likelihood tree:       ../Data/IQTree_out/run_matching.treefile
+  Likelihood distances:          ../Data/IQTree_out/run_matching.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ../Data/IQTree_out/run_matching.splits.nex
+  Consensus tree:                ../Data/IQTree_out/run_matching.contree
+  Screen log file:               ../Data/IQTree_out/run_matching.log
+
+Date and Time: Mon Dec 22 14:38:48 2025
