@@ -1,0 +1,979 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Input file name: ALIGNEDSEQ213.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 780930
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 213 sequences with 198855 nucleotide sites
+Number of constant sites: 198203 (= 99.6721% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 198203 (= 99.6721% of all sites)
+Number of parsimony informative sites: 210
+Number of distinct site patterns: 2431
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F
+
+Rate parameter R:
+
+  A-C: 1.0250
+  A-G: 4.2476
+  A-T: 0.9404
+  C-G: 0.7778
+  C-T: 3.3589
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3355
+  pi(C) = 0.1652
+  pi(G) = 0.1654
+  pi(T) = 0.334
+
+Rate matrix Q:
+
+  A   -0.8989    0.1283    0.5324    0.2381
+  C    0.2607    -1.209    0.0975    0.8505
+  G      1.08    0.0974    -1.431    0.2532
+  T    0.2391    0.4206    0.1253   -0.7851
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -274029.3640 (s.e. 774.2100)
+Unconstrained log-likelihood (without tree): -470980.0060
+Number of free parameters (#branches + #model parameters): 431
+Akaike information criterion (AIC) score: 548920.7280
+Corrected Akaike information criterion (AICc) score: 548922.6048
+Bayesian information criterion (BIC) score: 553317.0708
+
+Total tree length (sum of branch lengths): 0.0054
+Sum of internal branch lengths: 0.0019 (35.2822% of tree length)
+
+WARNING: 112 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'hMpxV/DRC/HGRK-1L/2024|EPI_ISL_18886301|2024-01-15' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++----hMpxV/DRC/HGRK-1L/2024|EPI_ISL_18886301|2024-01-15
+|
+|        +--hMpxV/Germany/un-RKI-1213/2024|EPI_ISL_19785226|2024-12
+|     +--| (94.6/99)
+|     |  +----hMpxV/Germany/un-RKI-1214/2024|EPI_ISL_19785230|2024-12
+|  +--| (97.6/99)
+|  |  +--hMpxV/Germany/NW-RKI-1142/2024|EPI_ISL_19502532|2024-10-12
++--| (73.9/70)
+|  |  +--hMpxV/DRC/CRSN-1/2023|EPI_ISL_19004044|2023-11-02
+|  +--| (88.5/100)
+|     |  +**hMpxV/DRC/CRSN-2/2023|EPI_ISL_19004045|2023-11-15
+|     +--| (89.9/100)
+|        +--hMpxV/DRC/CRSN-3/2023|EPI_ISL_19004046|2023-12-23
+|
+|                                      +--hMpxV/Germany/un-RKI-1216/2025|EPI_ISL_19785218|2025-01
+|                                   +--| (97.3/100)
+|                                   |  |  +**hMpxV/Germany/un-RKI-1351/2025|EPI_ISL_19887806|2025-04
+|                                   |  +--| (95.2/100)
+|                                   |     +**hMpxV/Germany/un-RKI-1349/2025|EPI_ISL_19887833|2025-04
+|                                +**| (0/96)
+|                                |  |     +**hMpxV/Canada/MB-NML-6349/2024|EPI_ISL_19791290|2024-11-21
+|                                |  |  +**| (0/87)
+|                                |  |  |  +**hMpxV/Canada/MB-NML-6350/2024|EPI_ISL_19791291|2024-11-21
+|                                |  +**| (0/99)
+|                                |     +--hMpxV/Canada/MB-NML-6348/2024|EPI_ISL_19791292|2024-11-21
+|                             +--| (98.3/100)
+|                             |  +**hMpxV/USA/GA-CDC-0100/2025|EPI_ISL_19686354|2025-01
+|                          +**| (0/88)
+|                          |  |     +--hMpxV/Brazil/SP-LEIAL-4448/2025|EPI_ISL_19762724|2025-02-24
+|                          |  |  +--| (77.3/94)
+|                          |  |  |  |  +---hMpxV/China/ZJ-ZCDC-001/2024|EPI_ISL_19870071|2024-12-30
+|                          |  |  |  +--| (29.4/88)
+|                          |  |  |     |        +--hMpxV/Congo/BZV-LNSP-CG001/2024|EPI_ISL_19810234|2024-12-23
+|                          |  |  |     |     +--| (42.4/92)
+|                          |  |  |     |     |  |  +------hMpxV/Congo/BZV-LNSP-CG022/2025|EPI_ISL_19810238|2025-02-19
+|                          |  |  |     |     |  +--| (80.9/95)
+|                          |  |  |     |     |     +------hMpxV/Congo/BZV-LNSP-CG021/2025|EPI_ISL_19810237|2025-02-17
+|                          |  |  |     +-----| (99.8/100)
+|                          |  |  |           |     +--hMpxV/Congo/BZV-LNSP-CG018/2025|EPI_ISL_19810235|2025-01-09
+|                          |  |  |           |  +--| (22.6/93)
+|                          |  |  |           |  |  +--hMpxV/Congo/BZV-LNSP-CG032/2025|EPI_ISL_19810240|2025-03-05
+|                          |  |  |           +--| (41.7/94)
+|                          |  |  |              +------hMpxV/Congo/BZV-LNSP-CG020/2025|EPI_ISL_19810236|2025-02-13
+|                          |  +**| (0/79)
+|                          |     +---hMpxV/USA/NH-CDC-0100/2025|EPI_ISL_19785231|2025-02
+|                       +--| (84.1/91)
+|                       |  |     +**hMpxV/United_Kingdom/UKHSA-0072/2024|EPI_ISL_19557976|2024-10-27
+|                       |  |  +**| (84/100)
+|                       |  |  |  +--hMpxV/USA/CA-CDC-0100/2024|EPI_ISL_19586581|2024-11
+|                       |  +--| (80.8/98)
+|                       |     +**hMpxV/Thailand/NIC-31/2024|EPI_ISL_19350788|2024-08-16
+|                    +**| (0/55)
+|                    |  |              +--hMpxV/Thailand/BIDI-001/2025|EPI_ISL_19673536|2025-01-06
+|                    |  |           +**| (0/64)
+|                    |  |           |  |  +--hMpxV/Thailand/BIDI-004/2025|EPI_ISL_19818649|2025-03-29
+|                    |  |           |  +--| (92.7/99)
+|                    |  |           |     +--hMpxV/India/UP-MCL-H-196-2884-1197/2025|EPI_ISL_19902083|2025-05-03
+|                    |  |        +**| (0/61)
+|                    |  |        |  |  +--hMpxV/Uganda/UVRI-MP173/2024|EPI_ISL_19867563|2024-08-25
+|                    |  |        |  +**| (74.7/93)
+|                    |  |        |     +--hMpxV/USA/MA-CDC-0100/2025|EPI_ISL_20056547|2025-06
+|                    |  |     +--| (87.6/64)
+|                    |  |     |  +--hMpxV/India/KL-ICMR-176_1054/2024|EPI_ISL_19484958|2024-09-21
+|                    |  |  +--| (76.9/63)
+|                    |  |  |  +----hMpxV/Italy/un-INMI-0001/2025|EPI_ISL_20055054|2025-05
+|                    |  +**| (0/57)
+|                    |     +--hMpxV/Sweden/PHAS-11304/2024|EPI_ISL_19348512|2024-08-13
+|              +-----| (91.9/56)
+|              |     +---hMpxV/Uganda/CPHL-002/2024|EPI_ISL_19456777|2024-09-08
+|           +--| (87.8/64)
+|           |  |        +**hMpxV/Kenya/nvrl220/2024|EPI_ISL_19302262|2024-07-25
+|           |  |     +**| (0/85)
+|           |  |     |  +**hMpxV/Kenya/KEMRI-00107/2024|EPI_ISL_19345034|2024-07-25
+|           |  |  +**| (0/63)
+|           |  |  |  +**hMpxV/USA/NY-CDC-0100/2025|EPI_ISL_19818650|2025-02
+|           |  +--| (97.9/77)
+|           |     +**hMpxV/Uganda/UVRI-MP125/2024|EPI_ISL_19867562|2024-08-18
+|        +**| (0/57)
+|        |  +--hMpxV/Thailand/KCMH-ID24110/2024|EPI_ISL_19366744|2024-08-16
+|     +--| (95.5/71)
+|     |  |                                                                                                  +**hMpxV/DRC/CRSN-4/2023|EPI_ISL_19079342|2023-12-23
+|     |  |                                                                                               +**| (0/30)
+|     |  |                                                                                               |  +---hMpxV/DRC/CRSN-5/2024|EPI_ISL_19079343|2024-01-06
+|     |  |                                                                                            +--| (95.3/85)
+|     |  |                                                                                            |  +**hMpxV/DRC/CRSN-6/2024|EPI_ISL_19079344|2024-01-14
+|     |  |                                                                                         +--| (19.6/8)
+|     |  |                                                                                         |  +**hMpxV/Uganda/UVRI-MP587/2024|EPI_ISL_19587238|2024-10-14
+|     |  |                                                                                      +--| (97.9/89)
+|     |  |                                                                                      |  +--hMpxV/Uganda/UVRI-MP588/2024|EPI_ISL_19587239|2024-10-14
+|     |  |                                                                                   +**| (0/65)
+|     |  |                                                                                   |  |              +------------------hMpxV/Uganda/UVRI-012/2024|EPI_ISL_19305614|2024-07-12
+|     |  |                                                                                   |  |           +--| (41/79)
+|     |  |                                                                                   |  |           |  +--hMpxV/Uganda/UVRI-MP783/2024|EPI_ISL_19693768|2024-10-30
+|     |  |                                                                                   |  |        +**| (0/75)
+|     |  |                                                                                   |  |        |  +--hMpxV/Uganda/UVRI-MP1472/2025|EPI_ISL_20047736|2025-02-07
+|     |  |                                                                                   |  |     +**| (74.8/90)
+|     |  |                                                                                   |  |     |  +--hMpxV/Uganda/UVRI-MP2072/2025|EPI_ISL_20047737|2025-02-18
+|     |  |                                                                                   |  |  +**| (0/84)
+|     |  |                                                                                   |  |  |  |  +--hMpxV/Uganda/UVRI-MP1575/2025|EPI_ISL_20047732|2025-01-05
+|     |  |                                                                                   |  |  |  +--| (81.1/90)
+|     |  |                                                                                   |  |  |     +--hMpxV/Uganda/UVRI-MP1563/2025|EPI_ISL_20047734|2025-01-31
+|     |  |                                                                                   |  +--| (99.3/94)
+|     |  |                                                                                   |     +**hMpxV/Uganda/UVRI-MP512/2024|EPI_ISL_19587237|2024-09-24
+|     |  |                                                                                +--| (87.8/91)
+|     |  |                                                                                |  |        +**hMpxV/Uganda/UVRI-MP818/2024|EPI_ISL_19602367|2024-11-01
+|     |  |                                                                                |  |     +**| (75/93)
+|     |  |                                                                                |  |     |  +--hMpxV/Uganda/UVRI-MP1023/2024|EPI_ISL_19602379|2024-11-08
+|     |  |                                                                                |  |  +--| (97.3/100)
+|     |  |                                                                                |  |  |  +--hMpxV/Uganda/UVRI-MP1167/2024|EPI_ISL_19693782|2024-11-20
+|     |  |                                                                                |  +--| (78.8/85)
+|     |  |                                                                                |     |  +--hMpxV/Uganda/UVRI-MP1153/2024|EPI_ISL_19693778|2024-11-20
+|     |  |                                                                                |     +--| (80.6/87)
+|     |  |                                                                                |        |              +**hMpxV/DRC/HGRK-78/2023|EPI_ISL_19439696|2023-12-06
+|     |  |                                                                                |        |           +--| (96.4/100)
+|     |  |                                                                                |        |           |  |                    +----------------hMpxV/DRC/HGRK-36/2023|EPI_ISL_19381268|2023-12-12
+|     |  |                                                                                |        |           |  |                 +**| (0/58)
+|     |  |                                                                                |        |           |  |                 |  |  +**hMpxV/DRC/HGRK-1M/2024|EPI_ISL_19689371|2024-09-02
+|     |  |                                                                                |        |           |  |                 |  +**| (0/50)
+|     |  |                                                                                |        |           |  |                 |     |        +**hMpxV/DRC/HGRK-11K/2024|EPI_ISL_19689378|2024-09-01
+|     |  |                                                                                |        |           |  |                 |     |     +**| (100/34)
+|     |  |                                                                                |        |           |  |                 |     |     |  |  +**hMpxV/DRC/HGRK-19K/2024|EPI_ISL_19689685|2024-09-01
+|     |  |                                                                                |        |           |  |                 |     |     |  +**| (0/35)
+|     |  |                                                                                |        |           |  |                 |     |     |     +**hMpxV/DRC/HGRK-16K/2024|EPI_ISL_19689399|2024-09-01
+|     |  |                                                                                |        |           |  |                 |     |  +--| (97.4/100)
+|     |  |                                                                                |        |           |  |                 |     |  |  |        +**hMpxV/DRC/HGRK-13K/2024|EPI_ISL_19689380|2024-09-01
+|     |  |                                                                                |        |           |  |                 |     |  |  |     +**| (0/66)
+|     |  |                                                                                |        |           |  |                 |     |  |  |     |  +**hMpxV/DRC/HGRK-12K/2024|EPI_ISL_19689379|2024-09-01
+|     |  |                                                                                |        |           |  |                 |     |  |  |  +**| (0/27)
+|     |  |                                                                                |        |           |  |                 |     |  |  |  |  +**hMpxV/DRC/HGRK-15K/2024|EPI_ISL_19689381|2024-09-01
+|     |  |                                                                                |        |           |  |                 |     |  |  +**| (0/27)
+|     |  |                                                                                |        |           |  |                 |     |  |     +**hMpxV/DRC/HGRK-18K/2024|EPI_ISL_19689632|2024-09-01
+|     |  |                                                                                |        |           |  |                 |     +**| (0/98)
+|     |  |                                                                                |        |           |  |                 |        +**hMpxV/DRC/HGRK-17K/2024|EPI_ISL_19689575|2024-09-01
+|     |  |                                                                                |        |           |  |              +**| (0/17)
+|     |  |                                                                                |        |           |  |              |  +**hMpxV/DRC/HGRK-8MM/2024|EPI_ISL_19689376|2024-08-12
+|     |  |                                                                                |        |           |  |           +**| (0/7)
+|     |  |                                                                                |        |           |  |           |  +**hMpxV/DRC/HGRK-5MM/2024|EPI_ISL_19689373|2024-08-15
+|     |  |                                                                                |        |           |  |        +**| (0/14)
+|     |  |                                                                                |        |           |  |        |  |  +**hMpxV/DRC/HGRK-7N/2024|EPI_ISL_19689375|2024-08-22
+|     |  |                                                                                |        |           |  |        |  +--| (93.6/100)
+|     |  |                                                                                |        |           |  |        |     +**hMpxV/DRC/HGRK-6K/2024|EPI_ISL_19689374|2024-08-30
+|     |  |                                                                                |        |           |  |     +**| (0/13)
+|     |  |                                                                                |        |           |  |     |  +**hMpxV/DRC/HGRK-04m/2024|EPI_ISL_19621388|2024-08-12
+|     |  |                                                                                |        |           |  |  +**| (0/57)
+|     |  |                                                                                |        |           |  |  |  +**hMpxV/DRC/HGRK-2N/2024|EPI_ISL_19689372|2024-08-22
+|     |  |                                                                                |        |           |  +--| (78.9/100)
+|     |  |                                                                                |        |           |     +--hMpxV/DRC/HGRK-20K/2024|EPI_ISL_19689707|2024-09-01
+|     |  |                                                                                |        |        +--| (87.1/89)
+|     |  |                                                                                |        |        |  +--hMpxV/DRC/HGRK-9MM/2024|EPI_ISL_19689377|2024-08-15
+|     |  |                                                                                |        |     +--| (94.5/93)
+|     |  |                                                                                |        |     |  |  +**hMpxV/Burundi/INSP-1447/2024|EPI_ISL_19599243|2024-09-14
+|     |  |                                                                                |        |     |  +--| (86.9/100)
+|     |  |                                                                                |        |     |     +--hMpxV/Burundi/INSP-1529/2024|EPI_ISL_19599257|2024-09-16
+|     |  |                                                                                |        |  +--| (79.1/89)
+|     |  |                                                                                |        |  |  |                       +--hMpxV/DRC/INRB-2832V/2024|EPI_ISL_19857759|2024-09-06
+|     |  |                                                                                |        |  |  |                 +-----| (96/100)
+|     |  |                                                                                |        |  |  |                 |     |  +--hMpxV/DRC/INRB-2925V/2024|EPI_ISL_19858736|2024-09-09
+|     |  |                                                                                |        |  |  |                 |     +--| (75.2/98)
+|     |  |                                                                                |        |  |  |                 |        +------hMpxV/DRC/INRB-3101C/2024|EPI_ISL_19858194|2024-09-13
+|     |  |                                                                                |        |  |  +-----------------| (100/100)
+|     |  |                                                                                |        |  |                    +---hMpxV/DRC/INRB-2497V/2024|EPI_ISL_19858796|2024-08-30
+|     |  |                                                                                |        +--| (77.6/87)
+|     |  |                                                                                |           +--hMpxV/Congo/BZV-LNSP-CG000/2024|EPI_ISL_19810233|2024-08-08
+|     |  |                                                                             +--| (84.3/86)
+|     |  |                                                                             |  +--------hMpxV/Uganda/UVRI-MP2088/2025|EPI_ISL_20047703|2025-02-15
+|     |  |                                                                          +**| (0/23)
+|     |  |                                                                          |  |     +--hMpxV/Uganda/UVRI-MP769/2024|EPI_ISL_19587262|2024-10-25
+|     |  |                                                                          |  |  +**| (0/81)
+|     |  |                                                                          |  |  |  +**hMpxV/Uganda/UVRI-MP1596/2025|EPI_ISL_20047727|2025-02-10
+|     |  |                                                                          |  +**| (80.5/82)
+|     |  |                                                                          |     +--hMpxV/Uganda/UVRI-MP1222/2024|EPI_ISL_19612228|2024-11-27
+|     |  |                                                                       +--| (82.4/21)
+|     |  |                                                                       |  |              +**hMpxV/Uganda/UVRI-MP350B/2024|EPI_ISL_19587233|2024-09-08
+|     |  |                                                                       |  |           +**| (0/5)
+|     |  |                                                                       |  |           |  |        +--hMpxV/Uganda/UVRI-MP1512/2025|EPI_ISL_20047718|2025-02-05
+|     |  |                                                                       |  |           |  |     +**| (80.9/83)
+|     |  |                                                                       |  |           |  |     |  +**hMpxV/Uganda/UVRI-MP644/2024|EPI_ISL_19587244|2024-10-21
+|     |  |                                                                       |  |           |  |  +**| (0/26)
+|     |  |                                                                       |  |           |  |  |  +--hMpxV/Uganda/UVRI-MP770/2024|EPI_ISL_19587263|2024-10-27
+|     |  |                                                                       |  |           |  +**| (100/29)
+|     |  |                                                                       |  |           |     |     +--hMpxV/Uganda/UVRI-MP2102/2025|EPI_ISL_20047710|2025-02-03
+|     |  |                                                                       |  |           |     |  +**| (81.8/36)
+|     |  |                                                                       |  |           |     |  |  |        +**hMpxV/Uganda/UVRI-MP880/2024|EPI_ISL_19602374|2024-11-04
+|     |  |                                                                       |  |           |     |  |  |     +**| (76.5/45)
+|     |  |                                                                       |  |           |     |  |  |     |  +--hMpxV/Uganda/UVRI-MP1039/2024|EPI_ISL_19602380|2024-11-22
+|     |  |                                                                       |  |           |     |  |  |  +--| (79.3/78)
+|     |  |                                                                       |  |           |     |  |  |  |  |  +--hMpxV/Uganda/UVRI-MP1604/2025|EPI_ISL_20047716|2024-12-10
+|     |  |                                                                       |  |           |     |  |  |  |  +--| (80.3/89)
+|     |  |                                                                       |  |           |     |  |  |  |     |  +**hMpxV/Uganda/UVRI-MP814/2024|EPI_ISL_19602365|2024-11-01
+|     |  |                                                                       |  |           |     |  |  |  |     +--| (77/88)
+|     |  |                                                                       |  |           |     |  |  |  |        |  +--hMpxV/Uganda/UVRI-MP1606/2025|EPI_ISL_20047715|2025-02-14
+|     |  |                                                                       |  |           |     |  |  |  |        +--| (77/80)
+|     |  |                                                                       |  |           |     |  |  |  |           |     +--hMpxV/Uganda/UVRI-MP2082/2025|EPI_ISL_20047702|2025-02-18
+|     |  |                                                                       |  |           |     |  |  |  |           |  +--| (73.7/99)
+|     |  |                                                                       |  |           |     |  |  |  |           |  |  |  +**hMpxV/Uganda/UVRI-060/2024|EPI_ISL_19612236|2024-12-04
+|     |  |                                                                       |  |           |     |  |  |  |           |  |  +--| (98.5/100)
+|     |  |                                                                       |  |           |     |  |  |  |           |  |     +--hMpxV/Uganda/UVRI-062/2024|EPI_ISL_19612237|2024-12-03
+|     |  |                                                                       |  |           |     |  |  |  |           +--| (93.3/96)
+|     |  |                                                                       |  |           |     |  |  |  |              +--hMpxV/Uganda/UVRI-MP2060/2025|EPI_ISL_20047709|2025-02-18
+|     |  |                                                                       |  |           |     |  |  +**| (74.3/29)
+|     |  |                                                                       |  |           |     |  |     |  +--hMpxV/Uganda/UVRI-MP2089/2025|EPI_ISL_20047704|2025-02-17
+|     |  |                                                                       |  |           |     |  |     +--| (76.7/85)
+|     |  |                                                                       |  |           |     |  |        +--hMpxV/Uganda/UVRI-MP767/2024|EPI_ISL_19587260|2024-10-27
+|     |  |                                                                       |  |           |     +**| (82.7/29)
+|     |  |                                                                       |  |           |        |     +--hMpxV/Uganda/UVRI-MP674/2024|EPI_ISL_19587254|2024-10-19
+|     |  |                                                                       |  |           |        |  +**| (0/74)
+|     |  |                                                                       |  |           |        |  |  +--hMpxV/Uganda/UVRI-MP1605/2025|EPI_ISL_20047720|2024-12-10
+|     |  |                                                                       |  |           |        +**| (0/51)
+|     |  |                                                                       |  |           |           |  +--hMpxV/Uganda/UVRI-MP766/2024|EPI_ISL_19587259|2024-10-25
+|     |  |                                                                       |  |           |           +**| (74.5/70)
+|     |  |                                                                       |  |           |              |  +**hMpxV/Uganda/UVRI-MP1474/2024|EPI_ISL_20047731|2024-12-10
+|     |  |                                                                       |  |           |              +--| (89/83)
+|     |  |                                                                       |  |           |                 |  +--hMpxV/Uganda/UVRI-MP1185/2024|EPI_ISL_19602383|2024-11-22
+|     |  |                                                                       |  |           |                 +--| (78.5/79)
+|     |  |                                                                       |  |           |                    +--hMpxV/Uganda/UVRI-MP1473/2025|EPI_ISL_20047726|2025-02-11
+|     |  |                                                                       |  |        +**| (0/4)
+|     |  |                                                                       |  |        |  +**hMpxV/Uganda/UVRI-MP763/2024|EPI_ISL_19587256|2024-10-21
+|     |  |                                                                       |  |     +**| (0/5)
+|     |  |                                                                       |  |     |  |  +**hMpxV/Uganda/UVRI-MP819/2024|EPI_ISL_19602368|2024-11-01
+|     |  |                                                                       |  |     |  +**| (0/5)
+|     |  |                                                                       |  |     |     +--hMpxV/Uganda/UVRI-MP1483/2025|EPI_ISL_20047735|2025-02-04
+|     |  |                                                                       |  |  +--| (87.3/13)
+|     |  |                                                                       |  |  |  +--hMpxV/Uganda/UVRI-MP828/2024|EPI_ISL_19602370|2024-10-30
+|     |  |                                                                       |  +**| (51.2/13)
+|     |  |                                                                       |     +**hMpxV/Uganda/UVRI-MP454/2024|EPI_ISL_19587236|2024-09-22
+|     |  |                                                                    +**| (93.3/77)
+|     |  |                                                                    |  |     +**hMpxV/Uganda/UVRI-MP350C/2024|EPI_ISL_19587234|2024-09-08
+|     |  |                                                                    |  |  +**| (0/88)
+|     |  |                                                                    |  |  |  +**hMpxV/Uganda/UVRI-MP652/2024|EPI_ISL_19587245|2024-10-21
+|     |  |                                                                    |  +**| (98.8/92)
+|     |  |                                                                    |     +**hMpxV/Uganda/UVRI-MP350D/2024|EPI_ISL_19587235|2024-09-08
+|     |  |                                                                 +**| (0/2)
+|     |  |                                                                 |  |              +**hMpxV/Uganda/UVRI-MP1249/2024|EPI_ISL_19612231|2024-11-30
+|     |  |                                                                 |  |           +**| (78.9/75)
+|     |  |                                                                 |  |           |  |  +--hMpxV/Uganda/UVRI-MP901/2024|EPI_ISL_19602375|2024-11-06
+|     |  |                                                                 |  |           |  +--| (94.2/94)
+|     |  |                                                                 |  |           |     +--hMpxV/Uganda/UVRI-MP1236/2024|EPI_ISL_19612229|2024-11-29
+|     |  |                                                                 |  |        +--| (76.2/15)
+|     |  |                                                                 |  |        |  |  +--hMpxV/Uganda/UVRI-MP859/2024|EPI_ISL_19602372|2024-10-30
+|     |  |                                                                 |  |        |  +--| (89/80)
+|     |  |                                                                 |  |        |     +--hMpxV/Uganda/UVRI-MP1582/2024|EPI_ISL_20047729|2024-12-09
+|     |  |                                                                 |  |     +**| (74.3/13)
+|     |  |                                                                 |  |     |  +--hMpxV/Uganda/UVRI-MP817/2024|EPI_ISL_19602366|2024-11-01
+|     |  |                                                                 |  |  +--| (84.5/66)
+|     |  |                                                                 |  |  |  |     +--hMpxV/Uganda/UVRI-MP2092/2025|EPI_ISL_20047705|2024-12-09
+|     |  |                                                                 |  |  |  |  +**| (0/79)
+|     |  |                                                                 |  |  |  |  |  +--hMpxV/Uganda/UVRI-MP2080/2025|EPI_ISL_20047742|2025-02-17
+|     |  |                                                                 |  |  |  +--| (87.4/86)
+|     |  |                                                                 |  |  |     +**hMpxV/Uganda/UVRI-MP1271/2024|EPI_ISL_19612232|2024-11-30
+|     |  |                                                                 |  +**| (72.1/9)
+|     |  |                                                                 |     +**hMpxV/Uganda/UVRI-MP742/2024|EPI_ISL_19587252|2024-10
+|     |  |                                                              +**| (0/2)
+|     |  |                                                              |  +**hMpxV/Uganda/UVRI-MP538/2024|EPI_ISL_19587264|2024-10
+|     |  |                                                           +**| (100/8)
+|     |  |                                                           |  +--hMpxV/Uganda/UVRI-MP1562/2025|EPI_ISL_20047722|2025-01-21
+|     |  |                                                        +**| (73.8/13)
+|     |  |                                                        |  +**hMpxV/Uganda/UVRI-MP688/2024|EPI_ISL_19587251|2024-10-19
+|     |  |                                                     +**| (46.9/40)
+|     |  |                                                     |  |        +**hMpxV/Uganda/UVRI-MP349/2024|EPI_ISL_19587230|2024-09-08
+|     |  |                                                     |  |     +**| (85.2/95)
+|     |  |                                                     |  |     |  +**hMpxV/Uganda/UVRI-MP765/2024|EPI_ISL_19587258|2024-10-24
+|     |  |                                                     |  |  +--| (82.8/96)
+|     |  |                                                     |  |  |  +**hMpxV/Uganda/UVRI-MP636/2024|EPI_ISL_19587243|2024-10-21
+|     |  |                                                     |  +**| (83.8/79)
+|     |  |                                                     |     |  +--hMpxV/Uganda/UVRI-059/2024|EPI_ISL_19612235|2024-12-04
+|     |  |                                                     |     +**| (75.8/78)
+|     |  |                                                     |        |  +**hMpxV/Uganda/UVRI-MP822/2024|EPI_ISL_19602369|2024-11-01
+|     |  |                                                     |        +--| (84.7/83)
+|     |  |                                                     |           +--hMpxV/Uganda/UVRI-MP2079/2025|EPI_ISL_20047741|2025-02-10
+|     |  |                                                  +--| (86.5/65)
+|     |  |                                                  |  +--hMpxV/Uganda/UVRI-MP768/2024|EPI_ISL_19587261|2024-10-25
+|     |  |                                               +--| (77.4/14)
+|     |  |                                               |  |  +**hMpxV/Uganda/UVRI-MP350A1/2024|EPI_ISL_19587231|2024-09-08
+|     |  |                                               |  +**| (34.3/5)
+|     |  |                                               |     |  +**hMpxV/Uganda/UVRI-MP350A2/2024|EPI_ISL_19587232|2024-09-08
+|     |  |                                               |     +**| (75.2/5)
+|     |  |                                               |        |                    +--hMpxV/Uganda/UVRI-MP789/2024|EPI_ISL_19602362|2024-10-30
+|     |  |                                               |        |                 +--| (89.7/80)
+|     |  |                                               |        |                 |  |  +**hMpxV/Uganda/UVRI-MP1247/2024|EPI_ISL_19693786|2024-12-03
+|     |  |                                               |        |                 |  +--| (79.7/88)
+|     |  |                                               |        |                 |     |  +--hMpxV/Uganda/UVRI-MP2101/2025|EPI_ISL_20047708|2025-01-22
+|     |  |                                               |        |                 |     +**| (35.5/79)
+|     |  |                                               |        |                 |        +--hMpxV/Uganda/UVRI-MP2096/2025|EPI_ISL_20047707|2025-02-14
+|     |  |                                               |        |              +**| (0/56)
+|     |  |                                               |        |              |  +--hMpxV/Uganda/UVRI-MP1597/2025|EPI_ISL_20047717|2025-01-23
+|     |  |                                               |        |           +--| (78.9/68)
+|     |  |                                               |        |           |  +**hMpxV/Uganda/UVRI-MP667/2024|EPI_ISL_19587249|2024-10-21
+|     |  |                                               |        |        +**| (98.6/78)
+|     |  |                                               |        |        |  +--hMpxV/Uganda/UVRI-MP762/2024|EPI_ISL_19587255|2024-10-24
+|     |  |                                               |        |     +**| (0/5)
+|     |  |                                               |        |     |  +--hMpxV/Uganda/UVRI-MP2061/2025|EPI_ISL_20047719|2025-02-18
+|     |  |                                               |        |  +--| (37.7/6)
+|     |  |                                               |        |  |  +--hMpxV/Uganda/UVRI-MP2062/2025|EPI_ISL_20047730|2025-02-18
+|     |  |                                               |        +**| (90.3/8)
+|     |  |                                               |           +--hMpxV/Uganda/UVRI-MP1286/2024|EPI_ISL_19612234|2024-12-01
+|     |  |                                            +**| (0/12)
+|     |  |                                            |  |                       +--hMpxV/Uganda/UVRI-MP1183/2024|EPI_ISL_19602382|2024-11-22
+|     |  |                                            |  |                    +--| (80.6/87)
+|     |  |                                            |  |                    |  +--hMpxV/Uganda/UVRI-MP1602/2025|EPI_ISL_20047712|2025-02-04
+|     |  |                                            |  |                 +**| (76.1/87)
+|     |  |                                            |  |                 |  +--hMpxV/Uganda/UVRI-MP1285/2024|EPI_ISL_19612233|2024-12-01
+|     |  |                                            |  |              +**| (79/83)
+|     |  |                                            |  |              |  +--hMpxV/Uganda/UVRI-MP2073/2025|EPI_ISL_20047738|2025-02-18
+|     |  |                                            |  |           +**| (79.4/83)
+|     |  |                                            |  |           |  +--hMpxV/Uganda/UVRI-MP2103/2025|EPI_ISL_20047711|2025-01-23
+|     |  |                                            |  |        +--| (83.7/50)
+|     |  |                                            |  |        |  |     +**hMpxV/Uganda/UVRI-MP1221/2024|EPI_ISL_19612227|2024-11-26
+|     |  |                                            |  |        |  |  +--| (89.7/95)
+|     |  |                                            |  |        |  |  |  +**hMpxV/Uganda/UVRI-MP1287/2024|EPI_ISL_19693787|2024-12-04
+|     |  |                                            |  |        |  +**| (71.6/80)
+|     |  |                                            |  |        |     +--hMpxV/Uganda/UVRI-MP659/2024|EPI_ISL_19587247|2024-10-18
+|     |  |                                            |  |     +**| (85.6/80)
+|     |  |                                            |  |     |  |  +--hMpxV/Uganda/UVRI-MP632/2024|EPI_ISL_19587242|2024-10-17
+|     |  |                                            |  |     |  +**| (0/1)
+|     |  |                                            |  |     |     |     +--hMpxV/Uganda/UVRI-MP903/2024|EPI_ISL_19602376|2024-11-02
+|     |  |                                            |  |     |     |  +**| (72.3/81)
+|     |  |                                            |  |     |     |  |  +--hMpxV/Uganda/UVRI-MP1544/2025|EPI_ISL_20047724|2025-02-06
+|     |  |                                            |  |     |     +--| (90.2/52)
+|     |  |                                            |  |     |        |           +**hMpxV/Uganda/UVRI-MP1173/2024|EPI_ISL_19693785|2024-11-21
+|     |  |                                            |  |     |        |        +**| (32.7/96)
+|     |  |                                            |  |     |        |        |  +--hMpxV/Uganda/UVRI-MP1171/2024|EPI_ISL_19693783|2024-11-21
+|     |  |                                            |  |     |        |     +--| (79.8/87)
+|     |  |                                            |  |     |        |     |  +--hMpxV/Uganda/UVRI-MP1049/2024|EPI_ISL_19693771|2024-11-13
+|     |  |                                            |  |     |        |  +**| (0/70)
+|     |  |                                            |  |     |        |  |  +--hMpxV/Uganda/UVRI-MP1590/2025|EPI_ISL_20047714|2024-12-10
+|     |  |                                            |  |     |        +**| (39.7/58)
+|     |  |                                            |  |     |           |           +**hMpxV/Uganda/UVRI-MP663/2024|EPI_ISL_19587248|2024-10-21
+|     |  |                                            |  |     |           |        +**| (77.2/91)
+|     |  |                                            |  |     |           |        |  +--hMpxV/Uganda/UVRI-MP1537/2025|EPI_ISL_20047723|2025-02-06
+|     |  |                                            |  |     |           |     +**| (79.3/86)
+|     |  |                                            |  |     |           |     |  +**hMpxV/Uganda/UVRI-MP919/2024|EPI_ISL_19602377|2024-11-06
+|     |  |                                            |  |     |           |  +**| (77.7/84)
+|     |  |                                            |  |     |           |  |  +--hMpxV/Uganda/UVRI-MP1595/2025|EPI_ISL_20047721|2025-02-03
+|     |  |                                            |  |     |           +**| (75.3/82)
+|     |  |                                            |  |     |              +**hMpxV/Uganda/UVRI-MP655/2024|EPI_ISL_19587246|2024-10-18
+|     |  |                                            |  |  +**| (74.9/72)
+|     |  |                                            |  |  |  |  +--hMpxV/Uganda/UVRI-MP757/2024|EPI_ISL_19587253|2024-10-18
+|     |  |                                            |  |  |  +**| (0/82)
+|     |  |                                            |  |  |     +--hMpxV/Uganda/UVRI-MP678/2024|EPI_ISL_19587250|2024-10-19
+|     |  |                                            |  +**| (74.9/73)
+|     |  |                                            |     +--hMpxV/Uganda/UVRI-MP848/2024|EPI_ISL_19602371|2024-10-30
+|     |  |                                         +**| (0/17)
+|     |  |                                         |  |  +--hMpxV/Uganda/UVRI-MP1155/2024|EPI_ISL_19693779|2024-11-20
+|     |  |                                         |  +--| (89.2/77)
+|     |  |                                         |     +--hMpxV/Uganda/UVRI-MP863/2024|EPI_ISL_19602373|2024-11-01
+|     |  |                                      +**| (9.5/51)
+|     |  |                                      |  |           +--hMpxV/Uganda/UVRI-MP619/2024|EPI_ISL_19587240|2024-10-18
+|     |  |                                      |  |        +**| (0/24)
+|     |  |                                      |  |        |  |  +--hMpxV/Uganda/UVRI-MP2094/2025|EPI_ISL_20047706|2025-02-03
+|     |  |                                      |  |        |  +**| (0/37)
+|     |  |                                      |  |        |     +--hMpxV/Uganda/UVRI-MP1569/2025|EPI_ISL_20047733|2025-01-29
+|     |  |                                      |  |     +**| (81.5/41)
+|     |  |                                      |  |     |  +--hMpxV/Uganda/UVRI-MP1581/2025|EPI_ISL_20047725|2025-02-06
+|     |  |                                      |  |  +**| (70.2/32)
+|     |  |                                      |  |  |  +--hMpxV/Uganda/UVRI-MP920/2024|EPI_ISL_19602378|2024-11-05
+|     |  |                                      |  +**| (84/47)
+|     |  |                                      |     +--hMpxV/Uganda/UVRI-MP813/2024|EPI_ISL_19602364|2024-11-01
+|     |  |                                   +**| (0/79)
+|     |  |                                   |  +**hMpxV/Uganda/UVRI-MP1172/2024|EPI_ISL_19693784|2024-11-21
+|     |  |                                +--| (94.8/85)
+|     |  |                                |  +**hMpxV/Uganda/UVRI-MP812/2024|EPI_ISL_19602363|2024-11-01
+|     |  |                             +**| (0/88)
+|     |  |                             |  +--hMpxV/Uganda/UVRI-MP1137/2024|EPI_ISL_19693776|2024-11-15
+|     |  |                          +--| (88.9/81)
+|     |  |                          |  +--hMpxV/Uganda/UVRI-MP558/2024|EPI_ISL_19587265|2024-10-07
+|     |  |                       +--| (48.8/65)
+|     |  |                       |  +--hMpxV/Uganda/UVRI-MP1180/2024|EPI_ISL_19602381|2024-11-22
+|     |  |                    +--| (81/65)
+|     |  |                    |  |  +--hMpxV/Uganda/UVRI-MP1212/2024|EPI_ISL_19612226|2024-11-27
+|     |  |                    |  +**| (65.5/99)
+|     |  |                    |     +--hMpxV/Uganda/UVRI-MP1246/2024|EPI_ISL_19612230|2024-11-29
+|     |  |                 +**| (0/60)
+|     |  |                 |  +--hMpxV/Uganda/UVRI-MP1574/2025|EPI_ISL_20047713|2024-12-09
+|     |  |              +--| (24.4/57)
+|     |  |              |  |     +**hMpxV/Uganda/UVRI-MP764/2024|EPI_ISL_19587257|2024-10-21
+|     |  |              |  |  +--| (80.1/95)
+|     |  |              |  |  |  +--hMpxV/Uganda/UVRI-MP1186/2024|EPI_ISL_19602384|2024-11-22
+|     |  |              |  +--| (85.1/70)
+|     |  |              |     |  +--hMpxV/Uganda/UVRI-MP1130/2024|EPI_ISL_19693775|2024-11-15
+|     |  |              |     +--| (92.3/99)
+|     |  |              |        +--hMpxV/Uganda/UVRI-MP1159/2024|EPI_ISL_19693780|2024-11-20
+|     |  |           +**| (0/36)
+|     |  |           |  |     +--hMpxV/Uganda/UVRI-MP786/2024|EPI_ISL_19693769|2024-11-01
+|     |  |           |  |  +--| (88.1/100)
+|     |  |           |  |  |  +--hMpxV/Uganda/UVRI-MP1142/2024|EPI_ISL_19693777|2024-11-18
+|     |  |           |  +--| (84.6/73)
+|     |  |           |     +--hMpxV/Uganda/UVRI-MP2077/2025|EPI_ISL_20047740|2025-02-14
+|     |  |        +**| (0/47)
+|     |  |        |  |  +--hMpxV/Uganda/UVRI-MP1129/2024|EPI_ISL_19693774|2024-11-15
+|     |  |        |  +--| (79.4/99)
+|     |  |        |     +---hMpxV/Uganda/UVRI-MP1600/2024|EPI_ISL_20047728|2024-12-09
+|     |  |     +--| (80.9/85)
+|     |  |     |  +--hMpxV/Uganda/UVRI-MP1116/2024|EPI_ISL_19693772|2024-11-15
+|     |  |  +--| (76/87)
+|     |  |  |  +--hMpxV/Uganda/UVRI-MP787/2024|EPI_ISL_19693770|2024-11-01
+|     |  +--| (94.4/86)
+|     |     |     +**hMpxV/Thailand/BIDI-002/2025|EPI_ISL_19694853|2025-01-17
+|     |     |  +**| (76/100)
+|     |     |  |  +**hMpxV/Thailand/BIDI-003/2025|EPI_ISL_19694854|2025-01-22
+|     |     +**| (77/96)
+|     |        +-----hMpxV/Pakistan/NIH-KMU-006/2024|EPI_ISL_19713336|2024-12-02
+|  +**| (99.6/67)
+|  |  |        +**hMpxV/DRC/INRB-0239V/2024|EPI_ISL_19093791|2024-01-10
+|  |  |     +--| (82.6/96)
+|  |  |     |  |  +**hMpxV/DRC/INRB-0220V/2024|EPI_ISL_19093817|2024-01-26
+|  |  |     |  +--| (97.3/99)
+|  |  |     |     +**hMpxV/DRC/INRB-0198V/2024|EPI_ISL_19093796|2024-01-23
+|  |  |  +**| (0/74)
+|  |  |  |  |     +**hMpxV/DRC/INRB-0224C/2023|EPI_ISL_19093830|2023-12-25
+|  |  |  |  |  +**| (36.7/94)
+|  |  |  |  |  |  |        +**hMpxV/DRC/INRB-0231V/2023|EPI_ISL_19093810|2023-12-21
+|  |  |  |  |  |  |     +**| (0/98)
+|  |  |  |  |  |  |     |  +**hMpxV/DRC/INRB-0201V/2024|EPI_ISL_19093808|2024-01-23
+|  |  |  |  |  |  |  +--| (0/53)
+|  |  |  |  |  |  |  |  +--hMpxV/DRC/INRB-0230C/2023|EPI_ISL_19093827|2023-12-31
+|  |  |  |  |  |  +**| (34/94)
+|  |  |  |  |  |     +--hMpxV/DRC/INRB-0240V/2024|EPI_ISL_19093812|2024-01-14
+|  |  |  |  +--| (81.5/98)
+|  |  |  |     +**hMpxV/DRC/INRB-0209V/2024|EPI_ISL_19093803|2024-01-19
+|  |  +--| (77.6/80)
+|  |     |  +**hMpxV/DRC/INRB-0223C/2023|EPI_ISL_19093831|2023-12-26
+|  |     +**| (81.4/100)
+|  |        +--hMpxV/DRC/INRB-0226V/2023|EPI_ISL_19093809|2023-12-26
++--| (95.8/71)
+   +**hMpxV/DRC/INRB-010/2023|EPI_ISL_19093833|2023-10-13
+
+Tree in newick format:
+
+(hMpxV/DRC/HGRK-1L/2024|EPI_ISL_18886301|2024-01-15:0.0000624824,(((hMpxV/Germany/un-RKI-1213/2024|EPI_ISL_19785226|2024-12:0.0000366502,hMpxV/Germany/un-RKI-1214/2024|EPI_ISL_19785230|2024-12:0.0000662596)94.6/99:0.0000341234,hMpxV/Germany/NW-RKI-1142/2024|EPI_ISL_19502532|2024-10-12:0.0000347650)97.6/99:0.0000337432,(hMpxV/DRC/CRSN-1/2023|EPI_ISL_19004044|2023-11-02:0.0000065289,(hMpxV/DRC/CRSN-2/2023|EPI_ISL_19004045|2023-11-15:0.0000010942,hMpxV/DRC/CRSN-3/2023|EPI_ISL_19004046|2023-12-23:0.0000055192)89.9/100:0.0000225090)88.5/100:0.0000207941)73.9/70:0.0000073027,((((((((((((hMpxV/Germany/un-RKI-1216/2025|EPI_ISL_19785218|2025-01:0.0000266949,(hMpxV/Germany/un-RKI-1351/2025|EPI_ISL_19887806|2025-04:0.0000005029,hMpxV/Germany/un-RKI-1349/2025|EPI_ISL_19887833|2025-04:0.0000011248)95.2/100:0.0000306492)97.3/100:0.0000379915,((hMpxV/Canada/MB-NML-6349/2024|EPI_ISL_19791290|2024-11-21:0.0000005029,hMpxV/Canada/MB-NML-6350/2024|EPI_ISL_19791291|2024-11-21:0.0000005029)0/87:0.0000011391,hMpxV/Canada/MB-NML-6348/2024|EPI_ISL_19791292|2024-11-21:0.0000050288)0/99:0.0000013159)0/96:0.0000013694,hMpxV/USA/GA-CDC-0100/2025|EPI_ISL_19686354|2025-01:0.0000010387)98.3/100:0.0000306258,((hMpxV/Brazil/SP-LEIAL-4448/2025|EPI_ISL_19762724|2025-02-24:0.0000336891,(hMpxV/China/ZJ-ZCDC-001/2024|EPI_ISL_19870071|2024-12-30:0.0000500254,((hMpxV/Congo/BZV-LNSP-CG001/2024|EPI_ISL_19810234|2024-12-23:0.0000250601,(hMpxV/Congo/BZV-LNSP-CG022/2025|EPI_ISL_19810238|2025-02-19:0.0000897248,hMpxV/Congo/BZV-LNSP-CG021/2025|EPI_ISL_19810237|2025-02-17:0.0000908287)80.9/95:0.0000210868)42.4/92:0.0000059645,((hMpxV/Congo/BZV-LNSP-CG018/2025|EPI_ISL_19810235|2025-01-09:0.0000096981,hMpxV/Congo/BZV-LNSP-CG032/2025|EPI_ISL_19810240|2025-03-05:0.0000213804)22.6/93:0.0000051283,hMpxV/Congo/BZV-LNSP-CG020/2025|EPI_ISL_19810236|2025-02-13:0.0000879615)41.7/94:0.0000051833)99.8/100:0.0000688447)29.4/88:0.0000071555)77.3/94:0.0000084568,hMpxV/USA/NH-CDC-0100/2025|EPI_ISL_19785231|2025-02:0.0000565255)0/79:0.0000010645)0/88:0.0000012809,((hMpxV/United_Kingdom/UKHSA-0072/2024|EPI_ISL_19557976|2024-10-27:0.0000010136,hMpxV/USA/CA-CDC-0100/2024|EPI_ISL_19586581|2024-11:0.0000098900)84/100:0.0000050102,hMpxV/Thailand/NIC-31/2024|EPI_ISL_19350788|2024-08-16:0.0000010245)80.8/98:0.0000051530)84.1/91:0.0000059045,(((((hMpxV/Thailand/BIDI-001/2025|EPI_ISL_19673536|2025-01-06:0.0000219568,(hMpxV/Thailand/BIDI-004/2025|EPI_ISL_19818649|2025-03-29:0.0000101934,hMpxV/India/UP-MCL-H-196-2884-1197/2025|EPI_ISL_19902083|2025-05-03:0.0000317228)92.7/99:0.0000189939)0/64:0.0000010800,(hMpxV/Uganda/UVRI-MP173/2024|EPI_ISL_19867563|2024-08-25:0.0000309652,hMpxV/USA/MA-CDC-0100/2025|EPI_ISL_20056547|2025-06:0.0000151827)74.7/93:0.0000050225)0/61:0.0000012634,hMpxV/India/KL-ICMR-176_1054/2024|EPI_ISL_19484958|2024-09-21:0.0000101514)87.6/64:0.0000138808,hMpxV/Italy/un-INMI-0001/2025|EPI_ISL_20055054|2025-05:0.0000614756)76.9/63:0.0000067360,hMpxV/Sweden/PHAS-11304/2024|EPI_ISL_19348512|2024-08-13:0.0000174545)0/57:0.0000011617)0/55:0.0000014380,hMpxV/Uganda/CPHL-002/2024|EPI_ISL_19456777|2024-09-08:0.0000561822)91.9/56:0.0000764387,(((hMpxV/Kenya/nvrl220/2024|EPI_ISL_19302262|2024-07-25:0.0000014075,hMpxV/Kenya/KEMRI-00107/2024|EPI_ISL_19345034|2024-07-25:0.0000005029)0/85:0.0000010311,hMpxV/USA/NY-CDC-0100/2025|EPI_ISL_19818650|2025-02:0.0000014129)0/63:0.0000011167,hMpxV/Uganda/UVRI-MP125/2024|EPI_ISL_19867562|2024-08-18:0.0000014795)97.9/77:0.0000351771)87.8/64:0.0000168538,hMpxV/Thailand/KCMH-ID24110/2024|EPI_ISL_19366744|2024-08-16:0.0000253130)0/57:0.0000010638,(((((((((((((((((((((((((((((((((hMpxV/DRC/CRSN-4/2023|EPI_ISL_19079342|2023-12-23:0.0000005029,hMpxV/DRC/CRSN-5/2024|EPI_ISL_19079343|2024-01-06:0.0000468264)0/30:0.0000008712,hMpxV/DRC/CRSN-6/2024|EPI_ISL_19079344|2024-01-14:0.0000049238)95.3/85:0.0000218766,hMpxV/Uganda/UVRI-MP587/2024|EPI_ISL_19587238|2024-10-14:0.0000009121)19.6/8:0.0000072100,hMpxV/Uganda/UVRI-MP588/2024|EPI_ISL_19587239|2024-10-14:0.0000204107)97.9/89:0.0000404263,(((((hMpxV/Uganda/UVRI-012/2024|EPI_ISL_19305614|2024-07-12:0.0002277443,hMpxV/Uganda/UVRI-MP783/2024|EPI_ISL_19693768|2024-10-30:0.0000150830)41/79:0.0000130281,hMpxV/Uganda/UVRI-MP1472/2025|EPI_ISL_20047736|2025-02-07:0.0000151146)0/75:0.0000011588,hMpxV/Uganda/UVRI-MP2072/2025|EPI_ISL_20047737|2025-02-18:0.0000100259)74.8/90:0.0000049603,(hMpxV/Uganda/UVRI-MP1575/2025|EPI_ISL_20047732|2025-01-05:0.0000405441,hMpxV/Uganda/UVRI-MP1563/2025|EPI_ISL_20047734|2025-01-31:0.0000122731)81.1/90:0.0000183876)0/84:0.0000010249,hMpxV/Uganda/UVRI-MP512/2024|EPI_ISL_19587237|2024-09-24:0.0000014402)99.3/94:0.0000318632)0/65:0.0000010325,(((hMpxV/Uganda/UVRI-MP818/2024|EPI_ISL_19602367|2024-11-01:0.0000050141,hMpxV/Uganda/UVRI-MP1023/2024|EPI_ISL_19602379|2024-11-08:0.0000098361)75/93:0.0000047688,hMpxV/Uganda/UVRI-MP1167/2024|EPI_ISL_19693782|2024-11-20:0.0000253276)97.3/100:0.0000255187,(hMpxV/Uganda/UVRI-MP1153/2024|EPI_ISL_19693778|2024-11-20:0.0000296366,(((((hMpxV/DRC/HGRK-78/2023|EPI_ISL_19439696|2023-12-06:0.0000011071,(((((((hMpxV/DRC/HGRK-36/2023|EPI_ISL_19381268|2023-12-12:0.0001961373,(hMpxV/DRC/HGRK-1M/2024|EPI_ISL_19689371|2024-09-02:0.0000005029,(((hMpxV/DRC/HGRK-11K/2024|EPI_ISL_19689378|2024-09-01:0.0000005029,(hMpxV/DRC/HGRK-19K/2024|EPI_ISL_19689685|2024-09-01:0.0000005029,hMpxV/DRC/HGRK-16K/2024|EPI_ISL_19689399|2024-09-01:0.0000009701)0/35:0.0000009120)100/34:0.0000029613,(((hMpxV/DRC/HGRK-13K/2024|EPI_ISL_19689380|2024-09-01:0.0000005029,hMpxV/DRC/HGRK-12K/2024|EPI_ISL_19689379|2024-09-01:0.0000005029)0/66:0.0000011108,hMpxV/DRC/HGRK-15K/2024|EPI_ISL_19689381|2024-09-01:0.0000011841)0/27:0.0000011264,hMpxV/DRC/HGRK-18K/2024|EPI_ISL_19689632|2024-09-01:0.0000005029)0/27:0.0000011258)97.4/100:0.0000204376,hMpxV/DRC/HGRK-17K/2024|EPI_ISL_19689575|2024-09-01:0.0000011196)0/98:0.0000011496)0/50:0.0000011258)0/58:0.0000010144,hMpxV/DRC/HGRK-8MM/2024|EPI_ISL_19689376|2024-08-12:0.0000005029)0/17:0.0000010163,hMpxV/DRC/HGRK-5MM/2024|EPI_ISL_19689373|2024-08-15:0.0000047984)0/7:0.0000013636,(hMpxV/DRC/HGRK-7N/2024|EPI_ISL_19689375|2024-08-22:0.0000012591,hMpxV/DRC/HGRK-6K/2024|EPI_ISL_19689374|2024-08-30:0.0000010703)93.6/100:0.0000099557)0/14:0.0000005029,hMpxV/DRC/HGRK-04m/2024|EPI_ISL_19621388|2024-08-12:0.0000005029)0/13:0.0000013576,hMpxV/DRC/HGRK-2N/2024|EPI_ISL_19689372|2024-08-22:0.0000012211)0/57:0.0000010848,hMpxV/DRC/HGRK-20K/2024|EPI_ISL_19689707|2024-09-01:0.0000200426)78.9/100:0.0000052003)96.4/100:0.0000210661,hMpxV/DRC/HGRK-9MM/2024|EPI_ISL_19689377|2024-08-15:0.0000225144)87.1/89:0.0000114123,(hMpxV/Burundi/INSP-1447/2024|EPI_ISL_19599243|2024-09-14:0.0000011206,hMpxV/Burundi/INSP-1529/2024|EPI_ISL_19599257|2024-09-16:0.0000050668)86.9/100:0.0000102553)94.5/93:0.0000260158,((hMpxV/DRC/INRB-2832V/2024|EPI_ISL_19857759|2024-09-06:0.0000317991,(hMpxV/DRC/INRB-2925V/2024|EPI_ISL_19858736|2024-09-09:0.0000406378,hMpxV/DRC/INRB-3101C/2024|EPI_ISL_19858194|2024-09-13:0.0000829181)75.2/98:0.0000292642)96/100:0.0000762168,hMpxV/DRC/INRB-2497V/2024|EPI_ISL_19858796|2024-08-30:0.0000501325)100/100:0.0002164187)79.1/89:0.0000180770,hMpxV/Congo/BZV-LNSP-CG000/2024|EPI_ISL_19810233|2024-08-08:0.0000211690)77.6/87:0.0000174056)80.6/87:0.0000115732)78.8/85:0.0000052416)87.8/91:0.0000109688,hMpxV/Uganda/UVRI-MP2088/2025|EPI_ISL_20047703|2025-02-15:0.0001134100)84.3/86:0.0000111972,((hMpxV/Uganda/UVRI-MP769/2024|EPI_ISL_19587262|2024-10-25:0.0000053324,hMpxV/Uganda/UVRI-MP1596/2025|EPI_ISL_20047727|2025-02-10:0.0000048153)0/81:0.0000010576,hMpxV/Uganda/UVRI-MP1222/2024|EPI_ISL_19612228|2024-11-27:0.0000053179)80.5/82:0.0000049915)0/23:0.0000011204,(((((hMpxV/Uganda/UVRI-MP350B/2024|EPI_ISL_19587233|2024-09-08:0.0000005029,(((hMpxV/Uganda/UVRI-MP1512/2025|EPI_ISL_20047718|2025-02-05:0.0000103475,hMpxV/Uganda/UVRI-MP644/2024|EPI_ISL_19587244|2024-10-21:0.0000010910)80.9/83:0.0000047756,hMpxV/Uganda/UVRI-MP770/2024|EPI_ISL_19587263|2024-10-27:0.0000100577)0/26:0.0000010605,((hMpxV/Uganda/UVRI-MP2102/2025|EPI_ISL_20047710|2025-02-03:0.0000151662,(((hMpxV/Uganda/UVRI-MP880/2024|EPI_ISL_19602374|2024-11-04:0.0000010226,hMpxV/Uganda/UVRI-MP1039/2024|EPI_ISL_19602380|2024-11-22:0.0000150170)76.5/45:0.0000047082,(hMpxV/Uganda/UVRI-MP1604/2025|EPI_ISL_20047716|2024-12-10:0.0000203510,(hMpxV/Uganda/UVRI-MP814/2024|EPI_ISL_19602365|2024-11-01:0.0000005029,(hMpxV/Uganda/UVRI-MP1606/2025|EPI_ISL_20047715|2025-02-14:0.0000120697,((hMpxV/Uganda/UVRI-MP2082/2025|EPI_ISL_20047702|2025-02-18:0.0000097629,(hMpxV/Uganda/UVRI-060/2024|EPI_ISL_19612236|2024-12-04:0.0000048672,hMpxV/Uganda/UVRI-062/2024|EPI_ISL_19612237|2024-12-03:0.0000112819)98.5/100:0.0000340434)73.7/99:0.0000052779,hMpxV/Uganda/UVRI-MP2060/2025|EPI_ISL_20047709|2025-02-18:0.0000253856)93.3/96:0.0000152797)77/80:0.0000061890)77/88:0.0000060053)80.3/89:0.0000058956)79.3/78:0.0000053393,(hMpxV/Uganda/UVRI-MP2089/2025|EPI_ISL_20047704|2025-02-17:0.0000052778,hMpxV/Uganda/UVRI-MP767/2024|EPI_ISL_19587260|2024-10-27:0.0000134292)76.7/85:0.0000063871)74.3/29:0.0000012615)81.8/36:0.0000046124,((hMpxV/Uganda/UVRI-MP674/2024|EPI_ISL_19587254|2024-10-19:0.0000101946,hMpxV/Uganda/UVRI-MP1605/2025|EPI_ISL_20047720|2024-12-10:0.0000101932)0/74:0.0000011787,(hMpxV/Uganda/UVRI-MP766/2024|EPI_ISL_19587259|2024-10-25:0.0000101939,(hMpxV/Uganda/UVRI-MP1474/2024|EPI_ISL_20047731|2024-12-10:0.0000046916,(hMpxV/Uganda/UVRI-MP1185/2024|EPI_ISL_19602383|2024-11-22:0.0000075726,hMpxV/Uganda/UVRI-MP1473/2025|EPI_ISL_20047726|2025-02-11:0.0000306419)78.5/79:0.0000076316)89/83:0.0000099435)74.5/70:0.0000049786)0/51:0.0000010636)82.7/29:0.0000046431)100/29:0.0000035542)0/5:0.0000012982,hMpxV/Uganda/UVRI-MP763/2024|EPI_ISL_19587256|2024-10-21:0.0000010434)0/4:0.0000013522,(hMpxV/Uganda/UVRI-MP819/2024|EPI_ISL_19602368|2024-11-01:0.0000045193,hMpxV/Uganda/UVRI-MP1483/2025|EPI_ISL_20047735|2025-02-04:0.0000100577)0/5:0.0000005486)0/5:0.0000011145,hMpxV/Uganda/UVRI-MP828/2024|EPI_ISL_19602370|2024-10-30:0.0000100785)87.3/13:0.0000073909,hMpxV/Uganda/UVRI-MP454/2024|EPI_ISL_19587236|2024-09-22:0.0000005029)51.2/13:0.0000006390)82.4/21:0.0000054552,((hMpxV/Uganda/UVRI-MP350C/2024|EPI_ISL_19587234|2024-09-08:0.0000005029,hMpxV/Uganda/UVRI-MP652/2024|EPI_ISL_19587245|2024-10-21:0.0000005029)0/88:0.0000005029,hMpxV/Uganda/UVRI-MP350D/2024|EPI_ISL_19587235|2024-09-08:0.0000005029)98.8/92:0.0000023209)93.3/77:0.0000030349,(((((hMpxV/Uganda/UVRI-MP1249/2024|EPI_ISL_19612231|2024-11-30:0.0000007676,(hMpxV/Uganda/UVRI-MP901/2024|EPI_ISL_19602375|2024-11-06:0.0000081458,hMpxV/Uganda/UVRI-MP1236/2024|EPI_ISL_19612229|2024-11-29:0.0000151699)94.2/94:0.0000227373)78.9/75:0.0000049406,(hMpxV/Uganda/UVRI-MP859/2024|EPI_ISL_19602372|2024-10-30:0.0000169477,hMpxV/Uganda/UVRI-MP1582/2024|EPI_ISL_20047729|2024-12-09:0.0000356824)89/80:0.0000114213)76.2/15:0.0000055552,hMpxV/Uganda/UVRI-MP817/2024|EPI_ISL_19602366|2024-11-01:0.0000201573)74.3/13:0.0000012005,((hMpxV/Uganda/UVRI-MP2092/2025|EPI_ISL_20047705|2024-12-09:0.0000148366,hMpxV/Uganda/UVRI-MP2080/2025|EPI_ISL_20047742|2025-02-17:0.0000098513)0/79:0.0000006553,hMpxV/Uganda/UVRI-MP1271/2024|EPI_ISL_19612232|2024-11-30:0.0000014671)87.4/86:0.0000094237)84.5/66:0.0000103460,hMpxV/Uganda/UVRI-MP742/2024|EPI_ISL_19587252|2024-10:0.0000005029)72.1/9:0.0000011821)0/2:0.0000014679,hMpxV/Uganda/UVRI-MP538/2024|EPI_ISL_19587264|2024-10:0.0000010709)0/2:0.0000011892,hMpxV/Uganda/UVRI-MP1562/2025|EPI_ISL_20047722|2025-01-21:0.0000255204)100/8:0.0000011217,hMpxV/Uganda/UVRI-MP688/2024|EPI_ISL_19587251|2024-10-19:0.0000005029)73.8/13:0.0000044641,(((hMpxV/Uganda/UVRI-MP349/2024|EPI_ISL_19587230|2024-09-08:0.0000014612,hMpxV/Uganda/UVRI-MP765/2024|EPI_ISL_19587258|2024-10-24:0.0000047401)85.2/95:0.0000048492,hMpxV/Uganda/UVRI-MP636/2024|EPI_ISL_19587243|2024-10-21:0.0000012243)82.8/96:0.0000052329,(hMpxV/Uganda/UVRI-059/2024|EPI_ISL_19612235|2024-12-04:0.0000050889,(hMpxV/Uganda/UVRI-MP822/2024|EPI_ISL_19602369|2024-11-01:0.0000013374,hMpxV/Uganda/UVRI-MP2079/2025|EPI_ISL_20047741|2025-02-10:0.0000100876)84.7/83:0.0000091296)75.8/78:0.0000010650)83.8/79:0.0000046799)46.9/40:0.0000013950,hMpxV/Uganda/UVRI-MP768/2024|EPI_ISL_19587261|2024-10-25:0.0000204222)86.5/65:0.0000103901,(hMpxV/Uganda/UVRI-MP350A1/2024|EPI_ISL_19587231|2024-09-08:0.0000005029,(hMpxV/Uganda/UVRI-MP350A2/2024|EPI_ISL_19587232|2024-09-08:0.0000049802,(((((((hMpxV/Uganda/UVRI-MP789/2024|EPI_ISL_19602362|2024-10-30:0.0000051583,(hMpxV/Uganda/UVRI-MP1247/2024|EPI_ISL_19693786|2024-12-03:0.0000014322,(hMpxV/Uganda/UVRI-MP2101/2025|EPI_ISL_20047708|2025-01-22:0.0000186522,hMpxV/Uganda/UVRI-MP2096/2025|EPI_ISL_20047707|2025-02-14:0.0000255375)35.5/79:0.0000013672)79.7/88:0.0000058881)89.7/80:0.0000099735,hMpxV/Uganda/UVRI-MP1597/2025|EPI_ISL_20047717|2025-01-23:0.0000104559)0/56:0.0000010636,hMpxV/Uganda/UVRI-MP667/2024|EPI_ISL_19587249|2024-10-21:0.0000010623)78.9/68:0.0000068605,hMpxV/Uganda/UVRI-MP762/2024|EPI_ISL_19587255|2024-10-24:0.0000052338)98.6/78:0.0000048984,hMpxV/Uganda/UVRI-MP2061/2025|EPI_ISL_20047719|2025-02-18:0.0000169854)0/5:0.0000015056,hMpxV/Uganda/UVRI-MP2062/2025|EPI_ISL_20047730|2025-02-18:0.0000202518)37.7/6:0.0000054865,hMpxV/Uganda/UVRI-MP1286/2024|EPI_ISL_19612234|2024-12-01:0.0000152960)90.3/8:0.0000010645)75.2/5:0.0000012075)34.3/5:0.0000013264)77.4/14:0.0000053374,((((((((hMpxV/Uganda/UVRI-MP1183/2024|EPI_ISL_19602382|2024-11-22:0.0000074257,hMpxV/Uganda/UVRI-MP1602/2025|EPI_ISL_20047712|2025-02-04:0.0000121890)80.6/87:0.0000106762,hMpxV/Uganda/UVRI-MP1285/2024|EPI_ISL_19612233|2024-12-01:0.0000100213)76.1/87:0.0000047422,hMpxV/Uganda/UVRI-MP2073/2025|EPI_ISL_20047738|2025-02-18:0.0000203769)79/83:0.0000046696,hMpxV/Uganda/UVRI-MP2103/2025|EPI_ISL_20047711|2025-01-23:0.0000101835)79.4/83:0.0000049858,((hMpxV/Uganda/UVRI-MP1221/2024|EPI_ISL_19612227|2024-11-26:0.0000012705,hMpxV/Uganda/UVRI-MP1287/2024|EPI_ISL_19693787|2024-12-04:0.0000048969)89.7/95:0.0000145161,hMpxV/Uganda/UVRI-MP659/2024|EPI_ISL_19587247|2024-10-18:0.0000101704)71.6/80:0.0000010667)83.7/50:0.0000051502,(hMpxV/Uganda/UVRI-MP632/2024|EPI_ISL_19587242|2024-10-17:0.0000099937,((hMpxV/Uganda/UVRI-MP903/2024|EPI_ISL_19602376|2024-11-02:0.0000201081,hMpxV/Uganda/UVRI-MP1544/2025|EPI_ISL_20047724|2025-02-06:0.0000251038)72.3/81:0.0000012073,((((hMpxV/Uganda/UVRI-MP1173/2024|EPI_ISL_19693785|2024-11-21:0.0000005029,hMpxV/Uganda/UVRI-MP1171/2024|EPI_ISL_19693783|2024-11-21:0.0000146308)32.7/96:0.0000010949,hMpxV/Uganda/UVRI-MP1049/2024|EPI_ISL_19693771|2024-11-13:0.0000152260)79.8/87:0.0000099294,hMpxV/Uganda/UVRI-MP1590/2025|EPI_ISL_20047714|2024-12-10:0.0000101887)0/70:0.0000013438,((((hMpxV/Uganda/UVRI-MP663/2024|EPI_ISL_19587248|2024-10-21:0.0000047455,hMpxV/Uganda/UVRI-MP1537/2025|EPI_ISL_20047723|2025-02-06:0.0000302598)77.2/91:0.0000049858,hMpxV/Uganda/UVRI-MP919/2024|EPI_ISL_19602377|2024-11-06:0.0000049557)79.3/86:0.0000048227,hMpxV/Uganda/UVRI-MP1595/2025|EPI_ISL_20047721|2025-02-03:0.0000100439)77.7/84:0.0000049617,hMpxV/Uganda/UVRI-MP655/2024|EPI_ISL_19587246|2024-10-18:0.0000010709)75.3/82:0.0000047563)39.7/58:0.0000049284)90.2/52:0.0000097948)0/1:0.0000010600)85.6/80:0.0000048400,(hMpxV/Uganda/UVRI-MP757/2024|EPI_ISL_19587253|2024-10-18:0.0000052572,hMpxV/Uganda/UVRI-MP678/2024|EPI_ISL_19587250|2024-10-19:0.0000054253)0/82:0.0000010388)74.9/72:0.0000010620,hMpxV/Uganda/UVRI-MP848/2024|EPI_ISL_19602371|2024-10-30:0.0000097348)74.9/73:0.0000048127)0/12:0.0000012594,(hMpxV/Uganda/UVRI-MP1155/2024|EPI_ISL_19693779|2024-11-20:0.0000099093,hMpxV/Uganda/UVRI-MP863/2024|EPI_ISL_19602373|2024-11-01:0.0000106531)89.2/77:0.0000106888)0/17:0.0000005995,((((hMpxV/Uganda/UVRI-MP619/2024|EPI_ISL_19587240|2024-10-18:0.0000101179,(hMpxV/Uganda/UVRI-MP2094/2025|EPI_ISL_20047706|2025-02-03:0.0000097480,hMpxV/Uganda/UVRI-MP1569/2025|EPI_ISL_20047733|2025-01-29:0.0000455242)0/37:0.0000012120)0/24:0.0000010657,hMpxV/Uganda/UVRI-MP1581/2025|EPI_ISL_20047725|2025-02-06:0.0000201157)81.5/41:0.0000049851,hMpxV/Uganda/UVRI-MP920/2024|EPI_ISL_19602378|2024-11-05:0.0000153159)70.2/32:0.0000010139,hMpxV/Uganda/UVRI-MP813/2024|EPI_ISL_19602364|2024-11-01:0.0000051291)84/47:0.0000045938)9.5/51:0.0000022866,hMpxV/Uganda/UVRI-MP1172/2024|EPI_ISL_19693784|2024-11-21:0.0000050033)0/79:0.0000027773,hMpxV/Uganda/UVRI-MP812/2024|EPI_ISL_19602363|2024-11-01:0.0000008331)94.8/85:0.0000199943,hMpxV/Uganda/UVRI-MP1137/2024|EPI_ISL_19693776|2024-11-15:0.0000101806)0/88:0.0000012204,hMpxV/Uganda/UVRI-MP558/2024|EPI_ISL_19587265|2024-10-07:0.0000168810)88.9/81:0.0000241960,hMpxV/Uganda/UVRI-MP1180/2024|EPI_ISL_19602381|2024-11-22:0.0000107879)48.8/65:0.0000179729,(hMpxV/Uganda/UVRI-MP1212/2024|EPI_ISL_19612226|2024-11-27:0.0000099886,hMpxV/Uganda/UVRI-MP1246/2024|EPI_ISL_19612230|2024-11-29:0.0000151492)65.5/99:0.0000010993)81/65:0.0000057717,hMpxV/Uganda/UVRI-MP1574/2025|EPI_ISL_20047713|2024-12-09:0.0000306501)0/60:0.0000012634,((hMpxV/Uganda/UVRI-MP764/2024|EPI_ISL_19587257|2024-10-21:0.0000010364,hMpxV/Uganda/UVRI-MP1186/2024|EPI_ISL_19602384|2024-11-22:0.0000054051)80.1/95:0.0000098215,(hMpxV/Uganda/UVRI-MP1130/2024|EPI_ISL_19693775|2024-11-15:0.0000101753,hMpxV/Uganda/UVRI-MP1159/2024|EPI_ISL_19693780|2024-11-20:0.0000322217)92.3/99:0.0000160094)85.1/70:0.0000106639)24.4/57:0.0000055610,((hMpxV/Uganda/UVRI-MP786/2024|EPI_ISL_19693769|2024-11-01:0.0000100419,hMpxV/Uganda/UVRI-MP1142/2024|EPI_ISL_19693777|2024-11-18:0.0000059794)88.1/100:0.0000126870,hMpxV/Uganda/UVRI-MP2077/2025|EPI_ISL_20047740|2025-02-14:0.0000408899)84.6/73:0.0000062372)0/36:0.0000011724,(hMpxV/Uganda/UVRI-MP1129/2024|EPI_ISL_19693774|2024-11-15:0.0000076955,hMpxV/Uganda/UVRI-MP1600/2024|EPI_ISL_20047728|2024-12-09:0.0000509482)79.4/99:0.0000075251)0/47:0.0000012502,hMpxV/Uganda/UVRI-MP1116/2024|EPI_ISL_19693772|2024-11-15:0.0000201157)80.9/85:0.0000087420,hMpxV/Uganda/UVRI-MP787/2024|EPI_ISL_19693770|2024-11-01:0.0000075281)76/87:0.0000080319,((hMpxV/Thailand/BIDI-002/2025|EPI_ISL_19694853|2025-01-17:0.0000005029,hMpxV/Thailand/BIDI-003/2025|EPI_ISL_19694854|2025-01-22:0.0000010903)76/100:0.0000049906,hMpxV/Pakistan/NIH-KMU-006/2024|EPI_ISL_19713336|2024-12-02:0.0000712317)77/96:0.0000050082)94.4/86:0.0000229915)95.5/71:0.0000160789,(((hMpxV/DRC/INRB-0239V/2024|EPI_ISL_19093791|2024-01-10:0.0000010640,(hMpxV/DRC/INRB-0220V/2024|EPI_ISL_19093817|2024-01-26:0.0000011898,hMpxV/DRC/INRB-0198V/2024|EPI_ISL_19093796|2024-01-23:0.0000005029)97.3/99:0.0000116309)82.6/96:0.0000062219,((hMpxV/DRC/INRB-0224C/2023|EPI_ISL_19093830|2023-12-25:0.0000005029,(((hMpxV/DRC/INRB-0231V/2023|EPI_ISL_19093810|2023-12-21:0.0000011300,hMpxV/DRC/INRB-0201V/2024|EPI_ISL_19093808|2024-01-23:0.0000005029)0/98:0.0000010895,hMpxV/DRC/INRB-0230C/2023|EPI_ISL_19093827|2023-12-31:0.0000100577)0/53:0.0000148768,hMpxV/DRC/INRB-0240V/2024|EPI_ISL_19093812|2024-01-14:0.0000050288)34/94:0.0000011424)36.7/94:0.0000013250,hMpxV/DRC/INRB-0209V/2024|EPI_ISL_19093803|2024-01-19:0.0000005029)81.5/98:0.0000066043)0/74:0.0000012073,(hMpxV/DRC/INRB-0223C/2023|EPI_ISL_19093831|2023-12-26:0.0000010312,hMpxV/DRC/INRB-0226V/2023|EPI_ISL_19093809|2023-12-26:0.0000152551)81.4/100:0.0000049938)77.6/80:0.0000065775)99.6/67:0.0000034805,hMpxV/DRC/INRB-010/2023|EPI_ISL_19093833|2023-10-13:0.0000014968)95.8/71:0.0000293571);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -274037.34594720
+Robinson-Foulds distance between ML tree and consensus tree: 72
+
+Branches with support >0.00000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++----hMpxV/DRC/HGRK-1L/2024|EPI_ISL_18886301|2024-01-15
+|
+|        +--hMpxV/Germany/un-RKI-1213/2024|EPI_ISL_19785226|2024-12
+|     +--| (99)
+|     |  +----hMpxV/Germany/un-RKI-1214/2024|EPI_ISL_19785230|2024-12
+|  +--| (99)
+|  |  +--hMpxV/Germany/NW-RKI-1142/2024|EPI_ISL_19502532|2024-10-12
++--| (70)
+|  |  +--hMpxV/DRC/CRSN-1/2023|EPI_ISL_19004044|2023-11-02
+|  +--| (100)
+|     |  +**hMpxV/DRC/CRSN-2/2023|EPI_ISL_19004045|2023-11-15
+|     +--| (100)
+|        +--hMpxV/DRC/CRSN-3/2023|EPI_ISL_19004046|2023-12-23
+|
+|                                      +--hMpxV/Germany/un-RKI-1216/2025|EPI_ISL_19785218|2025-01
+|                                   +--| (100)
+|                                   |  |  +**hMpxV/Germany/un-RKI-1351/2025|EPI_ISL_19887806|2025-04
+|                                   |  +--| (100)
+|                                   |     +**hMpxV/Germany/un-RKI-1349/2025|EPI_ISL_19887833|2025-04
+|                                +**| (96)
+|                                |  |     +**hMpxV/Canada/MB-NML-6349/2024|EPI_ISL_19791290|2024-11-21
+|                                |  |  +**| (87)
+|                                |  |  |  +**hMpxV/Canada/MB-NML-6350/2024|EPI_ISL_19791291|2024-11-21
+|                                |  +**| (99)
+|                                |     +--hMpxV/Canada/MB-NML-6348/2024|EPI_ISL_19791292|2024-11-21
+|                             +--| (100)
+|                             |  +**hMpxV/USA/GA-CDC-0100/2025|EPI_ISL_19686354|2025-01
+|                          +**| (88)
+|                          |  |     +--hMpxV/Brazil/SP-LEIAL-4448/2025|EPI_ISL_19762724|2025-02-24
+|                          |  |  +--| (94)
+|                          |  |  |  |  +---hMpxV/China/ZJ-ZCDC-001/2024|EPI_ISL_19870071|2024-12-30
+|                          |  |  |  +--| (88)
+|                          |  |  |     |        +--hMpxV/Congo/BZV-LNSP-CG001/2024|EPI_ISL_19810234|2024-12-23
+|                          |  |  |     |     +--| (92)
+|                          |  |  |     |     |  |  +------hMpxV/Congo/BZV-LNSP-CG022/2025|EPI_ISL_19810238|2025-02-19
+|                          |  |  |     |     |  +--| (95)
+|                          |  |  |     |     |     +------hMpxV/Congo/BZV-LNSP-CG021/2025|EPI_ISL_19810237|2025-02-17
+|                          |  |  |     +-----| (100)
+|                          |  |  |           |     +--hMpxV/Congo/BZV-LNSP-CG018/2025|EPI_ISL_19810235|2025-01-09
+|                          |  |  |           |  +--| (93)
+|                          |  |  |           |  |  +--hMpxV/Congo/BZV-LNSP-CG032/2025|EPI_ISL_19810240|2025-03-05
+|                          |  |  |           +--| (94)
+|                          |  |  |              +------hMpxV/Congo/BZV-LNSP-CG020/2025|EPI_ISL_19810236|2025-02-13
+|                          |  +**| (79)
+|                          |     +---hMpxV/USA/NH-CDC-0100/2025|EPI_ISL_19785231|2025-02
+|                       +--| (91)
+|                       |  |     +**hMpxV/United_Kingdom/UKHSA-0072/2024|EPI_ISL_19557976|2024-10-27
+|                       |  |  +--| (100)
+|                       |  |  |  +--hMpxV/USA/CA-CDC-0100/2024|EPI_ISL_19586581|2024-11
+|                       |  +--| (98)
+|                       |     +**hMpxV/Thailand/NIC-31/2024|EPI_ISL_19350788|2024-08-16
+|                    +**| (55)
+|                    |  |              +--hMpxV/Thailand/BIDI-001/2025|EPI_ISL_19673536|2025-01-06
+|                    |  |           +**| (64)
+|                    |  |           |  |  +--hMpxV/Thailand/BIDI-004/2025|EPI_ISL_19818649|2025-03-29
+|                    |  |           |  +--| (99)
+|                    |  |           |     +--hMpxV/India/UP-MCL-H-196-2884-1197/2025|EPI_ISL_19902083|2025-05-03
+|                    |  |        +**| (61)
+|                    |  |        |  |  +--hMpxV/Uganda/UVRI-MP173/2024|EPI_ISL_19867563|2024-08-25
+|                    |  |        |  +**| (93)
+|                    |  |        |     +--hMpxV/USA/MA-CDC-0100/2025|EPI_ISL_20056547|2025-06
+|                    |  |     +--| (64)
+|                    |  |     |  +--hMpxV/India/KL-ICMR-176_1054/2024|EPI_ISL_19484958|2024-09-21
+|                    |  |  +--| (63)
+|                    |  |  |  +----hMpxV/Italy/un-INMI-0001/2025|EPI_ISL_20055054|2025-05
+|                    |  +**| (57)
+|                    |     +--hMpxV/Sweden/PHAS-11304/2024|EPI_ISL_19348512|2024-08-13
+|              +-----| (56)
+|              |     +---hMpxV/Uganda/CPHL-002/2024|EPI_ISL_19456777|2024-09-08
+|           +--| (64)
+|           |  |        +**hMpxV/Kenya/nvrl220/2024|EPI_ISL_19302262|2024-07-25
+|           |  |     +**| (85)
+|           |  |     |  +**hMpxV/Kenya/KEMRI-00107/2024|EPI_ISL_19345034|2024-07-25
+|           |  |  +**| (63)
+|           |  |  |  +**hMpxV/USA/NY-CDC-0100/2025|EPI_ISL_19818650|2025-02
+|           |  +--| (77)
+|           |     +**hMpxV/Uganda/UVRI-MP125/2024|EPI_ISL_19867562|2024-08-18
+|        +**| (57)
+|        |  +--hMpxV/Thailand/KCMH-ID24110/2024|EPI_ISL_19366744|2024-08-16
+|     +--| (71)
+|     |  |                                                                                                              +**hMpxV/DRC/CRSN-4/2023|EPI_ISL_19079342|2023-12-23
+|     |  |                                                                                                           +**| (69)
+|     |  |                                                                                                           |  +--hMpxV/DRC/CRSN-6/2024|EPI_ISL_19079344|2024-01-14
+|     |  |                                                                                                        +--| (85)
+|     |  |                                                                                                        |  +---hMpxV/DRC/CRSN-5/2024|EPI_ISL_19079343|2024-01-06
+|     |  |                                                                                                     +--| (75)
+|     |  |                                                                                                     |  +**hMpxV/Uganda/UVRI-MP588/2024|EPI_ISL_19587239|2024-10-14
+|     |  |                                                                                                  +--| (89)
+|     |  |                                                                                                  |  +--hMpxV/Uganda/UVRI-MP587/2024|EPI_ISL_19587238|2024-10-14
+|     |  |                                                                                               +**| (65)
+|     |  |                                                                                               |  |              +------------------hMpxV/Uganda/UVRI-012/2024|EPI_ISL_19305614|2024-07-12
+|     |  |                                                                                               |  |           +--| (79)
+|     |  |                                                                                               |  |           |  +--hMpxV/Uganda/UVRI-MP783/2024|EPI_ISL_19693768|2024-10-30
+|     |  |                                                                                               |  |        +**| (75)
+|     |  |                                                                                               |  |        |  +--hMpxV/Uganda/UVRI-MP1472/2025|EPI_ISL_20047736|2025-02-07
+|     |  |                                                                                               |  |     +--| (90)
+|     |  |                                                                                               |  |     |  +--hMpxV/Uganda/UVRI-MP2072/2025|EPI_ISL_20047737|2025-02-18
+|     |  |                                                                                               |  |  +**| (84)
+|     |  |                                                                                               |  |  |  |  +--hMpxV/Uganda/UVRI-MP1575/2025|EPI_ISL_20047732|2025-01-05
+|     |  |                                                                                               |  |  |  +--| (90)
+|     |  |                                                                                               |  |  |     +--hMpxV/Uganda/UVRI-MP1563/2025|EPI_ISL_20047734|2025-01-31
+|     |  |                                                                                               |  +--| (94)
+|     |  |                                                                                               |     +**hMpxV/Uganda/UVRI-MP512/2024|EPI_ISL_19587237|2024-09-24
+|     |  |                                                                                            +--| (91)
+|     |  |                                                                                            |  |        +--hMpxV/Uganda/UVRI-MP818/2024|EPI_ISL_19602367|2024-11-01
+|     |  |                                                                                            |  |     +--| (93)
+|     |  |                                                                                            |  |     |  +--hMpxV/Uganda/UVRI-MP1023/2024|EPI_ISL_19602379|2024-11-08
+|     |  |                                                                                            |  |  +--| (100)
+|     |  |                                                                                            |  |  |  +--hMpxV/Uganda/UVRI-MP1167/2024|EPI_ISL_19693782|2024-11-20
+|     |  |                                                                                            |  +--| (85)
+|     |  |                                                                                            |     |  +--hMpxV/Uganda/UVRI-MP1153/2024|EPI_ISL_19693778|2024-11-20
+|     |  |                                                                                            |     +--| (87)
+|     |  |                                                                                            |        |              +**hMpxV/DRC/HGRK-78/2023|EPI_ISL_19439696|2023-12-06
+|     |  |                                                                                            |        |           +--| (100)
+|     |  |                                                                                            |        |           |  |                    +----------------hMpxV/DRC/HGRK-36/2023|EPI_ISL_19381268|2023-12-12
+|     |  |                                                                                            |        |           |  |                 +**| (58)
+|     |  |                                                                                            |        |           |  |                 |  |  +**hMpxV/DRC/HGRK-1M/2024|EPI_ISL_19689371|2024-09-02
+|     |  |                                                                                            |        |           |  |                 |  +**| (50)
+|     |  |                                                                                            |        |           |  |                 |     |        +**hMpxV/DRC/HGRK-11K/2024|EPI_ISL_19689378|2024-09-01
+|     |  |                                                                                            |        |           |  |                 |     |     +**| (34)
+|     |  |                                                                                            |        |           |  |                 |     |     |  |  +**hMpxV/DRC/HGRK-19K/2024|EPI_ISL_19689685|2024-09-01
+|     |  |                                                                                            |        |           |  |                 |     |     |  +**| (35)
+|     |  |                                                                                            |        |           |  |                 |     |     |     +--hMpxV/DRC/HGRK-16K/2024|EPI_ISL_19689399|2024-09-01
+|     |  |                                                                                            |        |           |  |                 |     |  +--| (100)
+|     |  |                                                                                            |        |           |  |                 |     |  |  |        +**hMpxV/DRC/HGRK-13K/2024|EPI_ISL_19689380|2024-09-01
+|     |  |                                                                                            |        |           |  |                 |     |  |  |     +**| (66)
+|     |  |                                                                                            |        |           |  |                 |     |  |  |     |  +**hMpxV/DRC/HGRK-12K/2024|EPI_ISL_19689379|2024-09-01
+|     |  |                                                                                            |        |           |  |                 |     |  |  |  +**| (27)
+|     |  |                                                                                            |        |           |  |                 |     |  |  |  |  +**hMpxV/DRC/HGRK-15K/2024|EPI_ISL_19689381|2024-09-01
+|     |  |                                                                                            |        |           |  |                 |     |  |  +**| (27)
+|     |  |                                                                                            |        |           |  |                 |     |  |     +**hMpxV/DRC/HGRK-18K/2024|EPI_ISL_19689632|2024-09-01
+|     |  |                                                                                            |        |           |  |                 |     +**| (98)
+|     |  |                                                                                            |        |           |  |                 |        +**hMpxV/DRC/HGRK-17K/2024|EPI_ISL_19689575|2024-09-01
+|     |  |                                                                                            |        |           |  |              +**| (17)
+|     |  |                                                                                            |        |           |  |              |  +**hMpxV/DRC/HGRK-8MM/2024|EPI_ISL_19689376|2024-08-12
+|     |  |                                                                                            |        |           |  |           +**| (15)
+|     |  |                                                                                            |        |           |  |           |  |  +**hMpxV/DRC/HGRK-7N/2024|EPI_ISL_19689375|2024-08-22
+|     |  |                                                                                            |        |           |  |           |  +--| (100)
+|     |  |                                                                                            |        |           |  |           |     +**hMpxV/DRC/HGRK-6K/2024|EPI_ISL_19689374|2024-08-30
+|     |  |                                                                                            |        |           |  |        +**| (6)
+|     |  |                                                                                            |        |           |  |        |  +**hMpxV/DRC/HGRK-2N/2024|EPI_ISL_19689372|2024-08-22
+|     |  |                                                                                            |        |           |  |     +**| (18)
+|     |  |                                                                                            |        |           |  |     |  +**hMpxV/DRC/HGRK-04m/2024|EPI_ISL_19621388|2024-08-12
+|     |  |                                                                                            |        |           |  |  +**| (57)
+|     |  |                                                                                            |        |           |  |  |  +--hMpxV/DRC/HGRK-5MM/2024|EPI_ISL_19689373|2024-08-15
+|     |  |                                                                                            |        |           |  +--| (100)
+|     |  |                                                                                            |        |           |     +--hMpxV/DRC/HGRK-20K/2024|EPI_ISL_19689707|2024-09-01
+|     |  |                                                                                            |        |        +--| (89)
+|     |  |                                                                                            |        |        |  +--hMpxV/DRC/HGRK-9MM/2024|EPI_ISL_19689377|2024-08-15
+|     |  |                                                                                            |        |     +--| (93)
+|     |  |                                                                                            |        |     |  |  +**hMpxV/Burundi/INSP-1447/2024|EPI_ISL_19599243|2024-09-14
+|     |  |                                                                                            |        |     |  +--| (100)
+|     |  |                                                                                            |        |     |     +--hMpxV/Burundi/INSP-1529/2024|EPI_ISL_19599257|2024-09-16
+|     |  |                                                                                            |        |  +--| (89)
+|     |  |                                                                                            |        |  |  |                        +--hMpxV/DRC/INRB-2832V/2024|EPI_ISL_19857759|2024-09-06
+|     |  |                                                                                            |        |  |  |                  +-----| (100)
+|     |  |                                                                                            |        |  |  |                  |     |  +--hMpxV/DRC/INRB-2925V/2024|EPI_ISL_19858736|2024-09-09
+|     |  |                                                                                            |        |  |  |                  |     +--| (98)
+|     |  |                                                                                            |        |  |  |                  |        +------hMpxV/DRC/INRB-3101C/2024|EPI_ISL_19858194|2024-09-13
+|     |  |                                                                                            |        |  |  +------------------| (100)
+|     |  |                                                                                            |        |  |                     +---hMpxV/DRC/INRB-2497V/2024|EPI_ISL_19858796|2024-08-30
+|     |  |                                                                                            |        +--| (87)
+|     |  |                                                                                            |           +--hMpxV/Congo/BZV-LNSP-CG000/2024|EPI_ISL_19810233|2024-08-08
+|     |  |                                                                                         +--| (86)
+|     |  |                                                                                         |  +--------hMpxV/Uganda/UVRI-MP2088/2025|EPI_ISL_20047703|2025-02-15
+|     |  |                                                                                      +**| (38)
+|     |  |                                                                                      |  |     +**hMpxV/Uganda/UVRI-MP350C/2024|EPI_ISL_19587234|2024-09-08
+|     |  |                                                                                      |  |  +**| (88)
+|     |  |                                                                                      |  |  |  +**hMpxV/Uganda/UVRI-MP652/2024|EPI_ISL_19587245|2024-10-21
+|     |  |                                                                                      |  +--| (92)
+|     |  |                                                                                      |     +**hMpxV/Uganda/UVRI-MP350D/2024|EPI_ISL_19587235|2024-09-08
+|     |  |                                                                                   +**| (18)
+|     |  |                                                                                   |  +--hMpxV/Uganda/UVRI-MP1483/2025|EPI_ISL_20047735|2025-02-04
+|     |  |                                                                                +**| (15)
+|     |  |                                                                                |  +--hMpxV/Uganda/UVRI-MP828/2024|EPI_ISL_19602370|2024-10-30
+|     |  |                                                                             +**| (25)
+|     |  |                                                                             |  |     +--hMpxV/Uganda/UVRI-MP769/2024|EPI_ISL_19587262|2024-10-25
+|     |  |                                                                             |  |  +**| (81)
+|     |  |                                                                             |  |  |  +--hMpxV/Uganda/UVRI-MP1596/2025|EPI_ISL_20047727|2025-02-10
+|     |  |                                                                             |  +--| (82)
+|     |  |                                                                             |     +--hMpxV/Uganda/UVRI-MP1222/2024|EPI_ISL_19612228|2024-11-27
+|     |  |                                                                          +--| (77)
+|     |  |                                                                          |  |     +**hMpxV/Uganda/UVRI-MP350B/2024|EPI_ISL_19587233|2024-09-08
+|     |  |                                                                          |  |  +**| (26)
+|     |  |                                                                          |  |  |  |  +--hMpxV/Uganda/UVRI-MP819/2024|EPI_ISL_19602368|2024-11-01
+|     |  |                                                                          |  |  |  +**| (16)
+|     |  |                                                                          |  |  |     |        +--hMpxV/Uganda/UVRI-MP1512/2025|EPI_ISL_20047718|2025-02-05
+|     |  |                                                                          |  |  |     |     +--| (83)
+|     |  |                                                                          |  |  |     |     |  +**hMpxV/Uganda/UVRI-MP644/2024|EPI_ISL_19587244|2024-10-21
+|     |  |                                                                          |  |  |     |  +--| (23)
+|     |  |                                                                          |  |  |     |  |  |  +--hMpxV/Uganda/UVRI-MP763/2024|EPI_ISL_19587256|2024-10-21
+|     |  |                                                                          |  |  |     |  |  +**| (30)
+|     |  |                                                                          |  |  |     |  |     +--hMpxV/Uganda/UVRI-MP770/2024|EPI_ISL_19587263|2024-10-27
+|     |  |                                                                          |  |  |     +**| (9)
+|     |  |                                                                          |  |  |        |        +--hMpxV/Uganda/UVRI-MP2102/2025|EPI_ISL_20047710|2025-02-03
+|     |  |                                                                          |  |  |        |     +**| (48)
+|     |  |                                                                          |  |  |        |     |  |     +--hMpxV/Uganda/UVRI-MP880/2024|EPI_ISL_19602374|2024-11-04
+|     |  |                                                                          |  |  |        |     |  |  +**| (45)
+|     |  |                                                                          |  |  |        |     |  |  |  +--hMpxV/Uganda/UVRI-MP1039/2024|EPI_ISL_19602380|2024-11-22
+|     |  |                                                                          |  |  |        |     |  +--| (78)
+|     |  |                                                                          |  |  |        |     |     |  +--hMpxV/Uganda/UVRI-MP1604/2025|EPI_ISL_20047716|2024-12-10
+|     |  |                                                                          |  |  |        |     |     +--| (89)
+|     |  |                                                                          |  |  |        |     |        |  +**hMpxV/Uganda/UVRI-MP814/2024|EPI_ISL_19602365|2024-11-01
+|     |  |                                                                          |  |  |        |     |        +--| (88)
+|     |  |                                                                          |  |  |        |     |           |  +--hMpxV/Uganda/UVRI-MP1606/2025|EPI_ISL_20047715|2025-02-14
+|     |  |                                                                          |  |  |        |     |           +--| (80)
+|     |  |                                                                          |  |  |        |     |              |     +--hMpxV/Uganda/UVRI-MP2082/2025|EPI_ISL_20047702|2025-02-18
+|     |  |                                                                          |  |  |        |     |              |  +--| (99)
+|     |  |                                                                          |  |  |        |     |              |  |  |  +--hMpxV/Uganda/UVRI-060/2024|EPI_ISL_19612236|2024-12-04
+|     |  |                                                                          |  |  |        |     |              |  |  +--| (100)
+|     |  |                                                                          |  |  |        |     |              |  |     +--hMpxV/Uganda/UVRI-062/2024|EPI_ISL_19612237|2024-12-03
+|     |  |                                                                          |  |  |        |     |              +--| (96)
+|     |  |                                                                          |  |  |        |     |                 +--hMpxV/Uganda/UVRI-MP2060/2025|EPI_ISL_20047709|2025-02-18
+|     |  |                                                                          |  |  |        |  +--| (36)
+|     |  |                                                                          |  |  |        |  |  |  +--hMpxV/Uganda/UVRI-MP2089/2025|EPI_ISL_20047704|2025-02-17
+|     |  |                                                                          |  |  |        |  |  +--| (85)
+|     |  |                                                                          |  |  |        |  |     +--hMpxV/Uganda/UVRI-MP767/2024|EPI_ISL_19587260|2024-10-27
+|     |  |                                                                          |  |  |        +--| (29)
+|     |  |                                                                          |  |  |           |     +--hMpxV/Uganda/UVRI-MP674/2024|EPI_ISL_19587254|2024-10-19
+|     |  |                                                                          |  |  |           |  +**| (74)
+|     |  |                                                                          |  |  |           |  |  +--hMpxV/Uganda/UVRI-MP1605/2025|EPI_ISL_20047720|2024-12-10
+|     |  |                                                                          |  |  |           +**| (51)
+|     |  |                                                                          |  |  |              |  +--hMpxV/Uganda/UVRI-MP766/2024|EPI_ISL_19587259|2024-10-25
+|     |  |                                                                          |  |  |              +--| (70)
+|     |  |                                                                          |  |  |                 |  +--hMpxV/Uganda/UVRI-MP1474/2024|EPI_ISL_20047731|2024-12-10
+|     |  |                                                                          |  |  |                 +--| (83)
+|     |  |                                                                          |  |  |                    |  +--hMpxV/Uganda/UVRI-MP1185/2024|EPI_ISL_19602383|2024-11-22
+|     |  |                                                                          |  |  |                    +--| (79)
+|     |  |                                                                          |  |  |                       +--hMpxV/Uganda/UVRI-MP1473/2025|EPI_ISL_20047726|2025-02-11
+|     |  |                                                                          |  +**| (6)
+|     |  |                                                                          |     +**hMpxV/Uganda/UVRI-MP454/2024|EPI_ISL_19587236|2024-09-22
+|     |  |                                                                       +**| (57)
+|     |  |                                                                       |  +--hMpxV/Uganda/UVRI-MP1562/2025|EPI_ISL_20047722|2025-01-21
+|     |  |                                                                    +**| (52)
+|     |  |                                                                    |  +**hMpxV/Uganda/UVRI-MP538/2024|EPI_ISL_19587264|2024-10
+|     |  |                                                                 +**| (66)
+|     |  |                                                                 |  +**hMpxV/Uganda/UVRI-MP742/2024|EPI_ISL_19587252|2024-10
+|     |  |                                                              +--| (56)
+|     |  |                                                              |  +**hMpxV/Uganda/UVRI-MP688/2024|EPI_ISL_19587251|2024-10-19
+|     |  |                                                           +**| (40)
+|     |  |                                                           |  |           +**hMpxV/Uganda/UVRI-MP349/2024|EPI_ISL_19587230|2024-09-08
+|     |  |                                                           |  |        +--| (95)
+|     |  |                                                           |  |        |  +--hMpxV/Uganda/UVRI-MP765/2024|EPI_ISL_19587258|2024-10-24
+|     |  |                                                           |  |     +--| (96)
+|     |  |                                                           |  |     |  +**hMpxV/Uganda/UVRI-MP636/2024|EPI_ISL_19587243|2024-10-21
+|     |  |                                                           |  |  +--| (79)
+|     |  |                                                           |  |  |  |  +--hMpxV/Uganda/UVRI-059/2024|EPI_ISL_19612235|2024-12-04
+|     |  |                                                           |  |  |  +**| (78)
+|     |  |                                                           |  |  |     |  +**hMpxV/Uganda/UVRI-MP822/2024|EPI_ISL_19602369|2024-11-01
+|     |  |                                                           |  |  |     +--| (83)
+|     |  |                                                           |  |  |        +--hMpxV/Uganda/UVRI-MP2079/2025|EPI_ISL_20047741|2025-02-10
+|     |  |                                                           |  +**| (27)
+|     |  |                                                           |     |     +**hMpxV/Uganda/UVRI-MP1249/2024|EPI_ISL_19612231|2024-11-30
+|     |  |                                                           |     |  +--| (75)
+|     |  |                                                           |     |  |  |  +--hMpxV/Uganda/UVRI-MP901/2024|EPI_ISL_19602375|2024-11-06
+|     |  |                                                           |     |  |  +--| (94)
+|     |  |                                                           |     |  |     +--hMpxV/Uganda/UVRI-MP1236/2024|EPI_ISL_19612229|2024-11-29
+|     |  |                                                           |     +--| (66)
+|     |  |                                                           |        |           +--hMpxV/Uganda/UVRI-MP2092/2025|EPI_ISL_20047705|2024-12-09
+|     |  |                                                           |        |        +**| (79)
+|     |  |                                                           |        |        |  +--hMpxV/Uganda/UVRI-MP2080/2025|EPI_ISL_20047742|2025-02-17
+|     |  |                                                           |        |     +--| (86)
+|     |  |                                                           |        |     |  +**hMpxV/Uganda/UVRI-MP1271/2024|EPI_ISL_19612232|2024-11-30
+|     |  |                                                           |        |  +--| (51)
+|     |  |                                                           |        |  |  +--hMpxV/Uganda/UVRI-MP817/2024|EPI_ISL_19602366|2024-11-01
+|     |  |                                                           |        +**| (38)
+|     |  |                                                           |           |  +--hMpxV/Uganda/UVRI-MP859/2024|EPI_ISL_19602372|2024-10-30
+|     |  |                                                           |           +--| (80)
+|     |  |                                                           |              +--hMpxV/Uganda/UVRI-MP1582/2024|EPI_ISL_20047729|2024-12-09
+|     |  |                                                        +--| (65)
+|     |  |                                                        |  +--hMpxV/Uganda/UVRI-MP768/2024|EPI_ISL_19587261|2024-10-25
+|     |  |                                                     +**| (32)
+|     |  |                                                     |  |  +**hMpxV/Uganda/UVRI-MP350A1/2024|EPI_ISL_19587231|2024-09-08
+|     |  |                                                     |  +**| (29)
+|     |  |                                                     |     +--hMpxV/Uganda/UVRI-MP350A2/2024|EPI_ISL_19587232|2024-09-08
+|     |  |                                                  +--| (39)
+|     |  |                                                  |  |                 +--hMpxV/Uganda/UVRI-MP789/2024|EPI_ISL_19602362|2024-10-30
+|     |  |                                                  |  |              +--| (80)
+|     |  |                                                  |  |              |  |  +**hMpxV/Uganda/UVRI-MP1247/2024|EPI_ISL_19693786|2024-12-03
+|     |  |                                                  |  |              |  +--| (88)
+|     |  |                                                  |  |              |     |  +--hMpxV/Uganda/UVRI-MP2101/2025|EPI_ISL_20047708|2025-01-22
+|     |  |                                                  |  |              |     +**| (79)
+|     |  |                                                  |  |              |        +--hMpxV/Uganda/UVRI-MP2096/2025|EPI_ISL_20047707|2025-02-14
+|     |  |                                                  |  |           +**| (56)
+|     |  |                                                  |  |           |  +--hMpxV/Uganda/UVRI-MP1597/2025|EPI_ISL_20047717|2025-01-23
+|     |  |                                                  |  |        +--| (68)
+|     |  |                                                  |  |        |  +**hMpxV/Uganda/UVRI-MP667/2024|EPI_ISL_19587249|2024-10-21
+|     |  |                                                  |  |     +--| (78)
+|     |  |                                                  |  |     |  +--hMpxV/Uganda/UVRI-MP762/2024|EPI_ISL_19587255|2024-10-24
+|     |  |                                                  |  |  +--| (43)
+|     |  |                                                  |  |  |  +--hMpxV/Uganda/UVRI-MP2062/2025|EPI_ISL_20047730|2025-02-18
+|     |  |                                                  |  +**| (63)
+|     |  |                                                  |     +--hMpxV/Uganda/UVRI-MP1286/2024|EPI_ISL_19612234|2024-12-01
+|     |  |                                               +**| (14)
+|     |  |                                               |  |                          +--hMpxV/Uganda/UVRI-MP1183/2024|EPI_ISL_19602382|2024-11-22
+|     |  |                                               |  |                       +--| (87)
+|     |  |                                               |  |                       |  +--hMpxV/Uganda/UVRI-MP1602/2025|EPI_ISL_20047712|2025-02-04
+|     |  |                                               |  |                    +--| (87)
+|     |  |                                               |  |                    |  +--hMpxV/Uganda/UVRI-MP1285/2024|EPI_ISL_19612233|2024-12-01
+|     |  |                                               |  |                 +--| (83)
+|     |  |                                               |  |                 |  +--hMpxV/Uganda/UVRI-MP2073/2025|EPI_ISL_20047738|2025-02-18
+|     |  |                                               |  |              +--| (83)
+|     |  |                                               |  |              |  +--hMpxV/Uganda/UVRI-MP2103/2025|EPI_ISL_20047711|2025-01-23
+|     |  |                                               |  |           +--| (50)
+|     |  |                                               |  |           |  |     +**hMpxV/Uganda/UVRI-MP1221/2024|EPI_ISL_19612227|2024-11-26
+|     |  |                                               |  |           |  |  +--| (95)
+|     |  |                                               |  |           |  |  |  +--hMpxV/Uganda/UVRI-MP1287/2024|EPI_ISL_19693787|2024-12-04
+|     |  |                                               |  |           |  +**| (80)
+|     |  |                                               |  |           |     +--hMpxV/Uganda/UVRI-MP659/2024|EPI_ISL_19587247|2024-10-18
+|     |  |                                               |  |        +**| (75)
+|     |  |                                               |  |        |  |     +--hMpxV/Uganda/UVRI-MP903/2024|EPI_ISL_19602376|2024-11-02
+|     |  |                                               |  |        |  |  +**| (81)
+|     |  |                                               |  |        |  |  |  +--hMpxV/Uganda/UVRI-MP1544/2025|EPI_ISL_20047724|2025-02-06
+|     |  |                                               |  |        |  +--| (52)
+|     |  |                                               |  |        |     |           +**hMpxV/Uganda/UVRI-MP1173/2024|EPI_ISL_19693785|2024-11-21
+|     |  |                                               |  |        |     |        +**| (96)
+|     |  |                                               |  |        |     |        |  +--hMpxV/Uganda/UVRI-MP1171/2024|EPI_ISL_19693783|2024-11-21
+|     |  |                                               |  |        |     |     +--| (87)
+|     |  |                                               |  |        |     |     |  +--hMpxV/Uganda/UVRI-MP1049/2024|EPI_ISL_19693771|2024-11-13
+|     |  |                                               |  |        |     |  +**| (70)
+|     |  |                                               |  |        |     |  |  +--hMpxV/Uganda/UVRI-MP1590/2025|EPI_ISL_20047714|2024-12-10
+|     |  |                                               |  |        |     +--| (58)
+|     |  |                                               |  |        |        |           +--hMpxV/Uganda/UVRI-MP663/2024|EPI_ISL_19587248|2024-10-21
+|     |  |                                               |  |        |        |        +--| (91)
+|     |  |                                               |  |        |        |        |  +--hMpxV/Uganda/UVRI-MP1537/2025|EPI_ISL_20047723|2025-02-06
+|     |  |                                               |  |        |        |     +--| (86)
+|     |  |                                               |  |        |        |     |  +--hMpxV/Uganda/UVRI-MP919/2024|EPI_ISL_19602377|2024-11-06
+|     |  |                                               |  |        |        |  +--| (84)
+|     |  |                                               |  |        |        |  |  +--hMpxV/Uganda/UVRI-MP1595/2025|EPI_ISL_20047721|2025-02-03
+|     |  |                                               |  |        |        +--| (82)
+|     |  |                                               |  |        |           +**hMpxV/Uganda/UVRI-MP655/2024|EPI_ISL_19587246|2024-10-18
+|     |  |                                               |  |     +--| (80)
+|     |  |                                               |  |     |  +--hMpxV/Uganda/UVRI-MP632/2024|EPI_ISL_19587242|2024-10-17
+|     |  |                                               |  |  +**| (72)
+|     |  |                                               |  |  |  |  +--hMpxV/Uganda/UVRI-MP757/2024|EPI_ISL_19587253|2024-10-18
+|     |  |                                               |  |  |  +**| (82)
+|     |  |                                               |  |  |     +--hMpxV/Uganda/UVRI-MP678/2024|EPI_ISL_19587250|2024-10-19
+|     |  |                                               |  +--| (73)
+|     |  |                                               |     +--hMpxV/Uganda/UVRI-MP848/2024|EPI_ISL_19602371|2024-10-30
+|     |  |                                            +**| (23)
+|     |  |                                            |  |  +--hMpxV/Uganda/UVRI-MP1155/2024|EPI_ISL_19693779|2024-11-20
+|     |  |                                            |  +--| (77)
+|     |  |                                            |     +--hMpxV/Uganda/UVRI-MP863/2024|EPI_ISL_19602373|2024-11-01
+|     |  |                                         +--| (28)
+|     |  |                                         |  |     +--hMpxV/Uganda/UVRI-MP619/2024|EPI_ISL_19587240|2024-10-18
+|     |  |                                         |  |  +--| (44)
+|     |  |                                         |  |  |  +**hMpxV/Uganda/UVRI-MP813/2024|EPI_ISL_19602364|2024-11-01
+|     |  |                                         |  +--| (47)
+|     |  |                                         |     |  +--hMpxV/Uganda/UVRI-MP920/2024|EPI_ISL_19602378|2024-11-05
+|     |  |                                         |     +**| (37)
+|     |  |                                         |        |  +--hMpxV/Uganda/UVRI-MP2094/2025|EPI_ISL_20047706|2025-02-03
+|     |  |                                         |        +--| (47)
+|     |  |                                         |           |  +--hMpxV/Uganda/UVRI-MP1581/2025|EPI_ISL_20047725|2025-02-06
+|     |  |                                         |           +**| (49)
+|     |  |                                         |              +---hMpxV/Uganda/UVRI-MP1569/2025|EPI_ISL_20047733|2025-01-29
+|     |  |                                      +**| (51)
+|     |  |                                      |  +--hMpxV/Uganda/UVRI-MP2061/2025|EPI_ISL_20047719|2025-02-18
+|     |  |                                   +**| (79)
+|     |  |                                   |  +--hMpxV/Uganda/UVRI-MP1172/2024|EPI_ISL_19693784|2024-11-21
+|     |  |                                +--| (85)
+|     |  |                                |  +**hMpxV/Uganda/UVRI-MP812/2024|EPI_ISL_19602363|2024-11-01
+|     |  |                             +**| (88)
+|     |  |                             |  +--hMpxV/Uganda/UVRI-MP1137/2024|EPI_ISL_19693776|2024-11-15
+|     |  |                          +--| (81)
+|     |  |                          |  +--hMpxV/Uganda/UVRI-MP558/2024|EPI_ISL_19587265|2024-10-07
+|     |  |                       +--| (65)
+|     |  |                       |  +--hMpxV/Uganda/UVRI-MP1180/2024|EPI_ISL_19602381|2024-11-22
+|     |  |                    +--| (65)
+|     |  |                    |  |  +--hMpxV/Uganda/UVRI-MP1212/2024|EPI_ISL_19612226|2024-11-27
+|     |  |                    |  +**| (99)
+|     |  |                    |     +--hMpxV/Uganda/UVRI-MP1246/2024|EPI_ISL_19612230|2024-11-29
+|     |  |                 +**| (60)
+|     |  |                 |  +--hMpxV/Uganda/UVRI-MP1574/2025|EPI_ISL_20047713|2024-12-09
+|     |  |              +--| (57)
+|     |  |              |  |     +**hMpxV/Uganda/UVRI-MP764/2024|EPI_ISL_19587257|2024-10-21
+|     |  |              |  |  +--| (95)
+|     |  |              |  |  |  +--hMpxV/Uganda/UVRI-MP1186/2024|EPI_ISL_19602384|2024-11-22
+|     |  |              |  +--| (70)
+|     |  |              |     |  +--hMpxV/Uganda/UVRI-MP1130/2024|EPI_ISL_19693775|2024-11-15
+|     |  |              |     +--| (99)
+|     |  |              |        +--hMpxV/Uganda/UVRI-MP1159/2024|EPI_ISL_19693780|2024-11-20
+|     |  |           +**| (36)
+|     |  |           |  |     +--hMpxV/Uganda/UVRI-MP786/2024|EPI_ISL_19693769|2024-11-01
+|     |  |           |  |  +--| (100)
+|     |  |           |  |  |  +--hMpxV/Uganda/UVRI-MP1142/2024|EPI_ISL_19693777|2024-11-18
+|     |  |           |  +--| (73)
+|     |  |           |     +--hMpxV/Uganda/UVRI-MP2077/2025|EPI_ISL_20047740|2025-02-14
+|     |  |        +**| (47)
+|     |  |        |  |  +--hMpxV/Uganda/UVRI-MP1129/2024|EPI_ISL_19693774|2024-11-15
+|     |  |        |  +--| (99)
+|     |  |        |     +---hMpxV/Uganda/UVRI-MP1600/2024|EPI_ISL_20047728|2024-12-09
+|     |  |     +--| (85)
+|     |  |     |  +--hMpxV/Uganda/UVRI-MP1116/2024|EPI_ISL_19693772|2024-11-15
+|     |  |  +--| (87)
+|     |  |  |  +--hMpxV/Uganda/UVRI-MP787/2024|EPI_ISL_19693770|2024-11-01
+|     |  +--| (86)
+|     |     |     +**hMpxV/Thailand/BIDI-002/2025|EPI_ISL_19694853|2025-01-17
+|     |     |  +--| (100)
+|     |     |  |  +**hMpxV/Thailand/BIDI-003/2025|EPI_ISL_19694854|2025-01-22
+|     |     +--| (96)
+|     |        +-----hMpxV/Pakistan/NIH-KMU-006/2024|EPI_ISL_19713336|2024-12-02
+|  +**| (67)
+|  |  |        +**hMpxV/DRC/INRB-0239V/2024|EPI_ISL_19093791|2024-01-10
+|  |  |     +--| (96)
+|  |  |     |  |  +--hMpxV/DRC/INRB-0220V/2024|EPI_ISL_19093817|2024-01-26
+|  |  |     |  +**| (99)
+|  |  |     |     +**hMpxV/DRC/INRB-0198V/2024|EPI_ISL_19093796|2024-01-23
+|  |  |  +**| (74)
+|  |  |  |  |     +**hMpxV/DRC/INRB-0224C/2023|EPI_ISL_19093830|2023-12-25
+|  |  |  |  |  +**| (94)
+|  |  |  |  |  |  |        +**hMpxV/DRC/INRB-0231V/2023|EPI_ISL_19093810|2023-12-21
+|  |  |  |  |  |  |     +--| (98)
+|  |  |  |  |  |  |     |  +**hMpxV/DRC/INRB-0201V/2024|EPI_ISL_19093808|2024-01-23
+|  |  |  |  |  |  |  +**| (53)
+|  |  |  |  |  |  |  |  +--hMpxV/DRC/INRB-0230C/2023|EPI_ISL_19093827|2023-12-31
+|  |  |  |  |  |  +--| (94)
+|  |  |  |  |  |     +--hMpxV/DRC/INRB-0240V/2024|EPI_ISL_19093812|2024-01-14
+|  |  |  |  +--| (98)
+|  |  |  |     +**hMpxV/DRC/INRB-0209V/2024|EPI_ISL_19093803|2024-01-19
+|  |  +--| (80)
+|  |     |  +**hMpxV/DRC/INRB-0223C/2023|EPI_ISL_19093831|2023-12-26
+|  |     +--| (100)
+|  |        +--hMpxV/DRC/INRB-0226V/2023|EPI_ISL_19093809|2023-12-26
++--| (71)
+   +--hMpxV/DRC/INRB-010/2023|EPI_ISL_19093833|2023-10-13
+
+
+Consensus tree in newick format: 
+
+(hMpxV/DRC/HGRK-1L/2024|EPI_ISL_18886301|2024-01-15:0.0000625218,(((hMpxV/Germany/un-RKI-1213/2024|EPI_ISL_19785226|2024-12:0.0000368501,hMpxV/Germany/un-RKI-1214/2024|EPI_ISL_19785230|2024-12:0.0000666480)99:0.0000339872,hMpxV/Germany/NW-RKI-1142/2024|EPI_ISL_19502532|2024-10-12:0.0000343592)99:0.0000343550,(hMpxV/DRC/CRSN-1/2023|EPI_ISL_19004044|2023-11-02:0.0000059212,(hMpxV/DRC/CRSN-2/2023|EPI_ISL_19004045|2023-11-15:0.0000011158,hMpxV/DRC/CRSN-3/2023|EPI_ISL_19004046|2023-12-23:0.0000050288)100:0.0000226770)100:0.0000206509)70:0.0000073085,((((((((((((hMpxV/Germany/un-RKI-1216/2025|EPI_ISL_19785218|2025-01:0.0000264730,(hMpxV/Germany/un-RKI-1351/2025|EPI_ISL_19887806|2025-04:0.0000011001,hMpxV/Germany/un-RKI-1349/2025|EPI_ISL_19887833|2025-04:0.0000010686)100:0.0000305165)100:0.0000380261,((hMpxV/Canada/MB-NML-6349/2024|EPI_ISL_19791290|2024-11-21:0.0000010686,hMpxV/Canada/MB-NML-6350/2024|EPI_ISL_19791291|2024-11-21:0.0000010686)87:0.0000010686,hMpxV/Canada/MB-NML-6348/2024|EPI_ISL_19791292|2024-11-21:0.0000050288)99:0.0000010686)96:0.0000010686,hMpxV/USA/GA-CDC-0100/2025|EPI_ISL_19686354|2025-01:0.0000010686)100:0.0000301734,((hMpxV/Brazil/SP-LEIAL-4448/2025|EPI_ISL_19762724|2025-02-24:0.0000337454,(hMpxV/China/ZJ-ZCDC-001/2024|EPI_ISL_19870071|2024-12-30:0.0000502897,((hMpxV/Congo/BZV-LNSP-CG001/2024|EPI_ISL_19810234|2024-12-23:0.0000253249,(hMpxV/Congo/BZV-LNSP-CG022/2025|EPI_ISL_19810238|2025-02-19:0.0000896774,hMpxV/Congo/BZV-LNSP-CG021/2025|EPI_ISL_19810237|2025-02-17:0.0000905541)95:0.0000214958)92:0.0000055207,((hMpxV/Congo/BZV-LNSP-CG018/2025|EPI_ISL_19810235|2025-01-09:0.0000100576,hMpxV/Congo/BZV-LNSP-CG032/2025|EPI_ISL_19810240|2025-03-05:0.0000212277)93:0.0000052332,hMpxV/Congo/BZV-LNSP-CG020/2025|EPI_ISL_19810236|2025-02-13:0.0000877433)94:0.0000054721)100:0.0000687671)88:0.0000068605)94:0.0000081059,hMpxV/USA/NH-CDC-0100/2025|EPI_ISL_19785231|2025-02:0.0000562879)79:0.0000011158)88:0.0000011158,((hMpxV/United_Kingdom/UKHSA-0072/2024|EPI_ISL_19557976|2024-10-27:0.0000010686,hMpxV/USA/CA-CDC-0100/2024|EPI_ISL_19586581|2024-11:0.0000100576)100:0.0000050288,hMpxV/Thailand/NIC-31/2024|EPI_ISL_19350788|2024-08-16:0.0000010686)98:0.0000050288)91:0.0000059747,(((((hMpxV/Thailand/BIDI-001/2025|EPI_ISL_19673536|2025-01-06:0.0000219047,(hMpxV/Thailand/BIDI-004/2025|EPI_ISL_19818649|2025-03-29:0.0000100576,hMpxV/India/UP-MCL-H-196-2884-1197/2025|EPI_ISL_19902083|2025-05-03:0.0000316983)99:0.0000189576)64:0.0000012022,(hMpxV/Uganda/UVRI-MP173/2024|EPI_ISL_19867563|2024-08-25:0.0000310416,hMpxV/USA/MA-CDC-0100/2025|EPI_ISL_20056547|2025-06:0.0000150865)93:0.0000005453)61:0.0000012808,hMpxV/India/KL-ICMR-176_1054/2024|EPI_ISL_19484958|2024-09-21:0.0000100576)64:0.0000137755,hMpxV/Italy/un-INMI-0001/2025|EPI_ISL_20055054|2025-05:0.0000614847)63:0.0000067388,hMpxV/Sweden/PHAS-11304/2024|EPI_ISL_19348512|2024-08-13:0.0000180317)57:0.0000010097)55:0.0000012062,hMpxV/Uganda/CPHL-002/2024|EPI_ISL_19456777|2024-09-08:0.0000560927)56:0.0000762370,(((hMpxV/Kenya/nvrl220/2024|EPI_ISL_19302262|2024-07-25:0.0000010686,hMpxV/Kenya/KEMRI-00107/2024|EPI_ISL_19345034|2024-07-25:0.0000010686)85:0.0000010686,hMpxV/USA/NY-CDC-0100/2025|EPI_ISL_19818650|2025-02:0.0000010686)63:0.0000010686,hMpxV/Uganda/UVRI-MP125/2024|EPI_ISL_19867562|2024-08-18:0.0000010686)77:0.0000348450)64:0.0000168872,hMpxV/Thailand/KCMH-ID24110/2024|EPI_ISL_19366744|2024-08-16:0.0000251444)57:0.0000011236,(((((((((((((((((((((((((((((((((((((hMpxV/DRC/CRSN-4/2023|EPI_ISL_19079342|2023-12-23:0.0000010686,hMpxV/DRC/CRSN-6/2024|EPI_ISL_19079344|2024-01-14:0.0000050288)69:0.0000011001,hMpxV/DRC/CRSN-5/2024|EPI_ISL_19079343|2024-01-06:0.0000471252)85:0.0000214079,hMpxV/Uganda/UVRI-MP588/2024|EPI_ISL_19587239|2024-10-14:0.0000010706)75:0.0000224304,hMpxV/Uganda/UVRI-MP587/2024|EPI_ISL_19587238|2024-10-14:0.0000065369)89:0.0000398772,(((((hMpxV/Uganda/UVRI-012/2024|EPI_ISL_19305614|2024-07-12:0.0002276905,hMpxV/Uganda/UVRI-MP783/2024|EPI_ISL_19693768|2024-10-30:0.0000151937)79:0.0000128541,hMpxV/Uganda/UVRI-MP1472/2025|EPI_ISL_20047736|2025-02-07:0.0000150865)75:0.0000012729,hMpxV/Uganda/UVRI-MP2072/2025|EPI_ISL_20047737|2025-02-18:0.0000100576)90:0.0000054060,(hMpxV/Uganda/UVRI-MP1575/2025|EPI_ISL_20047732|2025-01-05:0.0000408165,hMpxV/Uganda/UVRI-MP1563/2025|EPI_ISL_20047734|2025-01-31:0.0000121992)90:0.0000183567)84:0.0000011158,hMpxV/Uganda/UVRI-MP512/2024|EPI_ISL_19587237|2024-09-24:0.0000010686)94:0.0000320739)65:0.0000014301,(((hMpxV/Uganda/UVRI-MP818/2024|EPI_ISL_19602367|2024-11-01:0.0000050288,hMpxV/Uganda/UVRI-MP1023/2024|EPI_ISL_19602379|2024-11-08:0.0000100576)93:0.0000050288,hMpxV/Uganda/UVRI-MP1167/2024|EPI_ISL_19693782|2024-11-20:0.0000251444)100:0.0000251444,(hMpxV/Uganda/UVRI-MP1153/2024|EPI_ISL_19693778|2024-11-20:0.0000291593,(((((hMpxV/DRC/HGRK-78/2023|EPI_ISL_19439696|2023-12-06:0.0000010686,(((((((hMpxV/DRC/HGRK-36/2023|EPI_ISL_19381268|2023-12-12:0.0001959984,(hMpxV/DRC/HGRK-1M/2024|EPI_ISL_19689371|2024-09-02:0.0000010686,(((hMpxV/DRC/HGRK-11K/2024|EPI_ISL_19689378|2024-09-01:0.0000010686,(hMpxV/DRC/HGRK-19K/2024|EPI_ISL_19689685|2024-09-01:0.0000010686,hMpxV/DRC/HGRK-16K/2024|EPI_ISL_19689399|2024-09-01:0.0000028450)35:0.0000010686)34:0.0000010686,(((hMpxV/DRC/HGRK-13K/2024|EPI_ISL_19689380|2024-09-01:0.0000010686,hMpxV/DRC/HGRK-12K/2024|EPI_ISL_19689379|2024-09-01:0.0000010686)66:0.0000010686,hMpxV/DRC/HGRK-15K/2024|EPI_ISL_19689381|2024-09-01:0.0000010686)27:0.0000010686,hMpxV/DRC/HGRK-18K/2024|EPI_ISL_19689632|2024-09-01:0.0000010686)27:0.0000010686)100:0.0000201154,hMpxV/DRC/HGRK-17K/2024|EPI_ISL_19689575|2024-09-01:0.0000010686)98:0.0000011001)50:0.0000011001)58:0.0000011001,hMpxV/DRC/HGRK-8MM/2024|EPI_ISL_19689376|2024-08-12:0.0000010686)17:0.0000011001,(hMpxV/DRC/HGRK-7N/2024|EPI_ISL_19689375|2024-08-22:0.0000010686,hMpxV/DRC/HGRK-6K/2024|EPI_ISL_19689374|2024-08-30:0.0000010686)100:0.0000100576)15:0.0000011001,hMpxV/DRC/HGRK-2N/2024|EPI_ISL_19689372|2024-08-22:0.0000010686)6:0.0000011001,hMpxV/DRC/HGRK-04m/2024|EPI_ISL_19621388|2024-08-12:0.0000010686)18:0.0000011001,hMpxV/DRC/HGRK-5MM/2024|EPI_ISL_19689373|2024-08-15:0.0000050288)57:0.0000011001,hMpxV/DRC/HGRK-20K/2024|EPI_ISL_19689707|2024-09-01:0.0000201154)100:0.0000048720)100:0.0000214291,hMpxV/DRC/HGRK-9MM/2024|EPI_ISL_19689377|2024-08-15:0.0000224606)89:0.0000117584,(hMpxV/Burundi/INSP-1447/2024|EPI_ISL_19599243|2024-09-14:0.0000010686,hMpxV/Burundi/INSP-1529/2024|EPI_ISL_19599257|2024-09-16:0.0000050288)100:0.0000100576)93:0.0000258469,((hMpxV/DRC/INRB-2832V/2024|EPI_ISL_19857759|2024-09-06:0.0000318718,(hMpxV/DRC/INRB-2925V/2024|EPI_ISL_19858736|2024-09-09:0.0000406348,hMpxV/DRC/INRB-3101C/2024|EPI_ISL_19858194|2024-09-13:0.0000830091)98:0.0000291952)100:0.0000761322,hMpxV/DRC/INRB-2497V/2024|EPI_ISL_19858796|2024-08-30:0.0000501289)100:0.0002167800)89:0.0000182767,hMpxV/Congo/BZV-LNSP-CG000/2024|EPI_ISL_19810233|2024-08-08:0.0000211315)87:0.0000168401)87:0.0000120783)85:0.0000052411)91:0.0000113236,hMpxV/Uganda/UVRI-MP2088/2025|EPI_ISL_20047703|2025-02-15:0.0001133506)86:0.0000113281,((hMpxV/Uganda/UVRI-MP350C/2024|EPI_ISL_19587234|2024-09-08:0.0000010686,hMpxV/Uganda/UVRI-MP652/2024|EPI_ISL_19587245|2024-10-21:0.0000010686)88:0.0000010686,hMpxV/Uganda/UVRI-MP350D/2024|EPI_ISL_19587235|2024-09-08:0.0000010686)92:0.0000050288)38:0.0000012808,hMpxV/Uganda/UVRI-MP1483/2025|EPI_ISL_20047735|2025-02-04:0.0000100576)18:0.0000012808,hMpxV/Uganda/UVRI-MP828/2024|EPI_ISL_19602370|2024-10-30:0.0000100576)15:0.0000013594,((hMpxV/Uganda/UVRI-MP769/2024|EPI_ISL_19587262|2024-10-25:0.0000050288,hMpxV/Uganda/UVRI-MP1596/2025|EPI_ISL_20047727|2025-02-10:0.0000050288)81:0.0000010686,hMpxV/Uganda/UVRI-MP1222/2024|EPI_ISL_19612228|2024-11-27:0.0000050288)82:0.0000050288)25:0.0000013846,((hMpxV/Uganda/UVRI-MP350B/2024|EPI_ISL_19587233|2024-09-08:0.0000010686,(hMpxV/Uganda/UVRI-MP819/2024|EPI_ISL_19602368|2024-11-01:0.0000050288,(((hMpxV/Uganda/UVRI-MP1512/2025|EPI_ISL_20047718|2025-02-05:0.0000100576,hMpxV/Uganda/UVRI-MP644/2024|EPI_ISL_19587244|2024-10-21:0.0000010686)83:0.0000050288,(hMpxV/Uganda/UVRI-MP763/2024|EPI_ISL_19587256|2024-10-21:0.0000050288,hMpxV/Uganda/UVRI-MP770/2024|EPI_ISL_19587263|2024-10-27:0.0000100576)30:0.0000005450)23:0.0000063984,(((hMpxV/Uganda/UVRI-MP2102/2025|EPI_ISL_20047710|2025-02-03:0.0000169872,((hMpxV/Uganda/UVRI-MP880/2024|EPI_ISL_19602374|2024-11-04:0.0000050288,hMpxV/Uganda/UVRI-MP1039/2024|EPI_ISL_19602380|2024-11-22:0.0000103050)45:0.0000010686,(hMpxV/Uganda/UVRI-MP1604/2025|EPI_ISL_20047716|2024-12-10:0.0000201154,(hMpxV/Uganda/UVRI-MP814/2024|EPI_ISL_19602365|2024-11-01:0.0000010686,(hMpxV/Uganda/UVRI-MP1606/2025|EPI_ISL_20047715|2025-02-14:0.0000140184,((hMpxV/Uganda/UVRI-MP2082/2025|EPI_ISL_20047702|2025-02-18:0.0000100576,(hMpxV/Uganda/UVRI-060/2024|EPI_ISL_19612236|2024-12-04:0.0000050288,hMpxV/Uganda/UVRI-062/2024|EPI_ISL_19612237|2024-12-03:0.0000114114)100:0.0000341856)99:0.0000050288,hMpxV/Uganda/UVRI-MP2060/2025|EPI_ISL_20047709|2025-02-18:0.0000251444)96:0.0000150865)80:0.0000066141)88:0.0000069510)89:0.0000068730)78:0.0000050288)48:0.0000010686,(hMpxV/Uganda/UVRI-MP2089/2025|EPI_ISL_20047704|2025-02-17:0.0000050288,hMpxV/Uganda/UVRI-MP767/2024|EPI_ISL_19587260|2024-10-27:0.0000122430)85:0.0000061111)36:0.0000050288,((hMpxV/Uganda/UVRI-MP674/2024|EPI_ISL_19587254|2024-10-19:0.0000100576,hMpxV/Uganda/UVRI-MP1605/2025|EPI_ISL_20047720|2024-12-10:0.0000100576)74:0.0000010686,(hMpxV/Uganda/UVRI-MP766/2024|EPI_ISL_19587259|2024-10-25:0.0000100576,(hMpxV/Uganda/UVRI-MP1474/2024|EPI_ISL_20047731|2024-12-10:0.0000050288,(hMpxV/Uganda/UVRI-MP1185/2024|EPI_ISL_19602383|2024-11-22:0.0000077359,hMpxV/Uganda/UVRI-MP1473/2025|EPI_ISL_20047726|2025-02-11:0.0000301734)79:0.0000071344)83:0.0000100576)70:0.0000050288)51:0.0000010686)29:0.0000050288)9:0.0000011001)16:0.0000011001)26:0.0000014212,hMpxV/Uganda/UVRI-MP454/2024|EPI_ISL_19587236|2024-09-22:0.0000010686)6:0.0000005851)77:0.0000050875,hMpxV/Uganda/UVRI-MP1562/2025|EPI_ISL_20047722|2025-01-21:0.0000251444)57:0.0000011236,hMpxV/Uganda/UVRI-MP538/2024|EPI_ISL_19587264|2024-10:0.0000010686)52:0.0000011236,hMpxV/Uganda/UVRI-MP742/2024|EPI_ISL_19587252|2024-10:0.0000010686)66:0.0000012022,hMpxV/Uganda/UVRI-MP688/2024|EPI_ISL_19587251|2024-10-19:0.0000010686)56:0.0000039195,((((hMpxV/Uganda/UVRI-MP349/2024|EPI_ISL_19587230|2024-09-08:0.0000010686,hMpxV/Uganda/UVRI-MP765/2024|EPI_ISL_19587258|2024-10-24:0.0000050288)95:0.0000050288,hMpxV/Uganda/UVRI-MP636/2024|EPI_ISL_19587243|2024-10-21:0.0000010686)96:0.0000050288,(hMpxV/Uganda/UVRI-059/2024|EPI_ISL_19612235|2024-12-04:0.0000050288,(hMpxV/Uganda/UVRI-MP822/2024|EPI_ISL_19602369|2024-11-01:0.0000010686,hMpxV/Uganda/UVRI-MP2079/2025|EPI_ISL_20047741|2025-02-10:0.0000100576)83:0.0000089703)78:0.0000010686)79:0.0000050288,((hMpxV/Uganda/UVRI-MP1249/2024|EPI_ISL_19612231|2024-11-30:0.0000010686,(hMpxV/Uganda/UVRI-MP901/2024|EPI_ISL_19602375|2024-11-06:0.0000075611,hMpxV/Uganda/UVRI-MP1236/2024|EPI_ISL_19612229|2024-11-29:0.0000150865)94:0.0000229061)75:0.0000050288,((((hMpxV/Uganda/UVRI-MP2092/2025|EPI_ISL_20047705|2024-12-09:0.0000150865,hMpxV/Uganda/UVRI-MP2080/2025|EPI_ISL_20047742|2025-02-17:0.0000100576)79:0.0000011001,hMpxV/Uganda/UVRI-MP1271/2024|EPI_ISL_19612232|2024-11-30:0.0000010686)86:0.0000094118,hMpxV/Uganda/UVRI-MP817/2024|EPI_ISL_19602366|2024-11-01:0.0000201154)51:0.0000050288,(hMpxV/Uganda/UVRI-MP859/2024|EPI_ISL_19602372|2024-10-30:0.0000172946,hMpxV/Uganda/UVRI-MP1582/2024|EPI_ISL_20047729|2024-12-09:0.0000357735)80:0.0000115661)38:0.0000011001)66:0.0000106097)27:0.0000011001)40:0.0000012022,hMpxV/Uganda/UVRI-MP768/2024|EPI_ISL_19587261|2024-10-25:0.0000201154)65:0.0000098253,(hMpxV/Uganda/UVRI-MP350A1/2024|EPI_ISL_19587231|2024-09-08:0.0000010686,hMpxV/Uganda/UVRI-MP350A2/2024|EPI_ISL_19587232|2024-09-08:0.0000050288)29:0.0000010686)32:0.0000012022,((((((hMpxV/Uganda/UVRI-MP789/2024|EPI_ISL_19602362|2024-10-30:0.0000050288,(hMpxV/Uganda/UVRI-MP1247/2024|EPI_ISL_19693786|2024-12-03:0.0000010686,(hMpxV/Uganda/UVRI-MP2101/2025|EPI_ISL_20047708|2025-01-22:0.0000187166,hMpxV/Uganda/UVRI-MP2096/2025|EPI_ISL_20047707|2025-02-14:0.0000251444)79:0.0000011001)88:0.0000062892)80:0.0000100576,hMpxV/Uganda/UVRI-MP1597/2025|EPI_ISL_20047717|2025-01-23:0.0000100576)56:0.0000010686,hMpxV/Uganda/UVRI-MP667/2024|EPI_ISL_19587249|2024-10-21:0.0000010686)68:0.0000066630,hMpxV/Uganda/UVRI-MP762/2024|EPI_ISL_19587255|2024-10-24:0.0000050288)78:0.0000067453,hMpxV/Uganda/UVRI-MP2062/2025|EPI_ISL_20047730|2025-02-18:0.0000201154)43:0.0000048587,hMpxV/Uganda/UVRI-MP1286/2024|EPI_ISL_19612234|2024-12-01:0.0000150865)63:0.0000018771)39:0.0000051324,(((((((((hMpxV/Uganda/UVRI-MP1183/2024|EPI_ISL_19602382|2024-11-22:0.0000073735,hMpxV/Uganda/UVRI-MP1602/2025|EPI_ISL_20047712|2025-02-04:0.0000122622)87:0.0000107337,hMpxV/Uganda/UVRI-MP1285/2024|EPI_ISL_19612233|2024-12-01:0.0000100576)87:0.0000050288,hMpxV/Uganda/UVRI-MP2073/2025|EPI_ISL_20047738|2025-02-18:0.0000201154)83:0.0000050288,hMpxV/Uganda/UVRI-MP2103/2025|EPI_ISL_20047711|2025-01-23:0.0000100576)83:0.0000050288,((hMpxV/Uganda/UVRI-MP1221/2024|EPI_ISL_19612227|2024-11-26:0.0000010686,hMpxV/Uganda/UVRI-MP1287/2024|EPI_ISL_19693787|2024-12-04:0.0000050288)95:0.0000145411,hMpxV/Uganda/UVRI-MP659/2024|EPI_ISL_19587247|2024-10-18:0.0000100576)80:0.0000010686)50:0.0000050288,((hMpxV/Uganda/UVRI-MP903/2024|EPI_ISL_19602376|2024-11-02:0.0000201154,hMpxV/Uganda/UVRI-MP1544/2025|EPI_ISL_20047724|2025-02-06:0.0000251444)81:0.0000011001,((((hMpxV/Uganda/UVRI-MP1173/2024|EPI_ISL_19693785|2024-11-21:0.0000010686,hMpxV/Uganda/UVRI-MP1171/2024|EPI_ISL_19693783|2024-11-21:0.0000150865)96:0.0000011001,hMpxV/Uganda/UVRI-MP1049/2024|EPI_ISL_19693771|2024-11-13:0.0000150865)87:0.0000091776,hMpxV/Uganda/UVRI-MP1590/2025|EPI_ISL_20047714|2024-12-10:0.0000100576)70:0.0000010686,((((hMpxV/Uganda/UVRI-MP663/2024|EPI_ISL_19587248|2024-10-21:0.0000050288,hMpxV/Uganda/UVRI-MP1537/2025|EPI_ISL_20047723|2025-02-06:0.0000301734)91:0.0000050288,hMpxV/Uganda/UVRI-MP919/2024|EPI_ISL_19602377|2024-11-06:0.0000050288)86:0.0000050288,hMpxV/Uganda/UVRI-MP1595/2025|EPI_ISL_20047721|2025-02-03:0.0000100576)84:0.0000050288,hMpxV/Uganda/UVRI-MP655/2024|EPI_ISL_19587246|2024-10-18:0.0000010686)82:0.0000050288)58:0.0000050288)52:0.0000097004)75:0.0000010686,hMpxV/Uganda/UVRI-MP632/2024|EPI_ISL_19587242|2024-10-17:0.0000100576)80:0.0000050288,(hMpxV/Uganda/UVRI-MP757/2024|EPI_ISL_19587253|2024-10-18:0.0000050288,hMpxV/Uganda/UVRI-MP678/2024|EPI_ISL_19587250|2024-10-19:0.0000050288)82:0.0000010686)72:0.0000010686,hMpxV/Uganda/UVRI-MP848/2024|EPI_ISL_19602371|2024-10-30:0.0000096033)73:0.0000048201)14:0.0000011236,(hMpxV/Uganda/UVRI-MP1155/2024|EPI_ISL_19693779|2024-11-20:0.0000100576,hMpxV/Uganda/UVRI-MP863/2024|EPI_ISL_19602373|2024-11-01:0.0000100576)77:0.0000100576)23:0.0000006415,((hMpxV/Uganda/UVRI-MP619/2024|EPI_ISL_19587240|2024-10-18:0.0000100576,hMpxV/Uganda/UVRI-MP813/2024|EPI_ISL_19602364|2024-11-01:0.0000010686)44:0.0000050288,(hMpxV/Uganda/UVRI-MP920/2024|EPI_ISL_19602378|2024-11-05:0.0000150865,(hMpxV/Uganda/UVRI-MP2094/2025|EPI_ISL_20047706|2025-02-03:0.0000100576,(hMpxV/Uganda/UVRI-MP1581/2025|EPI_ISL_20047725|2025-02-06:0.0000201154,hMpxV/Uganda/UVRI-MP1569/2025|EPI_ISL_20047733|2025-01-29:0.0000459908)49:0.0000011001)47:0.0000050288)37:0.0000010686)47:0.0000050288)28:0.0000021075,hMpxV/Uganda/UVRI-MP2061/2025|EPI_ISL_20047719|2025-02-18:0.0000167986)51:0.0000012808,hMpxV/Uganda/UVRI-MP1172/2024|EPI_ISL_19693784|2024-11-21:0.0000050288)79:0.0000012808,hMpxV/Uganda/UVRI-MP812/2024|EPI_ISL_19602363|2024-11-01:0.0000010686)85:0.0000189514,hMpxV/Uganda/UVRI-MP1137/2024|EPI_ISL_19693776|2024-11-15:0.0000100576)88:0.0000012808,hMpxV/Uganda/UVRI-MP558/2024|EPI_ISL_19587265|2024-10-07:0.0000169762)81:0.0000237534,hMpxV/Uganda/UVRI-MP1180/2024|EPI_ISL_19602381|2024-11-22:0.0000108883)65:0.0000175178,(hMpxV/Uganda/UVRI-MP1212/2024|EPI_ISL_19612226|2024-11-27:0.0000100576,hMpxV/Uganda/UVRI-MP1246/2024|EPI_ISL_19612230|2024-11-29:0.0000150865)99:0.0000011001)65:0.0000057502,hMpxV/Uganda/UVRI-MP1574/2025|EPI_ISL_20047713|2024-12-09:0.0000301734)60:0.0000013594,((hMpxV/Uganda/UVRI-MP764/2024|EPI_ISL_19587257|2024-10-21:0.0000011001,hMpxV/Uganda/UVRI-MP1186/2024|EPI_ISL_19602384|2024-11-22:0.0000050288)95:0.0000097334,(hMpxV/Uganda/UVRI-MP1130/2024|EPI_ISL_19693775|2024-11-15:0.0000100576,hMpxV/Uganda/UVRI-MP1159/2024|EPI_ISL_19693780|2024-11-20:0.0000321550)99:0.0000161059)70:0.0000104414)57:0.0000056547,((hMpxV/Uganda/UVRI-MP786/2024|EPI_ISL_19693769|2024-11-01:0.0000100576,hMpxV/Uganda/UVRI-MP1142/2024|EPI_ISL_19693777|2024-11-18:0.0000065300)100:0.0000126469,hMpxV/Uganda/UVRI-MP2077/2025|EPI_ISL_20047740|2025-02-14:0.0000408855)73:0.0000060945)36:0.0000013594,(hMpxV/Uganda/UVRI-MP1129/2024|EPI_ISL_19693774|2024-11-15:0.0000077363,hMpxV/Uganda/UVRI-MP1600/2024|EPI_ISL_20047728|2024-12-09:0.0000512997)99:0.0000071349)47:0.0000014380,hMpxV/Uganda/UVRI-MP1116/2024|EPI_ISL_19693772|2024-11-15:0.0000201154)85:0.0000081307,hMpxV/Uganda/UVRI-MP787/2024|EPI_ISL_19693770|2024-11-01:0.0000073729)87:0.0000080078,((hMpxV/Thailand/BIDI-002/2025|EPI_ISL_19694853|2025-01-17:0.0000010686,hMpxV/Thailand/BIDI-003/2025|EPI_ISL_19694854|2025-01-22:0.0000010686)100:0.0000050288,hMpxV/Pakistan/NIH-KMU-006/2024|EPI_ISL_19713336|2024-12-02:0.0000715302)96:0.0000050288)86:0.0000223759)71:0.0000157462,(((hMpxV/DRC/INRB-0239V/2024|EPI_ISL_19093791|2024-01-10:0.0000010686,(hMpxV/DRC/INRB-0220V/2024|EPI_ISL_19093817|2024-01-26:0.0000113801,hMpxV/DRC/INRB-0198V/2024|EPI_ISL_19093796|2024-01-23:0.0000010686)99:0.0000014144)96:0.0000061975,((hMpxV/DRC/INRB-0224C/2023|EPI_ISL_19093830|2023-12-25:0.0000010686,(((hMpxV/DRC/INRB-0231V/2023|EPI_ISL_19093810|2023-12-21:0.0000012552,hMpxV/DRC/INRB-0201V/2024|EPI_ISL_19093808|2024-01-23:0.0000010686)98:0.0000034467,hMpxV/DRC/INRB-0230C/2023|EPI_ISL_19093827|2023-12-31:0.0000100576)53:0.0000011158,hMpxV/DRC/INRB-0240V/2024|EPI_ISL_19093812|2024-01-14:0.0000050288)94:0.0000123281)94:0.0000011158,hMpxV/DRC/INRB-0209V/2024|EPI_ISL_19093803|2024-01-19:0.0000010686)98:0.0000068859)74:0.0000011001,(hMpxV/DRC/INRB-0223C/2023|EPI_ISL_19093831|2023-12-26:0.0000010686,hMpxV/DRC/INRB-0226V/2023|EPI_ISL_19093809|2023-12-26:0.0000150865)100:0.0000050288)80:0.0000063453)67:0.0000011001,hMpxV/DRC/INRB-010/2023|EPI_ISL_19093833|2023-10-13:0.0000038308)71:0.0000297052);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ALIGNEDSEQ213.fasta.treefile -m "GTR{1.02497,4.24763,0.940402,0.777824,3.35888}+F{0.335456,0.165181,0.165352,0.334011}" --length 198855
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ALIGNEDSEQ213.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ALIGNEDSEQ213.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Dec 21 18:44:25 2025
+Total CPU time used: 2709.984375 seconds (0h:45m:9s)
+Total wall-clock time used: 613.8738524 seconds (0h:10m:13s)
+
