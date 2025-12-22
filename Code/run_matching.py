@@ -13,12 +13,13 @@ def main(
     output_prefix = "../Data/IQTree_out/run_matching"
     extra_args = ["-m", "GTR", "-bb", "1000", "-alrt", "1000", "-nt", "AUTO"]
     tree_utils.run_iqtree(alignment_file, output_prefix, extra_args=extra_args)
+    time_pairs = tree_utils.parse_lengths("../Data/IQTree_out/run_matching.treefile")
 
     # matching functions
     sample_data = matching.read_ped_file(ped_file)
     pairs = matching.read_recombinant_file(recombinant_file)
     sample_to_pairs = matching.find_matching_pairs(sample_data, pairs)
-    excel_data = matching.summarize_matches(sample_to_pairs)
+    excel_data = matching.summarize_matches(sample_to_pairs, time_pairs)
     matching.save_to_excel(excel_data, output_excel)
 
 
