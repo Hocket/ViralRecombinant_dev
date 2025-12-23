@@ -22,9 +22,9 @@ def run_iqtree(input_alignment, output_prefix, iqtree_path="iqtree3", extra_args
     Returns:
         int: The return code from the IQ-TREE process.
     """
-    cmd = [iqtree_path, "-s", input_alignment, "-pre", output_prefix]
+    cmd = [str(iqtree_path), "-s", str(input_alignment), "-pre", str(output_prefix)]
     if extra_args:
-        cmd.extend(extra_args)
+        cmd.extend(map(str,extra_args))
     print("Running:", " ".join(cmd))
     result = subprocess.run(cmd)
     return result.returncode

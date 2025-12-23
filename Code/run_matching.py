@@ -7,19 +7,25 @@ Author: Alex Poyer
 import sys
 import matching
 import tree_utils
+from pathlib import Path
 
+ROOT_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT_DIR / "Data"
+INPUT_DIR = DATA_DIR / "InputFiles"
+OUTPUT_DIR = DATA_DIR / "OutputFiles"
+IQTREE_OUT_DIR = DATA_DIR / "IQTree_out"
 
 def main(
     ped_file,
     recombinant_file,
     alignment_file,
-    output_excel="../Data/OutputFiles/matches_output.xlsx",
+    output_excel=OUTPUT_DIR / "matches_output.xlsx",
 ):
     # tree_utils functions
-    output_prefix = "../Data/IQTree_out/run_matching"
+    output_prefix = IQTREE_OUT_DIR / "run_matching"
     extra_args = ["-m", "GTR", "-bb", "1000", "-alrt", "1000", "-nt", "AUTO"]
     tree_utils.run_iqtree(alignment_file, output_prefix, extra_args=extra_args)
-    time_pairs = tree_utils.parse_lengths("../Data/IQTree_out/run_matching.treefile")
+    time_pairs = tree_utils.parse_lengths(IQTREE_OUT_DIR / "run_matching.treefile")
 
     # matching functions
     sample_data = matching.read_ped_file(ped_file)
