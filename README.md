@@ -19,7 +19,7 @@ Code/
 
 ## Requirements
 
-- Python 3.13+
+- Python 3.8.20+ (developed using 3.13.11)
 - All Python packages listed in `Data/requirements/requirements.txt`
 - [IQ-TREE](http://iqtree.github.io) (required for phylogenetic analysis)
 
@@ -76,11 +76,10 @@ pip install -r Data/requirements/requirements.txt
 ## Usage
 
 1. Place your input files in `Data/InputFiles/`.
-2. cd into `Code` directory
 2. Run the main workflow script:
 
 ```
-python run_matching.py ../Data/InputFiles/<ped_file> ../Data/InputFiles/<recombinant_file> ../Data/InputFiles/<fasta_file>
+python Code/run_matching.py Data/InputFiles/<ped_file> Data/InputFiles/<recombinant_file> Data/InputFiles/<fasta_file>
 ```
 
 3. Output files will be saved in `Data/OutputFiles/` and `Data/IQTree_out/`.
@@ -89,7 +88,6 @@ python run_matching.py ../Data/InputFiles/<ped_file> ../Data/InputFiles/<recombi
 
 - `matching.py` — SNP matching logic
 - `run_matching.py` — Main workflow script
-- `SNPMatching.py` — SNP matching functions
 - `tree_utils.py` — Utilities for phylogenetic tree analysis
 
 ## Citation
