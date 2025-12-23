@@ -54,18 +54,18 @@ Create Local Environment
 ```
 python -m venv .venv
 ```
-Activate Local Environment
-###### **Windows**
+#### Activate Local Environment
+##### **Windows**
 ```
 .venv\Scripts\activate
 ```
 
-**Unix / MacOS**
+##### **Unix / MacOS**
 ```
 source .venv/bin/activate
 ```
 
-Install Python packages:
+#### Install Python packages:
 
 ```
 pip install -r Data/requirements/requirements.txt
