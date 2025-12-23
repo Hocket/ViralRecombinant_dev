@@ -21,7 +21,7 @@ Code/
 
 - Python 3.13+
 - All Python packages listed in `Data/requirements/requirements.txt`
-- [IQ-TREE](http://www.iqtree.org/) (required for phylogenetic analysis)
+- [IQ-TREE](http://iqtree.github.io) (required for phylogenetic analysis)
 
 ### Installing IQ-TREE
 
@@ -33,7 +33,7 @@ brew install iqtree
 ```
 
 **Other platforms:**  
-Download binaries from the [IQ-TREE website](http://www.iqtree.org/#download) and add to system path.
+Download binaries from the [IQ-TREE website](http://iqtree.github.io) and add to system path.
 <br><sub>This may require additional troubleshooting, for this reason conda is preferred.</sub>
 
 ## Setup
