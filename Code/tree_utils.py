@@ -9,14 +9,14 @@ import re
 from Bio import Phylo
 
 
-def run_iqtree(input_alignment, output_prefix, iqtree_path="iqtree", extra_args=None):
+def run_iqtree(input_alignment, output_prefix, iqtree_path="iqtree3", extra_args=None):
     """
     Runs IQ-TREE on the given alignment file.
 
     Args:
         input_alignment (str): Path to the input alignment file (FASTA, PHYLIP, etc.).
         output_prefix (str): Prefix for output files.
-        iqtree_path (str): Path to the IQ-TREE executable (default: "iqtree2").
+        iqtree_path (str): Path to the IQ-TREE executable (default: "iqtree3").
         extra_args (list): Additional command-line arguments for IQ-TREE.
 
     Returns:
