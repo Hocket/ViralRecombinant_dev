@@ -34,7 +34,7 @@ brew install iqtree
 
 **Other platforms:**  
 Download binaries from the [IQ-TREE website](http://www.iqtree.org/#download) and add to system path.
-  <sub>This may require additional troubleshooting, for this reason conda is preferred.</sub>
+<br><sub>This may require additional troubleshooting, for this reason conda is preferred.</sub>
 
 ## Setup
 
@@ -49,13 +49,19 @@ conda activate viral_recombinant
 
 ### Using pip
 
-Create and Activate local environment
+Create Local Environment
 
 ```
 python -m venv .venv
-<span style="color:green"># WINDOWS</span>
+```
+Activate Local Environment
+###### **Windows**
+```
 .venv\Scripts\activate
-<span style="color:green"># Unix / MacOS</span>
+```
+
+**Unix / MacOS**
+```
 source .venv/bin/activate
 ```
 
