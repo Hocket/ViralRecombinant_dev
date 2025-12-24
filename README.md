@@ -84,6 +84,9 @@ python Code/run_matching.py Data/InputFiles/<ped_file> Data/InputFiles/<recombin
 
 3. Output files will be saved in `Data/OutputFiles/` and `Data/IQTree_out/`.
 
+**Note:**  
+Tree result files are generated in two versions: one with color annotations and one without. Some phylogenetic tree viewers may not display the colored .nexus files correctly. If you encounter issues, use .nwk the version without color.
+
 ## Scripts Overview
 
 - `matching.py` — SNP matching logic
