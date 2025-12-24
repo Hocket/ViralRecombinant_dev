@@ -64,6 +64,7 @@ def color_tree(data, tree_file, output_file):
         epi_isl = extract_epi_isl(sample_name)
         if epi_isl is None:
             continue
+        clade.name = epi_isl
         unique_recombinant = (
             df.at[epi_isl, "UniqueRecombinant"]
             if epi_isl in df.index
