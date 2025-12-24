@@ -35,7 +35,7 @@ def main(
     sample_to_pairs = matching.find_matching_pairs(sample_data, pairs)
     dataframe = matching.summarize_matches(sample_to_pairs, time_pairs)
     matching.save_to_excel(dataframe, output_excel)
-    tree_utils.color_tree(dataframe, CONTREE, OUTPUT_DIR / (OUTPUT_PREFIX + ".nexus"))
+    tree_utils.color_tree(dataframe, CONTREE, OUTPUT_DIR / OUTPUT_PREFIX)
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:

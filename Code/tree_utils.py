@@ -57,6 +57,9 @@ def color_tree(data, tree_file, output_file):
 
     # pass through and add color to tree
     tree = Phylo.read(tree_file, "newick")
+    nwk = str(output_file) + ".nwk"
+    Phylo.write(tree, nwk, "newick")
+    print("Tree saved to", nwk)
     
     df = data.set_index("epi_isl")
     for clade in tree.get_terminals():
@@ -80,5 +83,6 @@ def color_tree(data, tree_file, output_file):
         #     if epi_isl in df.index
         #     else None
         # )
-    Phylo.write(tree, output_file, "nexus")
-    print("Color tree saved to", output_file)
+    nexus = str(output_file) + ".nexus"
+    Phylo.write(tree, nexus, "nexus")
+    print("Color tree saved to", nexus)
