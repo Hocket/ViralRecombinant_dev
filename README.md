@@ -97,7 +97,7 @@ Tree result files are generated in two versions: one with color annotations and 
 
 If you use this toolkit, please cite:
 
-Poyer, A., Feeley, M., Pheele, P. (2025). ViralRecombinant: A toolkit for viral recombinant analysis. GitHub repository: https://github.com/Hocket/ViralRecombinant_dev
+Alex T. Poyer, Michael C. Feehley, Patrick J. Feehley (2025). ViralRecombinant: A toolkit for viral recombinant analysis. GitHub repository: https://github.com/Hocket/ViralRecombinant_dev
 
 Or, preferably, cite the relevant publication/preprint if available.
 
