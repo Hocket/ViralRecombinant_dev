@@ -104,3 +104,11 @@ If you use this toolkit, please cite appropriately.
 ## Contact
 
 For questions or issues, please contact [your email or GitHub username].
+
+## References
+
+**IQTree3:**
+T.K.F. Wong, N. Ly-Trong, H. Ren, H. Banos, A.J. Roger, E. Susko, C. Bielow, N. De Maio, N. Goldman, M.W. Hahn, G. Huttley, R. Lanfear, B.Q. Minh (2025) IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models. Submitted, https://doi.org/10.32942/X2P62N.
+
+**BioPython:** <sub>Phylo</sub>
+Talevich E, Invergo BM, Cock PJ and Chapman BA (2012) Bio.Phylo: a unified toolkit for processing, analyzing and visualizing phylogenetic trees in Biopython. BMC Bioinformatics, 13, 209
