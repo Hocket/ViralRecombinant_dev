@@ -14,6 +14,8 @@ DATA_DIR = ROOT_DIR / "Data"
 INPUT_DIR = DATA_DIR / "InputFiles"
 OUTPUT_DIR = DATA_DIR / "OutputFiles"
 IQTREE_OUT_DIR = DATA_DIR / "IQTree_out"
+OUTPUT_PREFIX = "run_matching"
+CONTREE = IQTREE_OUT_DIR / (OUTPUT_PREFIX + ".contree")
 
 def main(
     ped_file,
@@ -22,18 +24,18 @@ def main(
     output_excel=OUTPUT_DIR / "matches_output.xlsx",
 ):
     # tree_utils functions
-    output_prefix = IQTREE_OUT_DIR / "run_matching"
+    output_prefix = IQTREE_OUT_DIR / OUTPUT_PREFIX
     extra_args = ["-m", "GTR", "-bb", "1000", "-alrt", "1000", "-nt", "AUTO"]
     tree_utils.run_iqtree(alignment_file, output_prefix, extra_args=extra_args)
-    time_pairs = tree_utils.parse_lengths(IQTREE_OUT_DIR / "run_matching.treefile")
+    time_pairs = tree_utils.parse_lengths(CONTREE)
 
     # matching functions
     sample_data = matching.read_ped_file(ped_file)
     pairs = matching.read_recombinant_file(recombinant_file)
     sample_to_pairs = matching.find_matching_pairs(sample_data, pairs)
-    excel_data = matching.summarize_matches(sample_to_pairs, time_pairs)
-    matching.save_to_excel(excel_data, output_excel)
-
+    dataframe = matching.summarize_matches(sample_to_pairs, time_pairs)
+    matching.save_to_excel(dataframe, output_excel)
+    tree_utils.color_tree(dataframe, CONTREE, OUTPUT_DIR / (OUTPUT_PREFIX + ".nwk"))
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
