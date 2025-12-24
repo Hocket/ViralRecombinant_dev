@@ -71,7 +71,7 @@ def color_tree(data, tree_file, output_file):
         )
         # COLORS USE HEX CODE
         if unique_recombinant.lower() == "yes":
-            clade.comment = "&color=#FF0000"
+            clade.comment = "&!color=#ff0000"
             continue
         # TO IMPLEMENT WHEN COLORS ARE KNOWN
         # num_pairs = (
@@ -79,5 +79,5 @@ def color_tree(data, tree_file, output_file):
         #     if epi_isl in df.index
         #     else None
         # )
-    Phylo.write(tree, output_file, "newick")
+    Phylo.write(tree, output_file, "nexus")
     print("Color tree saved to", output_file)
