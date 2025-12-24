@@ -8,6 +8,7 @@ import pandas as pd
 import re
 import tree_utils
 
+
 # This function may further be optimized by utilizing pandas dataframes. Works for small datasets
 def read_ped_file(ped_file, ped_header="Position"):
     """
@@ -145,14 +146,14 @@ def summarize_matches(sample_to_pairs, phylo_times=None):
         phylo_times (dict, optional): A dictionary mapping each sample name (str) to branch length / phylogenetic time (int)
 
     Returns:
-        list: excel_data
-            A list of lists, each containing:
-                [sample name, number of pairs, uniqueness, pair identities, samples it shares identities with]
+        DataFrame: df
+            A dataframe containing rows :
+                [epi_isl identifier, sample name, number of pairs, uniqueness, pair identities, samples it shares identities with]
     """
     pairs_to_samples = {}
     for sample_name, matching_pairs in sample_to_pairs.items():
         pairs_to_samples.setdefault(matching_pairs, []).append(sample_name)
-    excel_data = []
+    rows = []
     for pair_set, samples in pairs_to_samples.items():
         num_pairs = len(pair_set)
         pair_identities = "; ".join([f"L1={l1}, L2={l2}" for l1, l2 in pair_set])
@@ -161,30 +162,48 @@ def summarize_matches(sample_to_pairs, phylo_times=None):
         for sample in samples:
             epi_isl = tree_utils.extract_epi_isl(sample)
             phylo_time = phylo_times.get(epi_isl, "") if phylo_times else ""
-            excel_data.append([sample, num_pairs, unique, pair_identities, shared_with, phylo_time])
-    return excel_data
+            rows.append(
+                [
+                    epi_isl,
+                    sample,
+                    num_pairs,
+                    unique,
+                    pair_identities,
+                    shared_with,
+                    phylo_time,
+                ]
+            )
+    df = pd.DataFrame(
+        rows,
+        columns=[
+            "epi_isl",
+            "Sample",
+            "Num Pairs",
+            "UniqueRecombinant",
+            "Pair Identities",
+            "Shared With",
+            "Phylogenetic Time",
+        ],
+    )
+    return df
 
 
-def save_to_excel(excel_data, output_excel):
+def save_to_excel(df, output_excel):
     """
-    Converts data to an excel sheet
-        see summarize matches for format
+    Saves the DataFrame to an Excel file
 
 
     Args:
         excel_data (list): list with summarized sample data
         output_excel (str): output excel file name
     """
-    df = pd.DataFrame(
-        excel_data,
-        columns=[
-            "Sample",
-            "Num Pairs",
-            "UniqueRecombinant",
-            "Pair Identities",
-            "Shared With",
-            "Phylogenetic Time"
-        ],
-    )
-    df.to_excel(output_excel, index=False)
+    export_cols = [
+        "Sample",
+        "Num Pairs",
+        "UniqueRecombinant",
+        "Pair Identities",
+        "Shared With",
+        "Phylogenetic Time",
+    ]
+    df.to_excel(output_excel, index=False, columns=export_cols)
     print(f"Results saved to {output_excel}")
