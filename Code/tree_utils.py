@@ -43,7 +43,7 @@ def parse_lengths(tree_file):
 def extract_epi_isl(name):
     """Extracts the EPI_ISL identifier from a sample name string."""
     match = re.search(r"EPI_ISL_\d+", name)
-    return match.group(0) if match else None
+    return match.group(0) if match else name
 
 
 def color_tree(data, tree_file, output_file):
