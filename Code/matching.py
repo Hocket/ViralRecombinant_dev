@@ -212,10 +212,10 @@ def save_to_excel(df, output_excel):
     export_cols = [
         "Sample",
         "Num Pairs",
-        "UniqueRecombinant",
-        "Pair Identities",
-        "Shared With",
         "Phylogenetic Time",
+        "UniqueRecombinant",
+        "Shared With",
+        "Pair Identities",
     ]
     df.to_excel(output_excel, index=False, columns=export_cols)
     print(f"Results saved to {output_excel}")
