@@ -72,13 +72,15 @@ def read_ped_file(ped_file, ped_header="Position"):
 
 
 # primative approach for parsing and storing data -> efficient for small/medium datasets
-def read_recombinant_file(recombinant_file, CIHi_filter=None):
+def read_recombinant_file(recombinant_file, CIHi_filter=0.9):
     """
     Parses a Haploview LD export file and returns all recombinant SNP position pairs.
+    with CIHi >= 0.9 by default.
 
     Args:
         recombinant_file (str): Path to the LD text file.
-        CIHi_filter (float): minimum CIHi for a pair to be considered
+        CIHi_filter (float, optional): minimum CIHi for a pair to be considered
+            default: 0.9
 
     Raises:
         ValueError: If the file does not contain columns L1, L2, and CIhi.
