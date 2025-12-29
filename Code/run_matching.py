@@ -31,7 +31,7 @@ def main(
 
     # matching functions
     sample_data = matching.read_ped_file(ped_file)
-    pairs = matching.read_recombinant_file(recombinant_file, 0.9)
+    pairs = matching.read_recombinant_file(recombinant_file)
     sample_to_pairs = matching.find_matching_pairs(sample_data, pairs)
     dataframe = matching.summarize_matches(sample_to_pairs, time_pairs)
     matching.save_to_excel(dataframe, output_excel)
