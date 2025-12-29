@@ -12,7 +12,7 @@ import tree_utils
 # This function may further be optimized by utilizing pandas dataframes. Works for small datasets
 def read_ped_file(ped_file, ped_header="Position"):
     """
-    Reads a PED file and extracts genotype data for each sample.
+    Reads a PED file and extracts genotype data for each sample, merging duplicate positions.
 
     Args:
         ped_file (str): Path to the PED text file.
@@ -22,8 +22,9 @@ def read_ped_file(ped_file, ped_header="Position"):
         ValueError: If the PED file is empty or has an invalid format.
 
     Returns:
-        List: sample_data
+        dict: sample_data
             A dictionary mapping each sample name (str) to its genotype data.
+            Duplicate positions are merged using logical OR.
             Format:
                 {
                     "sample_name1": {position1: value1, position2: value2, ...},
@@ -33,7 +34,6 @@ def read_ped_file(ped_file, ped_header="Position"):
             Where positions are SNP positions (int) and values are genotype calls (int, e.g., 0 or 1).
     """
     sample_data = {}
-    positions = []
     with open(ped_file, "r") as f:
         lines = f.readlines()
         if not lines:
@@ -46,7 +46,12 @@ def read_ped_file(ped_file, ped_header="Position"):
             errorString = f"Invalid ped.txt format: First column must be '{ped_header}', found '{parts[0]}'"
             raise ValueError(errorString)
 
+        # Detect duplicate positions
         positions = [int(pos) for pos in parts[1:]]
+        pos_indices = {}
+        for idx, pos in enumerate(positions):
+            pos_indices.setdefault(pos, []).append(idx)
+
         for line in lines[1:]:
             parts = re.split(r"\s+", line.strip())
             parts = [p.strip() for p in parts]
@@ -56,9 +61,11 @@ def read_ped_file(ped_file, ped_header="Position"):
             sample_name = parts[0]
             try:
                 values = [int(val) for val in parts[1:]]
-                sample_data[sample_name] = dict(zip(positions, values))
-                # snps = sorted([pos for pos, val in sample_data[sample_name].items() if val == 1]) # Debug
-                # print(f"{sample_name} SNPs: {snps}") # Debug
+                merged = {}
+                for pos, idxs in pos_indices.items():
+                    # Merge duplicate columns using logical OR
+                    merged[pos] = int(any(values[i] for i in idxs))
+                sample_data[sample_name] = merged
             except ValueError:
                 continue
     return sample_data
