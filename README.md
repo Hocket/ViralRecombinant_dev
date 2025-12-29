@@ -25,16 +25,16 @@ Code/
 
 ### Installing IQ-TREE
 
-If you are **not using Conda**, install IQ-TREE separately:
+**NOTE:** If you are **using Windows**, install IQ-TREE separately
 
 **macOS (Homebrew):**
 ```
 brew install iqtree
 ```
 
-**Other platforms:**  
+**Windows / Other Methods:**  
 Download binaries from the [IQ-TREE website](http://iqtree.github.io) and add to system path.
-<br><sub>This may require additional troubleshooting, for this reason conda is preferred.</sub>
+<br><sub>This may require additional troubleshooting</sub>
 
 ## Setup
 
@@ -43,7 +43,7 @@ Download binaries from the [IQ-TREE website](http://iqtree.github.io) and add to
 Create the environment with all dependencies (including IQ-TREE):
 
 ```
-conda env create -f Data/requirements/environment.yml
+conda env create -f Data/requirements/environment_<OperatingSystem>.yml
 conda activate viral_recombinant
 ```
 
