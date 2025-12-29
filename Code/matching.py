@@ -163,17 +163,35 @@ def summarize_matches(sample_to_pairs, phylo_times=None):
                 [epi_isl identifier, sample name, number of pairs, uniqueness, pair identities, samples it shares identities with]
     """
     pairs_to_samples = {}
+    # uses pairset as the key and samples with that pairset as the values
     for sample_name, matching_pairs in sample_to_pairs.items():
         pairs_to_samples.setdefault(matching_pairs, []).append(sample_name)
+
     rows = []
     for pair_set, samples in pairs_to_samples.items():
         num_pairs = len(pair_set)
         pair_identities = "; ".join([f"L1={l1}, L2={l2}" for l1, l2 in pair_set])
-        unique = "Yes" if len(samples) == 1 else "No"
-        shared_with = "" if len(samples) == 1 else ", ".join(samples)
+
+        # gathering phylogenetic times for this unique pair set
+        sample_phylos = []
         for sample in samples:
             epi_isl = tree_utils.extract_epi_isl(sample)
-            phylo_time = phylo_times.get(epi_isl, "") if phylo_times else ""
+            phylo_time = (
+                phylo_times.get(epi_isl, float("inf")) if phylo_times else float("inf")
+            )
+            sample_phylos.append((sample, epi_isl, phylo_time))
+        # sort by phylogenetic time (ascending by default)
+        sample_phylos.sort(key=lambda x: x[2])
+
+        for idx, (sample, epi_isl, phylo_time) in enumerate(sample_phylos):
+            if len(samples) == 1:
+                unique = "Unique"
+                shared_with = ""
+            else:
+                unique = "Unique" if idx == 0 else "Progeny"
+                shared_with = ", ".join(
+                    [s for _, s, _ in sample_phylos if s != epi_isl]
+                )
             rows.append(
                 [
                     epi_isl,
@@ -182,9 +200,10 @@ def summarize_matches(sample_to_pairs, phylo_times=None):
                     unique,
                     pair_identities,
                     shared_with,
-                    phylo_time,
+                    phylo_time if phylo_time != float("inf") else "",
                 ]
             )
+
     df = pd.DataFrame(
         rows,
         columns=[
